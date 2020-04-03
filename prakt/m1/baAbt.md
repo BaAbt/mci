@@ -33,11 +33,13 @@ Dieses besteht aus einer visuellen Darstellung und einer Beschreibung und soll k
 
 ### Abgabedokument
 
-Artifakt von User Profiles und Storyboard, welches die User Profiles beschreibt.
+Stakeholder Analyse, User Profiles, Personas und Storyboard
 
 ### Abgabeverlauf
 
 Feedback durch die Praktikumsbetreuenden.
+
+Abgabe bis yum 11.05.2020 durch ilias
 
 ### Unklarheiten
 
