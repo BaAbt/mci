@@ -29,13 +29,13 @@ Reicht markdown, oder soll das dokument in eine pdf-datei verwandelt werden.
 
 ### kurze Erläuterung
  
-Über unser Szenario sollen mithilfe der Stakeholder Analyse User Profiles angelegt werden
-Dies erfolgt mithilfe eines vorgegebenen User-Story Dokuments. 
-Außerdem helfen vorgegeben Ist-Szenarien mit der Betrachtung von dem Nutzungskontext
+Über unser Szenario sollen mithilfe der Stakeholder Analyse User Profiles angelegt werden.
+Da wir keine Befragung erfolgt mithilfe eines vorgegebenen User-Story Dokuments. 
+Hier werden alle Interessengruppen detailiert beschrieben, dabei helfen vorgegeben Ist-Szenarien mit der Betrachtung von dem Nutzungskontext
  
-Im folgenden werden die erarbeiten User Stories mithilfe Storyboards aufarbeitet, 
-sodass klar wird, wie die Nutzer mit dem System interagieren werden.
-Dieses besteht aus einer visuellen Darstellung und einer Beschreibung und soll konsistenz sein.
+Im folgenden werden die erarbeiten User Stories mithilfe Storyboards aufarbeitet, sodass klar wird, wie die Nutzer mit dem System interagieren werden.
+Hierdurch kann man früh feedback erhalten und kann kosistent bleiben.
+Dieses besteht aus einer visuellen Darstellung und einer Beschreibung.
 
 ### Abgabedokument
 
