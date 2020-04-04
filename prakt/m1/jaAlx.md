@@ -1,33 +1,33 @@
 # Meilenstein 1: Vorstellung des Prakitkumsablaufs durch die Studierenden im SoSe2020
 
 
-##Meilenstein 1: Expose
+## Meilenstein 1: Expose
 
 
-####Artefakte zum Abgeben:
+#### Artefakte zum Abgeben:
 
 - Expose
 
-####Erklärung:
+#### Erklärung:
 
 Im ersten Meilenstein sollen die Studenten Zeigen, dass sie die Aufgabenstellung verstanden
 haben und alle Meilensteine zusammenfassen.
 
-####Art der Abgabe:
+#### Art der Abgabe:
 
 Datei wird von jedem Teammitglied im Ilias hochgeladen
 
-##Meilenstein 2:
+## Meilenstein 2:
 
 
-####Artefakte zum Abgeben:
+#### Artefakte zum Abgeben:
 
 - Stakeholder Analyse
 - User Profiles
 - Personas
 - Storyboards
 
-####Erklärung:
+#### Erklärung:
 
 Beim zweiten Meilenstein dreht sich alles um verschiedene
 User-Gruppen. Wir müssen als erstes eine Stakeholder Analyse
@@ -52,43 +52,43 @@ um Feedback zu erhalten, damit man schon vor der ersten
 Implementation Fehler und Missverständnisse beheben kann. 
 Die Storyboards müssen mit den User Storys im Einklang sein.
 
-####Art der Abgabe:
+#### Art der Abgabe:
 Stakeholder Analyse, User
  Profiles und Personas werden von
 der Gruppe im Ilias hochegladen.
 Storyboards müssen von jedem Teammitglied angefertigt werden.
 
-##Meilenstein 3: 
+## Meilenstein 3: 
 
 
-####Artefakte zum Abgeben:
+#### Artefakte zum Abgeben:
 
 
-####Erklärung:
+#### Erklärung:
 
 
-####Art der Abgabe:
+#### Art der Abgabe:
 
 
-##Meilenstein 4: 
+## Meilenstein 4: 
 
 
-####Artefakte zum Abgeben:
+#### Artefakte zum Abgeben:
 
 
-####Erklärung:
+#### Erklärung:
 
 
-####Art der Abgabe:
+#### Art der Abgabe:
 
 
-##Meilenstein 5: 
+## Meilenstein 5: 
 
 
-####Artefakte zum Abgeben:
+#### Artefakte zum Abgeben:
 
 
-####Erklärung:
+#### Erklärung:
 
 
-####Art der Abgabe:
+#### Art der Abgabe:
