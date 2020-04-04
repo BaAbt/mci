@@ -1,5 +1,11 @@
 # Meilenstein 1: Vorstellung des Prakitkumsablaufs durch die Studierenden im SoSe2020
 
+Alle diese Informationen finden sie auch auf meiner [github seite](https://github.com/BaAbt/mci). 
+Dort kann auch ein detalierter changelog durch die commit-history eingesehen werden.
+
+Alle meine Dokumente werden erst in markdown geschrieben und dann unnötigerweise in docx geändert. 
+Ich bitte inständig darum ein Textformat zu wählen, bei der der Texteditor nicht vorgegeben wird, beispielsweise latex oder markdown.
+
 ## Meilenstein 1:
 
 ### kurze Erlaeuterung
