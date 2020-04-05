@@ -10,12 +10,12 @@
 
 #### Erklärung:
 
-Im ersten Meilenstein sollen die Studenten Zeigen, dass sie die Aufgabenstellung verstanden
+Im ersten Meilenstein sollen die Studenten zeigen, dass sie die Aufgabenstellung verstanden
 haben und alle Meilensteine zusammenfassen.
 
 #### Art der Abgabe:
 
-Datei wird von jedem Teammitglied im Ilias hochgeladen
+Datei wird von jedem Teammitglied im ILIAS hochgeladen
 
 ## Meilenstein 2:
 
@@ -30,7 +30,7 @@ Datei wird von jedem Teammitglied im Ilias hochgeladen
 #### Erklärung:
 
 Beim zweiten Meilenstein dreht sich alles um verschiedene
-User-Gruppen. Wir müssen als erstes eine Stakeholder Analyse
+User Gruppen. Wir müssen als erstes eine Stakeholder Analyse
 durchführen, welche alle Interessengruppen der Anwendung 
 darstellt. Diese Analyse ist dann Grundlage für die Benutzer 
 Profile, wo alle Stakeholder detaillierter Beschrieben werden.
@@ -38,7 +38,7 @@ Danach sollen die Benutzer Profile in konkrete Personas
 aufgespalten werden, welche innerhalb der einzelnen 
 Nutzergruppen noch differenziertere Ziele und Motivationen 
 feststellen. Da wir keine Befragungen durchführen können werden 
-wir die Personas mihilfe von User Storys erstellen.
+wir die Personas mithilfe von User Storys erstellen.
 
 Im Anschluss sollen die Bedürfnisse der Nutzer definiert werden,
 wichtig ist es dabei agil zu bleiben da sich Anforderungen 
@@ -55,8 +55,8 @@ Die Storyboards müssen mit den User Storys im Einklang sein.
 #### Art der Abgabe:
 
 Stakeholder Analyse, User
- Profiles und Personas werden von
-der Gruppe im Ilias hochegladen.
+Profiles und Personas werden von
+der Gruppe im Ilias hochgeladen.
 Storyboards müssen von jedem Teammitglied angefertigt werden.
 
 ## Meilenstein 3: 
