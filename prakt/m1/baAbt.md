@@ -98,6 +98,8 @@ In diesem Meilenstein wird ein Prototype gebaut und mithilfe eines Usability Tes
 ### Unklarheiten
 
 - wie soll die Authentifizierung verlaufen. 
+- wie soll die Authorisierung verlaufen. 
+- wie soll die Datenspeicherung verlaufen. 
 - Bekommen wir da von der TH-Koeln das Usermanagment gestellt? (beispielsweise ueber illias login) 
 - Wer bezahlt den server.
 - gibt es bei der Implementierung Hilfe?
