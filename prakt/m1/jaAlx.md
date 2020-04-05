@@ -1,5 +1,6 @@
 # Meilenstein 1: Vorstellung des Prakitkumsablaufs durch die Studierenden im SoSe2020
 
+Verfasst von Jannik Alexander
 
 ## Meilenstein 1: Expose
 
