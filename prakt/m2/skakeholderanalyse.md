@@ -58,7 +58,7 @@ direkt (hoch)
 
 ### Impact/Machteinfluss
 
-hoch
+mittel
 
 ## Administrator - primary stakeholder
 
@@ -76,5 +76,5 @@ direkt (mittel)
 
 ### Impact/Machteinfluss
 
-hoch
+mittel
 
