@@ -8,22 +8,73 @@
 
 ## Student - primary stakeholder
 
-moechte schnell und einfach in fuer ihn relevanten Raeumen arbeiten koennen. 
-Dafuer muss er/sie mobil, schnell und einfach Transponder mit der Raumnummer oder Transpondernummer ausleihen koennen.
+### Ziele:
+
+möchte schnell und einfach in für ihn relevanten Räumen arbeiten können. 
+
+### Einstellung zum Projekt
+
+positiv
+
+### Einfluss des Stakeholders
+
+direkt (niedrig)
+
+### Impact/Machteinfluss
+
+hoch
 
 ## Pförtner - primary stakeholder
 
-verwaltet alle ausgeliehenen Transponder. 
-Er ist interessiert an den Status aller Transponder und ist ueber die Sicherheit der th-koeln bemueht.
+### Ziele:
 
-# Dozent - primary stakeholder
+Er möchte Transponder ausleihen und über den Status aller Transponder informiert werden.
 
-Unterrichtet Studenten und laesst diese Praktikas machen.
-Er oder eine von ihm berechtigte Person muss seinen Studenten Zugriff auf die ihm zugewiesenen Raeume geben.
+### Einstellung zum Projekt
+
+positiv
+
+### Einfluss des Stakeholders
+
+direkt (hoch)
+
+### Impact/Machteinfluss
+
+hoch
+
+## Dozent - primary stakeholder
+
+### Ziele:
+
+Muss seine Studenten Praktika in Räumen ermöglichen
+
+### Einstellung zum Projekt
+
+positiv
+
+### Einfluss des Stakeholders
+
+direkt (hoch)
+
+### Impact/Machteinfluss
+
+hoch
 
 ## Administrator - primary stakeholder
 
-verwaltet das System und damit alle vorhanden Schluessel und Raeume und Berechtigungen.
-Er muss auserdem bei Fehlern informiert werden und handeln koennen.
+### Ziele:
 
+Wartet fertiges System.
+
+### Einstellung zum Projekt
+
+neutral
+
+### Einfluss des Stakeholders
+
+direkt (mittel)
+
+### Impact/Machteinfluss
+
+hoch
 
