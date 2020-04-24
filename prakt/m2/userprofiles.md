@@ -34,7 +34,7 @@ Da Studenten viel unterwegs sind bietet sich eine App an.
 Da Studenten oft den Ablauf nicht kennen bietet sich ein interaktiver Prozess mit Anweisungen an.
 
 
-## Pfoertner
+## Pförtner
 
 alter: 30-65
 
