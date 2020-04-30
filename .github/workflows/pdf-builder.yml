@@ -4,9 +4,7 @@ name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
-  pull_request:
-    branches: [ master ]
+on: push
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,8 +18,21 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a set of commands using the runners shell
-    - name: build pdf files
+    #  installs all the needed stuff
+    - name: install tools
       run: |
-        sudo npm install -g markdown-pdf --ignore-scripts
-        markdown-pdf --help
+        sudo apt-get install -y pandoc texlive-xetex texlive texlive-latex-extra texlive-generic-extra
+        curl -L https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -o pandoc.deb
+        sudo dpkg -i pandoc.deb
+        mkdir output
+      #  generate the document
+    - name: create documents
+      run: |
+        pandoc --version
+        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/template.md -o output/template.pdf
+
+        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/baAbt.md -o output/baabt.pdf
+        # pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/jaAlx.md -o output/jaAlx.pdf
+    - uses: actions/upload-artifact@v2
+      with:
+        path: output
