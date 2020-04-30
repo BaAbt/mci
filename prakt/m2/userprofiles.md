@@ -16,42 +16,44 @@ alter: 16-99
 
 ### Charakteristiken
 
-Sind meistens jung (16-30) und haben daher meist niedrigeres Einkommen
-Sind meistens per email oder telefon gut erreichbar.
-Haben meistens etwas mehr Zeit, was sich in ausgiebigen Hobbies bemerkbar macht.
+Sind meistens jung (16-30) und haben daher meist niedrigeres Einkommen.
+Sind meistens per E-Mail oder Telefon gut erreichbar.
+Haben einen hohen Anspruch an Usability da sie viele Apps verwenden.
 
 ### Kenntnisse
 
-Sind meistens sehr affin mit Mobile-Apps.
-Sind meistens sehr affin mit Websites.
-Sind meistens affin mit Desktop-applikations.
-Haben teilweise keine Erfahrung mit dem Ausleih-verlauf
+- Sehr affin mit Mobile-Apps.
+- Sehr affin mit Websites.
+- Affin mit Desktop-Applikationen.
+- Teilweise keine Erfahrung mit dem Ausleihe-Verfahren.
 
 ### Motivation
 
-Da Studenten oft Transponder fuer Praktikas und Projekte ausleihen muessen, bietet sich hier eine bessere und schnellere Loesung an. 
-Da Studenten viel unterwegs sind bietet sich eine App an.
-Da Studenten oft den Ablauf nicht kennen bietet sich ein interaktiver Prozess mit Anweisungen an.
+Da Studenten oft Transponder für Praktika und Projekte ausleihen müssen, brauchen sie hier eine bessere und schnellere Lösung.
+Außerdem sind Studenten viel unterwegs, deswegen bietet sich hier eine Mobile-App an.
+Des Weiteren gibt es Studenten, die den Ablauf nicht kennen. Daher braucht man ein interaktives Tutorial für den ersten
+Gebrauch.
 
 
 ## Pförtner
 
-alter: 30-65
+alter: 25-65
 
 ### Charakteristiken
 
 Sind meistens im Job immer erreichbar.
-Sind meistens affin mit Sicherheits/beobachtungssoftware
-Sind meistens stationaer auf der arbeit.
+Sind meistens affin mit Sicherheits-/Überwachungssystemen und haben generell technische Kompetenz.
+Sie wechseln selten den Standort.
 
 ### Kenntnisse
 
-Arbeiten Hauptberuflich und sind so meistens erfahren mit aehnlicher Software. 
+Arbeiten hauptberuflich und sind so meistens erfahren mit ähnlicher Software. 
 Sind meistens affin mit apps und handys.
 
 ### Motivation
 
-Da dies eine regelmaessige Taetigkeit ist, hat der Pfoertner sehr starkes Interesse an einer effektiveren Loesung.
+Da dies eine regelmäßige Tätigkeit ist, hat der Pförtner sehr starkes Interesse an einer effektiveren Lösung.
+Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
 
 
 ## Dozent
@@ -60,26 +62,26 @@ alter: 30-65
 
 ### Charakteristiken
 
-Sind meistens sehr gut per email erreichbar, auch ausserhalb der Arbeitszeiten.
+Sind meistens sehr gut per E-Mail erreichbar, auch außerhalb der Arbeitszeiten.
 Haben meistens wenig Zeit.
-Arbeiten meist viel in der Lehre und Forschung.
 
 ### Kenntnisse
 
-Haben meistens wenig bis gute Technikkenttnisse mit Mobile-apps
+Haben meistens wenig bis gute Technikkenntnisse mit Mobile-apps
 
 ### Motivation
 
-Aufgrund der wenigen Zeit ist es fuer Dozenten sehr ansprechend, einen schnelleren und simpleren Prozess zu haben.
+Aufgrund der wenigen Zeit ist es für Dozenten sehr ansprechend, einen schnelleren und simpleren Prozess zu haben.
+Da Dozenten oft noch Mitarbeiter haben, brauchen sie Funktionen zum Delegieren.
 
 ## Administratoren
 
-alter: 25-45
+Alter: 25-45
 
 ### Charakteristiken
 
-Sind meistens sehr gut per email und Telefon erreichbar.
-Arbeiten meist privat mit aehnlicher Technik.
+Sind meistens sehr gut per E-Mail und Telefon erreichbar.
+Arbeiten meist privat mit ähnlicher Technik.
 Haben meist durchschnittlich viel Zeit.
 Kommen aus der Technik-Branche.
 
@@ -87,9 +89,13 @@ Kommen aus der Technik-Branche.
 
 Sind meistens sehr affin mit Mobile-Apps.
 Sind meistens sehr affin mit Websites.
-Sind meistens affin mit Desktop-applikations.
+Sind meistens affin mit Desktop-applications.
+Insgesamt sehr versiert im technischen Bereich.
 
 ### Motivation
 
-Der Administrator arbeitet tagtaeglich mit der Software, deswegen ist eine schneller, simplerer Prozess als zurzeit zu bevorzugen.
+Der Administrator arbeitet tagtäglich mit der Software, deswegen ist eine schneller, simplerer Prozess als zurzeit zu bevorzugen.
+Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen Job besser erledigen kann.
+Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
+umfangreiche Funtkionalität.
 
