@@ -1,10 +1,23 @@
 # personas
 
 > [confluence seite](https://agile02.gm.fh-koeln.de/display/MCIP/Personas)
-
-> [Personas] clearly illustrate the problem space you’re dealing with 
+>
+> [Ist-Szenario I](https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenario+I)
+> 
+> [Ist-Szenario II](https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenario+II)
+>
+> Die ist Szenarien liegen auch bereits markiert im Projektordner
+>
+> [Personas](https://agile02.gm.fh-koeln.de/display/MCIP/Personas) clearly illustrate the problem space you’re dealing with
 > and the people whose lives you’ll affect … to all stakeholders, including the design team
-
+> 
+> Ist Szenarien sollen verwendet werden, um Personas zu bilden:
+> - Erika Musterfrau & Max Mustermann (Studenten)
+> - Moe (Studentische Hilfskraft)
+> - Olliver Simpson (Wissenschaftlicher Mitarbeiter)
+> - Frau Zelador (Pförtnerin)
+> - Eventuell Prof. Dr. Intelligence? (Dozent, wenig Info)
+> 
 > was macht den Benutzer aus? 
 > Was sind seine Bedürfnisse, Probleme, Erwartungen, Wissen und seine Ziele im Kontext zu dem zu entwickelnden System. 
 > Was unterscheidet die jeweilige Persona gegenüber anderen
@@ -12,55 +25,65 @@
 [//]: # (TODO ausformulieren)
 [//]: # (diese Teile sind vorallem mit Hilfe der Ist-Szenarien umgesetzt)
 
-## Student 
+## Studenten
+### Moe, die studentische Hilfskraft
+Moe ist eine studentische Hilfskraft an der TH-Köln, er verwaltet die Zugangsrechte der Studierenden, die im Moment an Projekten
+arbeiten. Er selbst hat bereits eine Projektarbeit absolviert, deshalb kennt er sich mit den Bedürfnissen der Studenten sehr gut aus.
 
-Ziele
-- muss mit seiner Gruppe im ihm vorgebenen Raum ein Praktikum machen
+Rückblickend fand er gut, dass sein Team damals einen festen Raum zur Verfügung hatte, da sie dort mit Geräten der TH arbeiten konnten.
 
-Bedürfnisse und Erwartungen
-- Zugriff auf den Raum zu der gegebenen Zeit
-- so schnell und flexible wie möglich Zugriff auf den Transponder 
-- auch kurzfristig
-- feedback, falls der Transponder schon ausgeliehen wurde
+Allerdings war das Ausleihen des entsprechenden Transponders oft ein Problem, da der Prozess sehr langwierig war. Das lag unter anderem daran,
+dass die Pförtner die Berechtigungen jedes Mal in einem Dokument am PC nachschlagen und danach den Transponder anhand einer Nummer suchen
+mussten. Gerade bei neuen Mitarbeitern dauerte das Ausleihen besonders lange, da diese noch nicht so viel Erfahrung hatten. Außerdem
+musste jeder Transponder bei dem Ausleihen in einem Buch protokolliert werden und bei der Rückgabe quittiert werden. Deshalb empfand Moe den
+Prozess oft als störend und anstrengend.
 
-Wissen
-- besitzt handy und ist affin im Umgang
-- vernetzt mit der Gruppe
-- kein Wissen was den eigentlichen Prozess angeht
+Ein weiteres Problem war für ihn und sein Team, dass das sie nicht wussten, ob sich schon jemand im Raum befindet, was bedeutete, dass sie
+oft zum Pförtner liefen, obwohl es gar nicht nötig war.
 
-Probleme
-- beim arbeiten gestört werden
+Auch denkt Moe, dass das aktuelle System zur Konfiguration der Transponder nicht optimal ist, da es zu Überschneidungen bei der Ausleihe kommen
+kann. Denn ein Transponder kann mehrere Räume öffnen, aber es gibt nicht genügend Transponder, um allen Arbeitsgruppen ihren eigenen Transponder
+zuzuweisen. Deshalb musste Moe teilweise zu Leuten gehen, die nichts damit zu tun hatten, damit diese Räume auf oder zu schließen können. Das war
+unangenehm für Moe.
 
-## Pförtner oder Mitarbeiter
+Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der Suche waren, aus dem Raum hinauswerfen musste. Aber er 
+war schließlich für die Ordnung im Raum verantwortlich.
 
-Ziele
-- verleiht Transponder an Studenten
+### Erika Musterfrau und Max Mustermann
 
-Bedürfnisse und Erwartungen
-- Überblick von den von ihnen ausgeliehenen Transpondern
-- stabiles, konsistentes System
+## Pförtner und Mitarbeiter
 
-Wissen
-- arbeitet täglich mit dem System, also vertraut
+### Frau Zelador
 
-Probleme
-- veraltete Daten
+### Oliver Simpson
 
 ## Dozent
 
-Ziele
-- teilt seinen Studenten Räumen zu
+Seid 5 Jahren doziere ich an der Th-Köln. 
+Um meinen Lehre praxisbezogener zu machen, lasse ich meine Studenten Praktika machen.
+Da sie für diese spezielle Software brauchen, müssen sie diese in Räumen der TH-Köln machen.
 
-Bedürfnisse und Erwartungen
-- schneller Prozess
+Hierfür stehen mir 3 Räume zur Verfügung. 
+Diese kann ich dann über den Pförtner an meine Studenten verleihen.
+Das geht mittlerweile schnell, vor allem seit ich mich mit im gut verstehe.
 
-Wissen
-- neue Dozenten wenig Wissen über den Prozess, ältere aber schon
+Am Anfang war das allerdings schwieriger. 
+Der Ablauf ist nicht trivial und ich musste mir beim ersten Mal helfen lassen.
+Deswegen dauerte es die ersten Male auch länger und selbst jetzt geht es nicht in der gewünschen Zeit
+Das ist besonders störend, da meine Zeit zum Forschen schon vorher begrenzt war.
+Lieber würde ich die Transponderverleihung an einen mir untergeordneten Mitarbeiter abgeben.
 
-Probleme
-- Konflikte beim Zuteilen der Räume
+Außerdem ist es mir schon vorgekommen, das ich zwei gruppen aus Versehen den gleichen Raum ausgeliehen habe.
+Dies geschah, weil mir der Überblick dazu fehlte.
+Ich wünschte es gäbe ein System, was dies vermeiden würde.
+
+Ab und an passiert es auch, das eine Gruppe den Raum nicht anständig verlässt.
+Dies ist besonders anstrengend, da oft keiner sich schuldig fühlt und ich dann keinen Ansprechpartner finde.
 
 ## Administratoren
+
+
+
 
 Ziele
 - Verwalten Zugriff Räume-:Transponder
