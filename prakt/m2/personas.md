@@ -1,10 +1,23 @@
 # personas
 
 > [confluence seite](https://agile02.gm.fh-koeln.de/display/MCIP/Personas)
-
-> [Personas] clearly illustrate the problem space you’re dealing with 
+>
+> [Ist-Szenario I](https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenario+I)
+> 
+> [Ist-Szenario II](https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenario+II)
+>
+> Die ist Szenarien liegen auch bereits markiert im Projektordner
+>
+> [Personas](https://agile02.gm.fh-koeln.de/display/MCIP/Personas) clearly illustrate the problem space you’re dealing with
 > and the people whose lives you’ll affect … to all stakeholders, including the design team
-
+> 
+> Ist Szenarien sollen verwendet werden, um Personas zu bilden:
+> - Erika Musterfrau & Max Mustermann (Studenten)
+> - Moe (Studentische Hilfskraft)
+> - Olliver Simpson (Wissenschaftlicher Mitarbeiter)
+> - Frau Zelador (Pförtnerin)
+> - Eventuell Prof. Dr. Intelligence? (Dozent, wenig Info)
+> 
 > was macht den Benutzer aus? 
 > Was sind seine Bedürfnisse, Probleme, Erwartungen, Wissen und seine Ziele im Kontext zu dem zu entwickelnden System. 
 > Was unterscheidet die jeweilige Persona gegenüber anderen
@@ -12,46 +25,37 @@
 [//]: # (TODO ausformulieren)
 [//]: # (diese Teile sind vorallem mit Hilfe der Ist-Szenarien umgesetzt)
 
-## Student 
+## Studenten
+### Moe, die studentische Hilfskraft
+Moe ist eine studentische Hilfskraft an der TH-Köln, er verwaltet die Zugangsrechte der Studierenden, die im Moment an Projekten
+arbeiten. Er selbst hat bereits eine Projektarbeit absolviert, deshalb kennt er sich mit den Bedürfnissen der Studenten sehr gut aus.
 
-Seit 2 Jahren studiere ich nun an der TH. 
-Im letzten Semester hatte ich dabei das erste Mal ein längeres Projekt.
-Hierfür wurde uns ein Raum zugewiesen, in dem wir arbeiten sollen.
-Meine Arbeit kann ich nur dort aufgrund spezieller Lizenzen absolvieren
-und es ist gut einen Raum zu haben, in dem man nicht gestört wird.
+Rückblickend fand er gut, dass sein Team damals einen festen Raum zur Verfügung hatte, da sie dort mit Geräten der TH arbeiten konnten.
 
-Am Anfang war der Verleih noch sehr umbeholfen und langsam.
-Je länger ich dort allerdings arbeitete, desto besser lief der Ablauf.
+Allerdings war das Ausleihen des entsprechenden Transponders oft ein Problem, da der Prozess sehr langwierig war. Das lag unter anderem daran,
+dass die Pförtner die Berechtigungen jedes Mal in einem Dokument am PC nachschlagen und danach den Transponder anhand einer Nummer suchen
+mussten. Gerade bei neuen Mitarbeitern dauerte das Ausleihen besonders lange, da diese noch nicht so viel Erfahrung hatten. Außerdem
+musste jeder Transponder bei dem Ausleihen in einem Buch protokolliert werden und bei der Rückgabe quittiert werden. Deshalb empfand Moe den
+Prozess oft als störend und anstrengend.
 
-Da die Bahn nur jede Stunde von Köln kommt habe ich vor unseren Timeslot nicht so viel Zeit.
-Innerhalb 5 Minuten muss ich den Transponder ausleihen, sonst verpass ich wertvolle Arbeitszeit im Raum.
-Daher ist es sehr störend, wenn der Transponderverleih aufgrund fehlender Organisation nicht funktioniert.
-Beispielsweise konnten wir einen Tag gar nicht arbeiten, weil der Pförtner den Transponder an eine falsche Person abgegeben hatte.
-Er hatte noch eine veraltete Liste und wusste so gar nicht von der Überschneidung.
+Ein weiteres Problem war für ihn und sein Team, dass das sie nicht wussten, ob sich schon jemand im Raum befindet, was bedeutete, dass sie
+oft zum Pförtner liefen, obwohl es gar nicht nötig war.
 
-An einen anderen Tag war ein Kommilitone schneller als ich.
-Als ich am Pförtner um den Transponder fragte, wurde mir mitgeteilt das dieser schon ausgeteilt wurde.
-Gerne hätte ich mir diesen Weg zum Hauptgebäude gespart.
+Auch denkt Moe, dass das aktuelle System zur Konfiguration der Transponder nicht optimal ist, da es zu Überschneidungen bei der Ausleihe kommen
+kann. Denn ein Transponder kann mehrere Räume öffnen, aber es gibt nicht genügend Transponder, um allen Arbeitsgruppen ihren eigenen Transponder
+zuzuweisen. Deshalb musste Moe teilweise zu Leuten gehen, die nichts damit zu tun hatten, damit diese Räume auf oder zu schließen können. Das war
+unangenehm für Moe.
 
-## Pförtner oder Mitarbeiter
+Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der Suche waren, aus dem Raum hinauswerfen musste. Aber er 
+war schließlich für die Ordnung im Raum verantwortlich.
 
-Ich möchte die Universität sicher halten. 
-Immer schon habe ich mich darum bemüht, das der Transponderverleih sicher und ohne Ausfälle verläuft.
+### Erika Musterfrau und Max Mustermann
 
-Meine längere Zeit als Pförtner an der Th Köln hilft mir dabei.
-Die Systeme sind mir vertraut und deren Vorteile und Nachteile auch.
-Ich weiß genau, wie ich arbeiten kann um dennoch einen effektiven Verleih zu ermöglichen.
-Dabei muss ich immer den Überblick haben, den sobald ich den verliere, ist eine sichere Überprüfung der Situation nicht mehr möglich.
+## Pförtner und Mitarbeiter
 
-Beispielsweise sind manchmal unsere Daten veraltet. 
-Dann muss man über Verbindungen und Anrufen der Sache auf den Grund gehen.
-Andererseits ist unserer jetziges System sehr stabil.
-Ausfälle des Netzwerkes oder andere technische Probleme beeinträchtigen uns nicht.
+### Frau Zelador
 
-Leider trifft das nicht auf meine Kollegen zu. 
-Jedes mal, wenn eine Hilfskraft dazukommt müssen wir ausführlich das Konzept und unsere Erfahrungen berichten.
-Dies ist besonders problematisch, falls ich in Urlaub fahre oder krank bin.
-Schon zu oft wurde ich da angerufen, weil die Mitarbeiter auf ein Problem gestoßen sind, welches sie nicht alleine lösen konnten.
+### Oliver Simpson
 
 ## Dozent
 
@@ -77,6 +81,9 @@ Ab und an passiert es auch, das eine Gruppe den Raum nicht anständig verlässt.
 Dies ist besonders anstrengend, da oft keiner sich schuldig fühlt und ich dann keinen Ansprechpartner finde.
 
 ## Administratoren
+
+
+
 
 Ziele
 - Verwalten Zugriff Räume-:Transponder
