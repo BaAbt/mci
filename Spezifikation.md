@@ -389,10 +389,6 @@ BaAbt
 
 \newpage
 
-Jannik Alexander Storyboards
-
-Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
-
 ![student permission](prakt/m2/jalexan/StudentPerm.png)
 
 ![student request](prakt/m2/jalexan/StudentReq.png)
