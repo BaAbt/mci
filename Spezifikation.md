@@ -375,8 +375,6 @@ erfüllen**
 
 #### *\[Artefakte\]*
 
-\newpage
-
 BaAbt
 
 ![BaAbt](prakt/m2/ba_abt/storyboard_1.jpeg)
