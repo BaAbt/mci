@@ -75,7 +75,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+10.5.2020  | initial commit          | damit es da ist                             
            |                         |                              
            |                         |                              
            |                         |                              
@@ -85,7 +85,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*  
 
-##### __**Ausleihender  - primary stakeholder**__
+##### __**Ausleihender  - primary stakeholder**__  
 
 __Ziele__
 
@@ -103,7 +103,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-##### __**Papierverkäufer  - Antiuser**__
+##### __**Papierverkäufer  - Antiuser**__  
 
 __Ziele:__
 
@@ -121,7 +121,7 @@ __Impact/Machteinfluss:__
 
 sehr gering
 
-##### __**Pförtner - primary stakeholder**__
+##### __**Pförtner - primary stakeholder**__  
 
 __Ziele:__
 
@@ -139,7 +139,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-##### __**technik ablehnender Pförtner - primary stakeholder**__
+##### __**technik ablehnender Pförtner - primary stakeholder**__  
 
 __Ziele:__
 
@@ -157,7 +157,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Raumverantwortlicher - primary stakeholder**__
+##### __**Raumverantwortlicher - primary stakeholder**__  
 
 __Ziele:__
 
@@ -176,7 +176,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Administrator - primary stakeholder**__
+##### __**Administrator - primary stakeholder**__  
 
 __Ziele:__
 
@@ -196,7 +196,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Auftraggeber - primary stakeholder**__
+##### __**Auftraggeber - primary stakeholder**__  
 
 __Ziele:__
 
@@ -214,7 +214,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-#### *\[Erläuterung\]*
+#### *\[Erläuterung\]*  
 
 Die hier dargestellten primären Stakeholder sind die hauptsächlichen Nutzer des Systems. 
 Diese sind die Personen, welche tagtäglich mit dem System in Berührung kommen werden und damit am wichtigsten fuer uns sind.
@@ -223,9 +223,9 @@ Das gemeinsame Ziel dieser ist es, das bestehende System effizienter zu machen.
 Die hier dargestellten Anti-User haben dabei eher eine kleinen Einfluss.
 Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumverantwortlicher und Administrator eingegehen.
 
-### User Profiles
+### User Profiles  
 
-#### Changelog
+#### Changelog  
 
 [//]: # (https://tableconvert.com/)
 
@@ -241,7 +241,7 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 #### *\[Artefakt/e\]*
 
-##### Student
+##### Student  
   
 alter: 16-99
 
@@ -266,7 +266,7 @@ Des Weiteren gibt es Studenten, die den Ablauf nicht kennen. Daher braucht man e
 Gebrauch.
 
 
-##### Pförtner
+##### Pförtner  
 
 alter: 25-65
 
@@ -287,7 +287,7 @@ Da dies eine regelmäßige Tätigkeit ist, hat der Pförtner sehr starkes Intere
 Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
 
 
-##### Dozent
+##### Dozent  
 
 alter: 30-65
 
@@ -305,7 +305,7 @@ __Motivation__
 Aufgrund der wenigen Zeit ist es für Dozenten sehr ansprechend, einen schnelleren und simpleren Prozess zu haben.
 Da Dozenten oft noch Mitarbeiter haben, brauchen sie Funktionen zum Delegieren.
 
-##### Administratoren
+##### Administratoren  
 
 Alter: 25-45
 
@@ -330,19 +330,19 @@ Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen 
 Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
 umfangreiche Funtkionalität.
 
-#### *\[Erläuterung\]*
+#### *\[Erläuterung\]*  
 
 Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren System arbeiten müssen.
 
-### Personas
+### Personas  
 
-#### Changelog
+#### Changelog  
 
 [//]: # (https://tableconvert.com/)
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+10.5.2020  | initial commit          | damit es da ist                             
            |                         |                              
            |                         |                              
            |                         |                              
@@ -354,12 +354,10 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
 
 ## Nutzungsanforderungen spezifizieren
 
-[ ]{.underline}
 
 ## Gestaltungslösungen entwickeln, die die Nutzungsanforderungen
 erfüllen**
 
-[ ]{.underline}
 
 ### Storyboards
 
