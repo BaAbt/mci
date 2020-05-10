@@ -56,6 +56,14 @@ war schließlich für die Ordnung im Raum verantwortlich.
 ### Frau Zelador
 
 ### Oliver Simpson
+ 
+Oliver Simpson ist wissenschaftlicher Mitarbeiter im KI-Labor des Campus Gummersbach und muss daher oft die Berechtigung für die Transpondervergabe erteilen.
+Er kennt die Seite des Studenten, und wie nervig es sein kann, nicht rechtzeitig in den Raum zu können und deshalb wertvolle Arbeitszeit zu verlieren.
+Daher ist es im besonders wichtig, das Missverständnisse hinsichtlich der Ausgabe nicht vorkommen und versucht daher die Daten möglichst aktuell zu bleiben.
+
+Oliver fehlt dabei besonders eine zentrale Verwaltung der Transponder. 
+Dies würde die Berechtigungsliste immer aktuell halten.
+Das würde auch Fehler vermeiden, wo durch Fehlen bestimmter Personen Missverständnisse auftreten.
 
 ## Dozent
 
