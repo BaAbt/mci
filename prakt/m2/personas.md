@@ -25,7 +25,8 @@
 [//]: # (TODO ausformulieren)
 [//]: # (diese Teile sind vorallem mit Hilfe der Ist-Szenarien umgesetzt)
 
-## Moe, die studentische Hilfskraft (Student)
+___Moe, die studentische Hilfskraft (Student)___
+
 Moe ist eine studentische Hilfskraft an der TH-Köln, er verwaltet die Zugangsrechte der Studierenden, die im Moment an Projekten
 arbeiten. Er selbst hat bereits eine Projektarbeit absolviert, deshalb kennt er sich mit den Bedürfnissen der Studenten sehr gut aus.
 
@@ -47,7 +48,7 @@ unangenehm für Moe, weswegen er sich eine einfachere Lösung wünscht.
 Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der Suche waren, aus dem Raum hinauswerfen musste. Aber er 
 war schließlich für die Ordnung im Raum verantwortlich.
 
-## Erika Musterfrau und Max Mustermann (Student)
+___Erika Musterfrau und Max Mustermann (Student)___
 
 Erika Musterfrau und Max Mustermann sind Informatik Studenten im fünften Semester und nehmen an einem Projekt teil, bei dem Sie auf einen
 Transponder angewiesen sind. 
@@ -63,9 +64,23 @@ auf den Pförtner zu warten.
 
 Ihnen würde es Helfen, wenn die Verwaltung der Transponder zentral ablaufen würde. 
 
-## Frau Zelador (Pförtner)
+___Frau Zelador (Pförtner)___
 
-## Oliver Simpson (wissenschaftlicher Mitarbeiter)
+Als Frau Zelador davon hörte, dass Rex der System-Administrator sich für ein besseres Verwaltungssystem der Transponder aussprach, fielen ihr augenblicklich ein duzend Mängel am aktuellen Ausleihverfahren ein.
+Oft ist das Problem fehlende Kommunikation zwischen allen Beteiligten.
+Dann kommt es dazu dass viel Zeit vergeht und Studenten nicht an ihre Berechtigungen kommen.
+
+Besonders erinnert sie sich an den einen Morgen, als zwei Studenten vor meiner Pforte standen und um einen Transponder baten, für den sie angeblich berechtigt seien, es laut Liste allerdings nicht waren. 
+Erst nach einem Anruf bei Herrn Simpson – der die Mail nur an Frau Zeladors krankgeschriebenen Kollegen gemailt hatte – und einem Griff ins Postfach konnte sie die Liste manuell bearbeiten.
+Nun haben die Studenten zwar ihre Berechtigung, allerdings fehlte entsprechender Schlüssel. 
+Nachdem sie die Liste zurückgesetzt hatte stellte sie fest, dass bereits jemand anderes den Raum seit ein paar Stunden belegte. 
+Eine erneute Rücksprache mit Herrn Simpson war nötig, um zu erfahren, dass es sich um einen Fehler gehandelt habe und auch dieser Student eine Erlaubnis hatte, allerdings von einem anderen Dozenten.
+
+Es passiert ziemlich oft, dass sie Studenten aus ein und demselben Team erklären musste, dass einer ihrer Gruppenmitglieder bereits bei ihr war. 
+Sie erwartet von einem neuen System, dass eine klare Kommunikation zwischen ihr und den Dozenten untereinander besteht und Einträge nicht mehr von Hand erfasst werden müssen und aufgrund inkonsistenter Daten überschneidet. 
+Außerdem sollen Studenten die Möglichkeit besitzen, online über die Verfügbarkeit ihres Transponders bescheid zu wissen, um unnötige Wege zur Pforte vermeiden zu können
+
+___Oliver Simpson (wissenschaftlicher Mitarbeiter)___
  
 Oliver Simpson ist wissenschaftlicher Mitarbeiter im KI-Labor des Campus Gummersbach und muss daher oft die Berechtigung für die Transpondervergabe erteilen.
 Er kennt die Seite des Studenten, und wie nervig es sein kann, nicht rechtzeitig in den Raum zu können und deshalb wertvolle Arbeitszeit zu verlieren.
@@ -75,7 +90,7 @@ Oliver fehlt dabei besonders eine zentrale Verwaltung der Transponder.
 Dies würde die Berechtigungsliste immer aktuell halten.
 Das würde auch Fehler vermeiden, wo durch Fehlen bestimmter Personen Missverständnisse auftreten.
 
-## Pr Dr Intelligence (Dozent)
+___Pr Dr Intelligence (Dozent)___
 
 Seid 5 Jahren doziere ich an der Th-Köln. 
 Um meinen Lehre praxisbezogener zu machen, lasse ich meine Studenten Praktika machen.
@@ -98,10 +113,11 @@ Ich wünschte es gäbe ein System, was dies vermeiden würde.
 Ab und an passiert es auch, das eine Gruppe den Raum nicht anständig verlässt.
 Dies ist besonders anstrengend, da oft keiner sich schuldig fühlt und ich dann keinen Ansprechpartner finde.
 
-## Rex (Administrator)
+___Rex (Administrator)___
 
 Rex ist seit etwa 11 Monaten an der TH Köln in Gummersbach in einem Team als System-Administrator beschäftigt und unter anderem für die Verwaltung der Transponder-Schlüssel verantwortlich. Dies hat ihn allein in dieser kurzen Zeit schon viel Mühe gekostet, da er sich die meiste Zeit mit Überschneidungen zwischen Transpondern kümmern muss.
 Eigentlich ist seine Aufgabe, neue Räume in Neubauten zu erschließen und mit Transpondern zu versehen, doch verursacht das aktuelle System zur Verwaltung und Vergabe der Schlüssel viele Probleme, die einfach zu vermeiden wären.
+
 Rex wünscht sich ein stabileres System, welches im in den kommenden Jahre viel Zeit sparen könnte. Das System müsste eine funktionierende Kommunikation zwischen Dozenten, Pförtnern und Studenten gewährleisten und dabei leicht für Rex zu verwalten sein.
 Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wieder zu löschen. Darüber hinaus kann er die Benutzer des Systems Benachrichtigen, beispielsweise bei einem Netzausfall.
 
