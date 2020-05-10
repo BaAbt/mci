@@ -399,7 +399,7 @@ Die roten Kreise symbolisieren die Stellen an denen der User mit der Software in
 
 ![jalexan](prakt/m2/jalexan/StudentPerm.png)
 
-So kann der Student sehen ob sein Transponder bereits ausgeliehen ist.
+So kann der Student sehen, ob sein Transponder bereits ausgeliehen ist.
 
 ![jalexan](prakt/m2/jalexan/StudentReq.png)
 
