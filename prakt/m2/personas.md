@@ -30,11 +30,11 @@
 Moe ist eine studentische Hilfskraft an der TH-Köln, er verwaltet die Zugangsrechte der Studierenden, die im Moment an Projekten
 arbeiten. Er selbst hat bereits eine Projektarbeit absolviert, deshalb kennt er sich mit den Bedürfnissen der Studenten sehr gut aus.
 
-Rückblickend fand er gut, dass sein Team damals einen festen Raum zur Verfügung hatte, da sie dort mit Geräten der TH arbeiten konnten.
+Rückblickend findet er gut, dass sein Team damals einen festen Raum zur Verfügung hatte, da sie dort mit Geräten/Lizenzen der TH arbeiten konnten.
 
-Allerdings war das Ausleihen des entsprechenden Transponders oft ein Problem, da der Prozess sehr langwierig war. Das lag unter anderem daran,
+Allerdings war das Ausleihen des entsprechenden Transponders oft ein Problem, da der Prozess sehr langwierig war. Er meint, dass das unter anderem daran lag,
 dass die Pförtner die Berechtigungen jedes Mal in einem Dokument am PC nachschlagen und danach den Transponder anhand einer Nummer suchen
-mussten. Gerade bei neuen Mitarbeitern dauerte das Ausleihen besonders lange, da diese noch nicht so viel Erfahrung hatten. Außerdem
+mussten. Gerade bei neuen Mitarbeitern dauere das Ausleihen besonders lange, da diese noch nicht so viel Erfahrung hatten. Außerdem
 musste jeder Transponder bei dem Ausleihen in einem Buch protokolliert werden und bei der Rückgabe quittiert werden. Deshalb empfand Moe den
 Prozess oft als störend und anstrengend.
 
@@ -42,9 +42,8 @@ Ein weiteres Problem war für ihn und sein Team, dass das sie nicht wussten, ob 
 oft zum Pförtner liefen, obwohl es gar nicht nötig war.
 
 Auch denkt Moe, dass das aktuelle System zur Konfiguration der Transponder nicht optimal ist, da es zu Überschneidungen bei der Ausleihe kommen
-kann. Denn ein Transponder kann mehrere Räume öffnen, aber es gibt nicht genügend Transponder, um allen Arbeitsgruppen ihren eigenen Transponder
-zuzuweisen. Deshalb musste Moe teilweise zu Leuten gehen, die nichts damit zu tun hatten, damit diese Räume auf oder zu schließen können. Das war
-unangenehm für Moe.
+kann. Deshalb musste Moe teilweise zu Leuten gehen, die nichts damit zu tun hatten, damit diese Räume auf oder zu schließen können. Das war
+unangenehm für Moe, weswegen er sich eine einfachere Lösung wünscht.
 
 Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der Suche waren, aus dem Raum hinauswerfen musste. Aber er 
 war schließlich für die Ordnung im Raum verantwortlich.
