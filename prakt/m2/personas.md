@@ -100,25 +100,13 @@ Ich wünschte es gäbe ein System, was dies vermeiden würde.
 Ab und an passiert es auch, das eine Gruppe den Raum nicht anständig verlässt.
 Dies ist besonders anstrengend, da oft keiner sich schuldig fühlt und ich dann keinen Ansprechpartner finde.
 
-## Administratoren
+## Rex, der Administrator
 
+Rex ist seit etwa 11 Monaten an der TH Köln in Gummersbach in einem Team als System-Administrator beschäftigt und unter anderem für die Verwaltung der Transponder-Schlüssel verantwortlich. Dies hat ihn allein in dieser kurzen Zeit schon viel Mühe gekostet, da er sich die meiste Zeit mit Überschneidungen zwischen Transpondern kümmern muss.
+Eigentlich ist seine Aufgabe, neue Räume in Neubauten zu erschließen und mit Transpondern zu versehen, doch verursacht das aktuelle System zur Verwaltung und Vergabe der Schlüssel viele Probleme, die einfach zu vermeiden wären.
+Rex wünscht sich ein stabileres System, welches im in den kommenden Jahre viel Zeit sparen könnte. Das System müsste eine funktionierende Kommunikation zwischen Dozenten, Pförtnern und Studenten gewährleisten und dabei leicht für Rex zu verwalten sein.
+Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wieder zu löschen. Darüber hinaus kann er die Benutzer des Systems Benachrichtigen, beispielsweise bei einem Netzausfall.
 
-
-
-Ziele
-- Verwalten Zugriff Räume-:Transponder
-
-Bedürfniesse und Erwartungen
-- stabiles System
-- einfach zu wartendes system
-- auch bei krankmeldung zu wartendes system
-
-Wissen
-- gut
-
-Probleme
-- krankmeldung oder Urlaub
-- Netzausfall der TH-Köln
 
 
 
