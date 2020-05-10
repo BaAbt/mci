@@ -398,40 +398,33 @@ Jannik Alexander
 Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
 
 ![jalexan](prakt/m2/jalexan/StudentPerm.png)
-
-So kann der Student sehen, ob sein Transponder bereits ausgeliehen ist.
-
 ![jalexan](prakt/m2/jalexan/StudentReq.png)
-
-Der Student kann eine Anfrage auf Zutritt bei seinem Dozenten stellen.
+\newpage
 
 #### Dozenten und Mitarbeiter
 
-Mitarbeiter verwenden dasselbe UI wie der Dozent, nur dass sie keine weiteren Mitarbeiter hinzufügen können.
-
 ![jalexan](prakt/m2/jalexan/DozentBerechtigung1.png)
 ![jalexan](prakt/m2/jalexan/DozentBerechtigung2.png)
-
-Hier kann der Dozent einem oder mehreren Studenten gleichzeitig Zutritt zu einem oder mehreren Räumen gewähren.
+\newpage
 
 ![jalexan](prakt/m2/jalexan/DozentDelegieren1.png)
 ![jalexan](prakt/m2/jalexan/DozentDelegieren2.png)
-
-Hier wird der Prozess beschrieben, wie ein Dozent einen weiteren Mitarbeiter hinzufügt.
+\newpage
 
 ![jalexan](prakt/m2/jalexan/DozentEntfernen.png)
-
-Hier entfernt der Dozent/Mitarbeiter die Berechtigungen von einem Studierenden.
+\newpage
 
 #### Pförtner
 
 ![jalexan](prakt/m2/jalexan/Pförtner1.png)
 ![jalexan](prakt/m2/jalexan/Pförtner2.png)
+\newpage
 
 #### Administrator
 
 ![jalexan](prakt/m2/jalexan/Admin1.png)
 ![jalexan](prakt/m2/jalexan/Admin2.png)
+\newpage
 
     
 
