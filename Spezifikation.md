@@ -85,7 +85,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*
 
-__**Ausleihender  - primary stakeholder**__
+##### __**Ausleihender  - primary stakeholder**__
 
 __Ziele__
 
@@ -103,7 +103,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-__**Papierverkäufer  - Antiuser**__
+##### __**Papierverkäufer  - Antiuser**__
 
 __Ziele:__
 
@@ -121,7 +121,7 @@ __Impact/Machteinfluss:__
 
 sehr gering
 
-__**Pförtner - primary stakeholder**__
+##### __**Pförtner - primary stakeholder**__
 
 __Ziele:__
 
@@ -139,7 +139,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-__**technik ablehnender Pförtner - primary stakeholder**__
+##### __**technik ablehnender Pförtner - primary stakeholder**__
 
 __Ziele:__
 
@@ -157,7 +157,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-__**Raumverantwortlicher - primary stakeholder**__
+##### __**Raumverantwortlicher - primary stakeholder**__
 
 __Ziele:__
 
@@ -176,7 +176,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-__**Administrator - primary stakeholder**__
+##### __**Administrator - primary stakeholder**__
 
 __Ziele:__
 
@@ -196,7 +196,7 @@ __Impact/Machteinfluss:__
 
 mittel
 
-__**Auftraggeber - primary stakeholder**__
+##### __**Auftraggeber - primary stakeholder**__
 
 __Ziele:__
 
