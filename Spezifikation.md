@@ -150,6 +150,16 @@ erfüllen**
 
 #### *\[Artefakte\]*
 
+##### BaAbt
+
+![](prakt/m2/ba_abt/storyboard_1.jpeg)
+
+![](prakt/m2/ba_abt/storyboard_2.jpeg)
+
+![](prakt/m2/ba_abt/storyboard_3.jpeg)
+
+![](prakt/m2/ba_abt/storyboard_4.jpeg)
+
 #### *\[Erläuterung\]*
 
 ### Figma Prototyp

@@ -28,11 +28,7 @@ jobs:
       #  generate the document
     - name: create documents
       run: |
-        pandoc --version
-        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/template.md -o output/template.pdf
-
-        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/baAbt.md -o output/baabt.pdf
-        # pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N prakt/spez/jaAlx.md -o output/jaAlx.pdf
+        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" --toc -N Spezifikation.md -o output/Spezifikation.pdf
     - uses: actions/upload-artifact@v2
       with:
         path: output
