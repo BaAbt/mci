@@ -85,8 +85,6 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*  
 
----
-
 __**Ausleihender  - primary stakeholder**__  
 
 __Ziele__
@@ -228,8 +226,6 @@ __Impact/Machteinfluss:__
 
 hoch
 
----
-
 #### *\[Erläuterung\]*  
 
 Die hier dargestellten primären Stakeholder sind die hauptsächlichen Nutzer des Systems. 
@@ -257,8 +253,6 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 #### *\[Artefakt/e\]*
 
----
-  
 ___Student___
   
 alter: 16-99
@@ -352,8 +346,6 @@ Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen 
 Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
 umfangreiche Funtkionalität.
 
----
-
 #### *\[Erläuterung\]*  
 
 Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren System arbeiten müssen.
@@ -373,8 +365,6 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
            |                         |                              
 
 #### *\[Artefakt/e\]*
-
----
 
 ___Moe, die studentische Hilfskraft (Student)___
 
@@ -481,8 +471,6 @@ Eigentlich ist seine Aufgabe, neue Räume in Neubauten zu erschließen und mit T
 
 Rex wünscht sich ein stabileres System, welches im in den kommenden Jahre viel Zeit sparen könnte. Das System müsste eine funktionierende Kommunikation zwischen Dozenten, Pförtnern und Studenten gewährleisten und dabei leicht für Rex zu verwalten sein.
 Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wieder zu löschen. Darüber hinaus kann er die Benutzer des Systems Benachrichtigen, beispielsweise bei einem Netzausfall.
-
----
 
 #### *\[Erläuterung\]*
 
