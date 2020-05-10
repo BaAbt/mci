@@ -6,6 +6,17 @@
 
 > Stakeholders that hold a direct interest in a business or organization and its dealings are known as primary stakeholders
 
+```
+ __        ___    ____  _   _ ___ _   _  ____ 
+ \ \      / / \  |  _ \| \ | |_ _| \ | |/ ___|
+  \ \ /\ / / _ \ | |_) |  \| || ||  \| | |  _ 
+   \ V  V / ___ \|  _ <| |\  || || |\  | |_| |
+    \_/\_/_/   \_\_| \_\_| \_|___|_| \_|\____|
+```
+
+This was only used for development.
+Now the changes should be done in the Spezifikation directly
+
 __**Ausleihender  - primary stakeholder**__
 
 __Ziele__

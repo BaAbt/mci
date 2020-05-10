@@ -85,7 +85,143 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*
 
+__**Ausleihender  - primary stakeholder**__
+
+__Ziele__
+
+möchte schnell und einfach in für ihn relevanten Räumen arbeiten können. 
+
+__Einstellung zum Projekt:__
+
+positiv
+
+__Einfluss des Stakeholders:__
+
+direkt (niedrig)
+
+__Impact/Machteinfluss:__
+
+hoch
+
+__**Papierverkäufer  - Antiuser**__
+
+__Ziele:__
+
+Verdient Geld damit Papier zu verkaufen, das zur aktuellen Verwaltung verwendet wird.
+
+__Einstellung zum Projekt:__
+
+negativ
+
+__Einfluss des Stakeholders:__
+
+indirekt (sehr niedrig)
+
+__Impact/Machteinfluss:__
+
+sehr gering
+
+__**Pförtner - primary stakeholder**__
+
+__Ziele:__
+
+Er möchte Transponder ausleihen und über den Status aller Transponder informiert werden.
+
+__Einstellung zum Projekt:__
+
+positiv
+
+__Einfluss des Stakeholders:__
+
+direkt (hoch)
+
+__Impact/Machteinfluss:__
+
+hoch
+
+__**technik ablehnender Pförtner - primary stakeholder**__
+
+__Ziele:__
+
+Möchte, das alles so bleibt wie es ist da nur er das aktuelle System versteht und er dadurch eine gesicherte Stelle hat
+
+__Einstellung zum Projekt:__
+
+negativ
+
+__Einfluss des Stakeholders:__
+
+direkt (mittel)
+
+__Impact/Machteinfluss:__
+
+mittel
+
+__**Raumverantwortlicher - primary stakeholder**__
+
+__Ziele:__
+
+Verwaltet Zugriff auf die ihn zugewiesenen Räume.
+Sort dafür, das sie immer in einem guten Zustand sind.
+
+__Einstellung zum Projekt:__
+
+positiv
+
+__Einfluss des Stakeholders:__
+
+direkt (hoch)
+
+__Impact/Machteinfluss:__
+
+mittel
+
+__**Administrator - primary stakeholder**__
+
+__Ziele:__
+
+Wartet fertiges System,
+sowie Räume und Verantwortlicher.
+Sorgt dafür, das das System sicher und stabil läuft
+
+__Einstellung zum Projekt:__
+
+neutral
+
+__Einfluss des Stakeholders:__
+
+direkt (mittel)
+
+__Impact/Machteinfluss:__
+
+mittel
+
+__**Auftraggeber - primary stakeholder**__
+
+__Ziele:__
+
+Will die TH-Koeln effizienter machen
+
+__Einstellung zum Projekt:__
+
+positiv
+
+__Einfluss des Stakeholders:__
+
+direkt (niedrig)
+
+__Impact/Machteinfluss:__
+
+hoch
+
 #### *\[Erläuterung\]*
+
+Die hier dargestellten primären Stakeholder sind die hauptsächlichen Nutzer des Systems. 
+Diese sind die Personen, welche tagtäglich mit dem System in Berührung kommen werden und damit am wichtigsten fuer uns sind.
+Das gemeinsame Ziel dieser ist es, das bestehende System effizienter zu machen.
+ 
+Die hier dargestellten Anti-User haben dabei eher eine kleinen Einfluss.
+Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumverantwortlicher und Administrator eingegehen.
 
 ### User Profiles
 
@@ -95,7 +231,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+10.5.2020  | initial commit          | damit es da ist                             
            |                         |                              
            |                         |                              
            |                         |                              
