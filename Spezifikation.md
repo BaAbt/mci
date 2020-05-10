@@ -381,17 +381,12 @@ BaAbt
 
 ![BaAbt](prakt/m2/ba_abt/storyboard_1.jpeg)
 
-Description of an image
-
 ![BaAbt](prakt/m2/ba_abt/storyboard_2.jpeg)
 
 ![BaAbt](prakt/m2/ba_abt/storyboard_3.jpeg)
 
 ![BaAbt](prakt/m2/ba_abt/storyboard_4.jpeg)
 
-\newpage
-
-#### *\[Erläuterung\]*
 
 \newpage
 
