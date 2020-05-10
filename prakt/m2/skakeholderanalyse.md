@@ -6,75 +6,114 @@
 
 > Stakeholders that hold a direct interest in a business or organization and its dealings are known as primary stakeholders
 
-## Student - primary stakeholder
+__**Ausleihender  - primary stakeholder**__
 
-### Ziele:
+__Ziele__
 
 möchte schnell und einfach in für ihn relevanten Räumen arbeiten können. 
 
-### Einstellung zum Projekt
+__Einstellung zum Projekt:__
 
 positiv
 
-### Einfluss des Stakeholders
+__Einfluss des Stakeholders:__
 
 direkt (niedrig)
 
-### Impact/Machteinfluss
+__Impact/Machteinfluss:__
 
 hoch
 
-## Pförtner - primary stakeholder
+__**Papierverkaeufer  - Antiuser**__
 
-### Ziele:
+__Ziele:__
+
+Verdient Geld damit Papier zu verkaufen, das zur aktuellen Verwaltung verwendet wird.
+
+__Einstellung zum Projekt:__
+
+negativ
+
+__Einfluss des Stakeholders:__
+
+indirekt (sehr niedrig)
+
+__Impact/Machteinfluss:__
+
+sehr gering
+
+__**Pförtner - primary stakeholder**__
+
+__Ziele:__
 
 Er möchte Transponder ausleihen und über den Status aller Transponder informiert werden.
 
-### Einstellung zum Projekt
+__Einstellung zum Projekt:__
 
 positiv
 
-### Einfluss des Stakeholders
+__Einfluss des Stakeholders:__
 
 direkt (hoch)
 
-### Impact/Machteinfluss
+__Impact/Machteinfluss:__
 
 hoch
 
-## Dozent - primary stakeholder
+__**technik ablehnender Pförtner - primary stakeholder**__
 
-### Ziele:
+__Ziele:__
 
-Muss seine Studenten Praktika in Räumen ermöglichen
+Moechte, das alles so bleibt wie es ist da nur er das aktuelle System versteht und er dadurch eine gesicherte Stelle hat
 
-### Einstellung zum Projekt
+__Einstellung zum Projekt:__
 
-positiv
+negativ
 
-### Einfluss des Stakeholders
-
-direkt (hoch)
-
-### Impact/Machteinfluss
-
-mittel
-
-## Administrator - primary stakeholder
-
-### Ziele:
-
-Wartet fertiges System.
-
-### Einstellung zum Projekt
-
-neutral
-
-### Einfluss des Stakeholders
+__Einfluss des Stakeholders:__
 
 direkt (mittel)
 
-### Impact/Machteinfluss
+__Impact/Machteinfluss:__
+
+mittel
+
+__**Raumverantwortlicher - primary stakeholder**__
+
+__Ziele:__
+
+Verwaltet Zugriff auf die ihn zugewiesenen Raeume.
+Sort dafuer, das sie immer in einem guten Zustand sind.
+
+__Einstellung zum Projekt:__
+
+positiv
+
+__Einfluss des Stakeholders:__
+
+direkt (hoch)
+
+__Impact/Machteinfluss:__
+
+mittel
+
+__**Administrator - primary stakeholder**__
+
+__Ziele:__
+
+Wartet fertiges System,
+sowie Raeume und Verantwortlicher.
+Sorgt dafuer, das das System sicher und stabil laeuft
+
+__Einstellung zum Projekt:__
+
+neutral
+
+__Einfluss des Stakeholders:__
+
+direkt (mittel)
+
+__Impact/Machteinfluss:__
 
 mittel
 
