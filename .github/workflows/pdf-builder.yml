@@ -28,7 +28,7 @@ jobs:
       #  generate the document
     - name: create documents
       run: |
-        pandoc --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" -V subparagraph --toc -N Spezifikation.md -o output/Spezifikation.pdf
+        pandoc --wrap=preserve --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" -V subparagraph --toc -N Spezifikation.md -o output/Spezifikation.pdf
     - uses: actions/upload-artifact@v2
       with:
         path: output
