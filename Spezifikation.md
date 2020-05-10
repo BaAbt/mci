@@ -389,37 +389,35 @@ BaAbt
 
 \newpage
 
-#### *\[Erläuterung\]*
-
-\newpage
-
-Jannik Alexander
+Jannik Alexander Storyboards
 
 Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
 
-![Student](prakt/m2/jalexan/StudentPerm.png){ height=80% }
+![student permission](prakt/m2/jalexan/StudentPerm.png)
 
-![jalexan](prakt/m2/jalexan/StudentReq.png)
+![student request](prakt/m2/jalexan/StudentReq.png)
 
-![jalexan](prakt/m2/jalexan/DozentBerechtigung1.png)
+![dozent grant permission1](prakt/m2/jalexan/DozentBerechtigung1.png)
 
-![jalexan](prakt/m2/jalexan/DozentBerechtigung2.png)
+![dozent grant permission2](prakt/m2/jalexan/DozentBerechtigung2.png)
 
-![jalexan](prakt/m2/jalexan/DozentDelegieren1.png)
+![dozent new member1](prakt/m2/jalexan/DozentDelegieren1.png)
 
-![jalexan](prakt/m2/jalexan/DozentDelegieren2.png)
+![dozent new member2](prakt/m2/jalexan/DozentDelegieren2.png)
 
-![jalexan](prakt/m2/jalexan/DozentEntfernen.png)
+![dozent revoke permission](prakt/m2/jalexan/DozentEntfernen.png)
 
-![jalexan](prakt/m2/jalexan/Pförtner1.png)
+![gatekeeper 1](prakt/m2/jalexan/Pförtner1.png)
 
-![jalexan](prakt/m2/jalexan/Pförtner2.png)
+![gatekeeper 2](prakt/m2/jalexan/Pförtner2.png)
 
-![jalexan](prakt/m2/jalexan/Admin1.png)
+![admin 1](prakt/m2/jalexan/Admin1.png)
 
-![jalexan](prakt/m2/jalexan/Admin2.png)
+![admin 2](prakt/m2/jalexan/Admin2.png)
 
 \newpage
+
+Ole Würschig Storyboards
 
 ![olewue](prakt/m2/olewue/1.JPG)
 
@@ -433,6 +431,9 @@ Die roten Kreise symbolisieren die Stellen an denen der User mit der Software in
 
 ![olewue](prakt/m2/olewue/6.JPG)
 
+\newpage
+
+#### *\[Erläuterung\]*
 
 ### Figma Prototyp
 
