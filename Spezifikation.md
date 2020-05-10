@@ -379,7 +379,9 @@ erfüllen**
 
 BaAbt
 
-![BaAbt](prakt/m2/ba_abt/storyboard_1.jpeg "coole beschreibung")
+![BaAbt](prakt/m2/ba_abt/storyboard_1.jpeg)
+
+Description of an image
 
 ![BaAbt](prakt/m2/ba_abt/storyboard_2.jpeg)
 
