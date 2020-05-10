@@ -50,7 +50,19 @@ Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der 
 war schließlich für die Ordnung im Raum verantwortlich.
 
 ### Erika Musterfrau und Max Mustermann
+Erika Musterfrau und Max Mustermann sind Informatik Studenten im fünften Semester und nehmen an einem Projekt teil, bei dem Sie auf einen
+Transponder angewiesen sind. 
 
+Beim Ausleihen kam es jedoch zu mehreren Problemen. Die E-Mail mit den Berechtigungen kam beim Pförter nicht an. Also musste bei Oliver Simpson
+angerufen werden um die Berechtigung nachträglich zu holen, was den Beiden unnötige Zeit gekostet hat. 
+
+Auch hat den beiden Zeit gekostet, dass der Transponder den sie ausleihen möchten, schon verliehen war. Also musste nochmal bei Oliver Simpson 
+angerufen werden um eine Berechtigung für einen anderen Transponder zu holen.
+
+Das letzte Problem der beiden war, dass die Abgabe des Transponders nicht genau besprochen wurde. Dadurch haben sie Zeit verschwendet um
+auf den Pförtner zu warten.
+
+Ihnen würde es Helfen, wenn die Verwaltung der Transponder zentral ablaufen würde. 
 ## Pförtner und Mitarbeiter
 
 ### Frau Zelador
