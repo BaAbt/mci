@@ -85,7 +85,9 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*  
 
-##### __**Ausleihender  - primary stakeholder**__  
+---
+
+__**Ausleihender  - primary stakeholder**__  
 
 __Ziele__
 
@@ -103,7 +105,9 @@ __Impact/Machteinfluss:__
 
 hoch
 
-##### __**Papierverkäufer  - Antiuser**__  
+---
+
+__**Papierverkäufer  - Antiuser**__  
 
 __Ziele:__
 
@@ -121,7 +125,9 @@ __Impact/Machteinfluss:__
 
 sehr gering
 
-##### __**Pförtner - primary stakeholder**__  
+---
+
+__**Pförtner - primary stakeholder**__
 
 __Ziele:__
 
@@ -139,7 +145,9 @@ __Impact/Machteinfluss:__
 
 hoch
 
-##### __**technik ablehnender Pförtner - primary stakeholder**__  
+---
+
+__**technik ablehnender Pförtner - primary stakeholder**__
 
 __Ziele:__
 
@@ -157,7 +165,9 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Raumverantwortlicher - primary stakeholder**__  
+---
+
+__**Raumverantwortlicher - primary stakeholder**__
 
 __Ziele:__
 
@@ -176,7 +186,9 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Administrator - primary stakeholder**__  
+---
+
+__**Administrator - primary stakeholder**__ 
 
 __Ziele:__
 
@@ -196,7 +208,9 @@ __Impact/Machteinfluss:__
 
 mittel
 
-##### __**Auftraggeber - primary stakeholder**__  
+---
+
+__**Auftraggeber - primary stakeholder**__
 
 __Ziele:__
 
@@ -213,6 +227,8 @@ direkt (niedrig)
 __Impact/Machteinfluss:__
 
 hoch
+
+---
 
 #### *\[Erläuterung\]*  
 
@@ -241,7 +257,9 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 #### *\[Artefakt/e\]*
 
-##### Student  
+---
+  
+___Student___
   
 alter: 16-99
 
@@ -265,8 +283,9 @@ Außerdem sind Studenten viel unterwegs, deswegen bietet sich hier eine Mobile-A
 Des Weiteren gibt es Studenten, die den Ablauf nicht kennen. Daher braucht man ein interaktives Tutorial für den ersten
 Gebrauch.
 
+---
 
-##### Pförtner  
+___Pförtner___
 
 alter: 25-65
 
@@ -286,8 +305,9 @@ __Motivation__
 Da dies eine regelmäßige Tätigkeit ist, hat der Pförtner sehr starkes Interesse an einer effektiveren Lösung.
 Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
 
+---
 
-##### Dozent  
+___Dozent___
 
 alter: 30-65
 
@@ -305,7 +325,9 @@ __Motivation__
 Aufgrund der wenigen Zeit ist es für Dozenten sehr ansprechend, einen schnelleren und simpleren Prozess zu haben.
 Da Dozenten oft noch Mitarbeiter haben, brauchen sie Funktionen zum Delegieren.
 
-##### Administratoren  
+---
+
+___Administratoren___
 
 Alter: 25-45
 
@@ -330,11 +352,11 @@ Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen 
 Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
 umfangreiche Funtkionalität.
 
+---
+
 #### *\[Erläuterung\]*  
 
 Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren System arbeiten müssen.
-
----
 
 ### Personas  
 
@@ -351,6 +373,8 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
            |                         |                              
 
 #### *\[Artefakt/e\]*
+
+---
 
 ___Moe, die studentische Hilfskraft (Student)___
 
@@ -375,6 +399,8 @@ unangenehm für Moe, weswegen er sich eine einfachere Lösung wünscht.
 Ebenso fand er es komisch, wenn er andere Studierende, welche ebenfalls auf der Suche waren, aus dem Raum hinauswerfen musste. Aber er 
 war schließlich für die Ordnung im Raum verantwortlich.
 
+---
+
 ___Erika Musterfrau und Max Mustermann (Student)___
 
 Erika Musterfrau und Max Mustermann sind Informatik Studenten im fünften Semester und nehmen an einem Projekt teil, bei dem Sie auf einen
@@ -390,6 +416,8 @@ Das letzte Problem der beiden war, dass die Abgabe des Transponders nicht genau 
 auf den Pförtner zu warten.
 
 Ihnen würde es Helfen, wenn die Verwaltung der Transponder zentral ablaufen würde. 
+
+---
 
 ___Frau Zelador (Pförtner)___
 
@@ -407,6 +435,8 @@ Es passiert ziemlich oft, dass sie Studenten aus ein und demselben Team erkläre
 Sie erwartet von einem neuen System, dass eine klare Kommunikation zwischen ihr und den Dozenten untereinander besteht und Einträge nicht mehr von Hand erfasst werden müssen und aufgrund inkonsistenter Daten überschneidet. 
 Außerdem sollen Studenten die Möglichkeit besitzen, online über die Verfügbarkeit ihres Transponders bescheid zu wissen, um unnötige Wege zur Pforte vermeiden zu können
 
+---
+
 ___Oliver Simpson (wissenschaftlicher Mitarbeiter)___
  
 Oliver Simpson ist wissenschaftlicher Mitarbeiter im KI-Labor des Campus Gummersbach und muss daher oft die Berechtigung für die Transpondervergabe erteilen.
@@ -416,6 +446,8 @@ Daher ist es im besonders wichtig, das Missverständnisse hinsichtlich der Ausga
 Oliver fehlt dabei besonders eine zentrale Verwaltung der Transponder. 
 Dies würde die Berechtigungsliste immer aktuell halten.
 Das würde auch Fehler vermeiden, wo durch Fehlen bestimmter Personen Missverständnisse auftreten.
+
+---
 
 ___Pr Dr Intelligence (Dozent)___
 
@@ -440,6 +472,8 @@ Ich wünschte es gäbe ein System, was dies vermeiden würde.
 Ab und an passiert es auch, das eine Gruppe den Raum nicht anständig verlässt.
 Dies ist besonders anstrengend, da oft keiner sich schuldig fühlt und ich dann keinen Ansprechpartner finde.
 
+---
+
 ___Rex (Administrator)___
 
 Rex ist seit etwa 11 Monaten an der TH Köln in Gummersbach in einem Team als System-Administrator beschäftigt und unter anderem für die Verwaltung der Transponder-Schlüssel verantwortlich. Dies hat ihn allein in dieser kurzen Zeit schon viel Mühe gekostet, da er sich die meiste Zeit mit Überschneidungen zwischen Transpondern kümmern muss.
@@ -447,6 +481,8 @@ Eigentlich ist seine Aufgabe, neue Räume in Neubauten zu erschließen und mit T
 
 Rex wünscht sich ein stabileres System, welches im in den kommenden Jahre viel Zeit sparen könnte. Das System müsste eine funktionierende Kommunikation zwischen Dozenten, Pförtnern und Studenten gewährleisten und dabei leicht für Rex zu verwalten sein.
 Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wieder zu löschen. Darüber hinaus kann er die Benutzer des Systems Benachrichtigen, beispielsweise bei einem Netzausfall.
+
+---
 
 #### *\[Erläuterung\]*
 
@@ -493,7 +529,7 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 
 ![BaAbt - Der typische Arbeitsablauf eines Pförtner mit vielen kompakten Informationen](prakt/m2/ba_abt/storyboard_1.jpeg)
 
-![BaAbt - Dies zeigt den Ablauf eines Studenten, der schnell und einfach Räume mieten](prakt/m2/ba_abt/storyboard_2.jpeg)
+![BaAbt - Dies zeigt den Ablauf eines Studenten, der schnell und einfach Transponder bekommt](prakt/m2/ba_abt/storyboard_2.jpeg)
 
 ![BaAbt - UI des Raumverantwortlichen, wieder Fokus auf viele kompakte Informationen](prakt/m2/ba_abt/storyboard_3.jpeg)
 
@@ -524,8 +560,6 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 ![JaAlex - admin 2](prakt/m2/jalexan/Admin2.png)
 
 \newpage
-
-Ole Würschig Storyboards
 
 ![olewue](prakt/m2/olewue/1.JPG)
 
