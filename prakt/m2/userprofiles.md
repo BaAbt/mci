@@ -9,25 +9,36 @@
 > Gilt dies auch für einen Online Store für Babyunterwäsche? Hierbei sollte man stets hinterfragen, inwieweit die dargestellten Informationen dabei helfen, den Nutzer besser zu verstehen.
 > Verhindert, dass die Charakterisierung stereotypisch wird und letztendlich zu Klischees führt.
 > Auf diesem Wege läuft man Gefahr sich von den Nutzern zu distanzieren und Klischees zu bedienen, anstatt den realen Nutzer.
+>
+```
+ __        ___    ____  _   _ ___ _   _  ____ 
+ \ \      / / \  |  _ \| \ | |_ _| \ | |/ ___|
+  \ \ /\ / / _ \ | |_) |  \| || ||  \| | |  _ 
+   \ V  V / ___ \|  _ <| |\  || || |\  | |_| |
+    \_/\_/_/   \_\_| \_\_| \_|___|_| \_|\____|
+```
+
+This was only used for development.
+Now the changes should be done in the Spezifikation directly
   
 ## Student
   
 alter: 16-99
 
-### Charakteristiken
+__Charakteristiken__
 
 Sind meistens jung (16-30) und haben daher meist niedrigeres Einkommen.
 Sind meistens per E-Mail oder Telefon gut erreichbar.
 Haben einen hohen Anspruch an Usability da sie viele Apps verwenden.
 
-### Kenntnisse
+__Kenntnisse__
 
 - Sehr affin mit Mobile-Apps.
 - Sehr affin mit Websites.
 - Affin mit Desktop-Applikationen.
 - Teilweise keine Erfahrung mit dem Ausleihe-Verfahren.
 
-### Motivation
+__Motivation__
 
 Da Studenten oft Transponder für Praktika und Projekte ausleihen müssen, brauchen sie hier eine bessere und schnellere Lösung.
 Außerdem sind Studenten viel unterwegs, deswegen bietet sich hier eine Mobile-App an.
@@ -39,18 +50,18 @@ Gebrauch.
 
 alter: 25-65
 
-### Charakteristiken
+__Charakteristiken__
 
 Sind meistens im Job immer erreichbar.
 Sind meistens affin mit Sicherheits-/Überwachungssystemen und haben generell technische Kompetenz.
 Sie wechseln selten den Standort.
 
-### Kenntnisse
+__Kenntnisse__
 
 Arbeiten hauptberuflich und sind so meistens erfahren mit ähnlicher Software. 
 Sind meistens affin mit apps und handys.
 
-### Motivation
+__Motivation__
 
 Da dies eine regelmäßige Tätigkeit ist, hat der Pförtner sehr starkes Interesse an einer effektiveren Lösung.
 Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
@@ -60,16 +71,16 @@ Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
 
 alter: 30-65
 
-### Charakteristiken
+__Charakteristiken__
 
 Sind meistens sehr gut per E-Mail erreichbar, auch außerhalb der Arbeitszeiten.
 Haben meistens wenig Zeit.
 
-### Kenntnisse
+__Kenntnisse__
 
 Haben meistens wenig bis gute Technikkenntnisse mit Mobile-apps
 
-### Motivation
+__Motivation__
 
 Aufgrund der wenigen Zeit ist es für Dozenten sehr ansprechend, einen schnelleren und simpleren Prozess zu haben.
 Da Dozenten oft noch Mitarbeiter haben, brauchen sie Funktionen zum Delegieren.
@@ -78,21 +89,21 @@ Da Dozenten oft noch Mitarbeiter haben, brauchen sie Funktionen zum Delegieren.
 
 Alter: 25-45
 
-### Charakteristiken
+__Charakteristiken__
 
 Sind meistens sehr gut per E-Mail und Telefon erreichbar.
 Arbeiten meist privat mit ähnlicher Technik.
 Haben meist durchschnittlich viel Zeit.
 Kommen aus der Technik-Branche.
 
-### Kenntnisse
+__Kenntnisse__
 
 Sind meistens sehr affin mit Mobile-Apps.
 Sind meistens sehr affin mit Websites.
 Sind meistens affin mit Desktop-applications.
 Insgesamt sehr versiert im technischen Bereich.
 
-### Motivation
+__Motivation__
 
 Der Administrator arbeitet tagtäglich mit der Software, deswegen ist eine schneller, simplerer Prozess als zurzeit zu bevorzugen.
 Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen Job besser erledigen kann.
