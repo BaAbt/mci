@@ -391,6 +391,37 @@ BaAbt
 
 #### *\[Erläuterung\]*
 
+\newpage
+
+Jannik Alexander
+
+Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
+
+![jalexan](prakt/m2/jalexan/StudentPerm.png)
+
+![jalexan](prakt/m2/jalexan/StudentReq.png)
+
+![jalexan](prakt/m2/jalexan/DozentBerechtigung1.png)
+
+![jalexan](prakt/m2/jalexan/DozentBerechtigung2.png)
+
+![jalexan](prakt/m2/jalexan/DozentDelegieren1.png)
+
+![jalexan](prakt/m2/jalexan/DozentDelegieren2.png)
+
+![jalexan](prakt/m2/jalexan/DozentEntfernen.png)
+
+![jalexan](prakt/m2/jalexan/Pförtner1.png)
+
+![jalexan](prakt/m2/jalexan/Pförtner2.png)
+
+![jalexan](prakt/m2/jalexan/Admin1.png)
+
+![jalexan](prakt/m2/jalexan/Admin2.png)
+
+\newpage
+
+
 ### Figma Prototyp
 
 #### Changelog
