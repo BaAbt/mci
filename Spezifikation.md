@@ -397,7 +397,7 @@ Jannik Alexander
 
 Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
 
-![Student](prakt/m2/jalexan/StudentPerm.png)
+![Student](prakt/m2/jalexan/StudentPerm.png){ height=80% }
 
 ![jalexan](prakt/m2/jalexan/StudentReq.png)
 
