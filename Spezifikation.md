@@ -397,7 +397,7 @@ Jannik Alexander
 
 Die roten Kreise symbolisieren die Stellen an denen der User mit der Software interagiert.
 
-![jalexan](prakt/m2/jalexan/StudentPerm.png)
+![Student](prakt/m2/jalexan/StudentPerm.png)
 
 ![jalexan](prakt/m2/jalexan/StudentReq.png)
 
@@ -420,6 +420,18 @@ Die roten Kreise symbolisieren die Stellen an denen der User mit der Software in
 ![jalexan](prakt/m2/jalexan/Admin2.png)
 
 \newpage
+
+![olewue](prakt/m2/olewue/1.JPG)
+
+![olewue](prakt/m2/olewue/2.JPG)
+
+![olewue](prakt/m2/olewue/3.JPG)
+
+![olewue](prakt/m2/olewue/4.JPG)
+
+![olewue](prakt/m2/olewue/5.JPG)
+
+![olewue](prakt/m2/olewue/6.JPG)
 
 
 ### Figma Prototyp
