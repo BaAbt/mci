@@ -397,8 +397,6 @@ BaAbt
 
 ![dozent grant permission2](prakt/m2/jalexan/DozentBerechtigung2.png)
 
-Es sei angemerkt, dass ein Mitarbeiter genau dasselbe UI wie der Dozent verwendet, nur dass er keine Funktion zum Delegieren hat.
-
 ![dozent new member1](prakt/m2/jalexan/DozentDelegieren1.png)
 
 ![dozent new member2](prakt/m2/jalexan/DozentDelegieren2.png)
