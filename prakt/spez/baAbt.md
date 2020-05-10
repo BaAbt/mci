@@ -2,9 +2,13 @@
 
 # Einleitung
 
+![logo](./logo.png)
+
 Dieses Dokument gliedert sich nach den Artefakten des Praktikums. Ab
 Meilenstein 2 werden die vorhandenen Artefakte auf Basis von Feedback
 und Evaluationen überarbeitet.
+
+![logo](logo.png)
 
 Was in den jeweiligen Abschnitten zu erbringen ist, wird immer über
 *\[Platzhalter\]* gekennzeichnet. Hierbei gibt es zwei Arten von
