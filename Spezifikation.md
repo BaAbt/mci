@@ -85,6 +85,8 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 #### *\[Artefakt/e\]*  
 
+$~$
+
 __**Ausleihender  - primary stakeholder**__  
 
 __Ziele__
@@ -253,6 +255,8 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 #### *\[Artefakt/e\]*
 
+$~$
+
 ___Student___
   
 alter: 16-99
@@ -365,6 +369,8 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
            |                         |                              
 
 #### *\[Artefakt/e\]*
+
+$~$
 
 ___Moe, die studentische Hilfskraft (Student)___
 
@@ -521,7 +527,7 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 
 ![BaAbt - UI des Raumverantwortlichen, wieder Fokus auf viele kompakte Informationen](prakt/m2/ba_abt/storyboard_3.jpeg)
 
-![BaAbt - UI des Administrator, der Rechte und management auf allem hat.](prakt/m2/ba_abt/storyboard_4.jpeg)
+![BaAbt - UI des Administrator, Alle Rechte für maximalen Überblick sowie Optionen für Wartungsoperatoren](prakt/m2/ba_abt/storyboard_4.jpeg)
 
 \newpage
 
