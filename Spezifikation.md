@@ -504,6 +504,7 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
+10.5.2020  | initial commit          | 
            |                         |                              
            |                         |                              
            |                         |                              
@@ -511,6 +512,8 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
            |                         |                              
 
 #### *\[Artefakte\]*
+
+$~$
 
 \newpage
 
@@ -527,6 +530,8 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 ![BaAbt - UI des Administrator, Alle Rechte für maximalen Überblick sowie Optionen für Wartungsoperatoren](prakt/m2/ba_abt/storyboard_4.jpeg)
 
 \newpage
+
+$~$
 
 ![JaAlex - student permission](prakt/m2/jalexan/StudentPerm.png)
 
@@ -552,6 +557,8 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 
 \newpage
 
+$~$
+
 ![olewue](prakt/m2/olewue/1.JPG)
 
 ![olewue](prakt/m2/olewue/2.JPG)
@@ -566,6 +573,8 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 
 \newpage
 
+$~$
+
 ![spfeil - Legende](prakt/m2/spfeil/leg1.png)
 
 ![spfeil - Legende](prakt/m2/spfeil/leg2.png)
@@ -577,6 +586,8 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 ![spfeil - Bilder 6-9](prakt/m2/spfeil/pic3.jpg)
 
 \newpage
+
+$~$
 
 ### Figma Prototyp
 
