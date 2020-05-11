@@ -230,6 +230,8 @@ hoch
 
 #### *\[Erläuterung\]*  
 
+$~$
+
 Die hier dargestellten primären Stakeholder sind die hauptsächlichen Nutzer des Systems. 
 Diese sind die Personen, welche tagtäglich mit dem System in Berührung kommen werden und damit am wichtigsten fuer uns sind.
 Das gemeinsame Ziel dieser ist es, das bestehende System effizienter zu machen.
@@ -351,6 +353,8 @@ Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen
 umfangreiche Funtkionalität.
 
 #### *\[Erläuterung\]*  
+
+$~$
 
 Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren System arbeiten müssen.
 
@@ -480,6 +484,8 @@ Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wiede
 
 #### *\[Erläuterung\]*
 
+$~$
+
 Wir schreiben Personas für die im Vornhinein als wichtigsten ausgemachtesten Userprofiles. 
 Hierdurch werden die Bedürfnisse, Probleme und Erwartungen klarer, wodurch wir unsere Produkt später preziser auf diese Gruppen entwickeln können.
 
@@ -488,8 +494,6 @@ Auch dies hilft dadurch, uns ein besseres Bild von den finalen Nutzer zu machen.
 
 Wichtig war dabei, das wir je User-Profile mehr als eine Persona bauen.
 Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
-
----
 
 ## Nutzungsanforderungen spezifizieren
 
