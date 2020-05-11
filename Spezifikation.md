@@ -494,10 +494,7 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 ## Nutzungsanforderungen spezifizieren
 
 
-## Gestaltungslösungen entwickeln, die die Nutzungsanforderungen
-erfüllen**
-
----
+## Gestaltungslösungen entwickeln, die die Nutzungsanforderungen erfüllen
 
 ### Storyboards
 
@@ -566,6 +563,18 @@ Berechtigungen werden über zentrale TH-Rollen geregelt.
 ![olewue](prakt/m2/olewue/5.JPG)
 
 ![olewue](prakt/m2/olewue/6.JPG)
+
+\newpage
+
+![spfeil - Legende](prakt/m2/spfeil/leg1.png)
+
+![spfeil - Legende](prakt/m2/spfeil/leg2.png)
+
+![spfeil - Bild 1](prakt/m2/spfeil/pic1.jpg)
+
+![spfeil - Bilder 2-5](prakt/m2/spfeil/pic2.jpg)
+
+![spfeil - Bilder 6-9](prakt/m2/spfeil/pic3.jpg)
 
 \newpage
 
