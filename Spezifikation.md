@@ -509,7 +509,7 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
 10.5.2020  | initial commit          | 
-           |                         |                              
+15.05.2020 | Anmerkungen fuer BaAbt  |                               
            |                         |                              
            |                         |                              
            |                         |                              
@@ -525,11 +525,66 @@ BaAbt - Storyboards in keiner spezieller Ordnung,
 da alle inneinander greifen.
 Berechtigungen werden über zentrale TH-Rollen geregelt.
 
+__Anmerkungen__
+
+- Oben links, Papier abgerissen. Text sollte eigentlich heisen 'falls der User' und bezieht sich auf das Rechtesystem der TH.
+- Ich habe es vergessen aufzuschreiben aber die die Authentifizierung und Authorisierung der Anfragen erfolgt ueber den Campus Planer erfolgt.
+  Das bedeutet die Anfragen sind alle berechtigt, da nur Raeume angefragt werden koennen, fuer die der Auszuleihende berechtigt ist.
+  Dieses ganze Anfragesystem dient also dazu, den eigentlichen Ablauf beim Pfoertner etwas zu minimieren und besseren Ueberblick zu schaffen.
+- Spam ist hierbei auch nicht die grosse Gefahr, da 
+  - die Anfragen berechtigt sein muessen und man somit auch fehlverhalten bestraffen kann
+  - die Anfrage liste ja sortierbar und mit strg-f suchbar ist. 
+  - alte Anfragen automatisch geloescht werden.
+- zu den Fragen warum mehr Informationen: 
+  Warum nicht, mehr Infos sind immer hilfreich um den Kontext besser zu verstehen und moeglichweise Konflikte zu loesen.
+- Warum nicht Verstoesse automatisch mitteilen: es teilt doch alle Verstosse mit, in dem es sie einfaerbt.
+- Pannel 3 zeigt nur den Ablauf ohne Anfrage. Hier muessen halt die per Hand eingetragen werden. 
+  Die software hilft dabei indem sie die Optionen abhaengig von den Berechtigungen einschraenkt.
+- Panel 4 zeigt, was passiert wenn das System selbst down war und deshalb der Status nachgetragen werden muss.
+- Eine Web-Anwendung ist etwas anderes als eine Excel-sheet und kann durchaus interactive elemente enthalten. 
+  Und ja, Buttons gibt es in zahlreichen Web-Anwendungen die eine tabulaerre Darstellung nutzen. 
+  Beispiel: ihr email-client.
+
 ![BaAbt - Der typische Arbeitsablauf eines Pförtner mit vielen kompakten Informationen](prakt/m2/ba_abt/storyboard_1.jpeg)
+
+__Anmerkungen__
+
+- Naja das _Feature_ das ich hier extra einbaue ist das auch die Studenten sehen koennen falls wer anderes ne Anfrage geschickt hat.
+  Und ob das extra Aufwand ist wage ich zu bezweifeln
+- klar die push notification bei Zeitablauf ist unnoetig und wird entfernt.
+  Das war ein Wunschdenken als Student :)
+- Bob kann keine Anfrage stellen wenn fuer den Raum schon eine existiert. 
+- beim Manuellen Nachtragen muss Trant die Gruppe, den Verantwortlichen, und den Transponder eintragen.
 
 ![BaAbt - Dies zeigt den Ablauf eines Studenten, der schnell und einfach Transponder bekommt](prakt/m2/ba_abt/storyboard_2.jpeg)
 
+__Anmerkungen__
+
+- NR = Transpondernummer.
+- das der campus um 11 dicht macht wusste ich nicht, damit ist das natuerlich noch besser und kann dementsprechend geaendert werden.
+- Die Darstellung der History zum Status weicht ab, da Unterschiedliche Informationen dargelegt werden
+  Status - Wann wurde es aus geliehen und bis wann ist die Person berechtigt.
+  History - Was war der komplette Ausleihezeitraum und was war der berechtigte.
+- zum hinzufuegen siehe Hinzufuegpannel des Admin
+- Immer der verantwortliche gibt den Transponder wiede ab.
+- wenn man wen einschließt ist der eingeschlossen :). Das hat aber nichts mit dem System zu tun
+
 ![BaAbt - UI des Raumverantwortlichen, wieder Fokus auf viele kompakte Informationen](prakt/m2/ba_abt/storyboard_3.jpeg)
+
+__Anmerkungen__
+
+- User Story 21 findet sich auch in dem Pannel 10/11. 
+Dies ist genauso wie beim raum geloest, so dass eine Liste von existierenden Dozenten darliegen und dazu zusaetzlich eine Moeglichkeit zum hinzufuegen existiert.
+- User Story 22 dachte ich findet sich im `send Notiication` Button.
+Dieser wuerde ein Pannel wie bei allen gewohnten Seiten (gitlab, nextcloud) hervorrufen.
+Dieses habe ich allerdings nicht gemalt, da ich zu faul war. 
+Stell dir einfach ein fettes gelbes banner oben auf der website/app vor (oder schreib mir nochmal dann mal ichs auf).
+- Die Trennung von Raeumen und Transpondern wurde extra nicht nachgenommen, da es eigentlich nicht im Interesse des Admin ist, Raeume zu verwalten die nicht von Transpondern genutzt werden
+Falls ein zentrales Raummanagment der TH existiert kann man hier noch mal drueber nachdenken.
+Da fehlen aber eindeutig die Informationen zu, genau wie zu dem bestehenden Rechtesystem/Verwaltungssystem.
+- als Admin moechte man doch volle Kontrolle ueber alle Berechtigten Raumverantwortlichen haben.
+Dazu zaehlt, das kein verrueckter Professor irgendwelchen Leuten Berechtigungen erteilen kann.
+Also muss es mindestens einen Prozess des Approvals geben, und da ich denke das nicht alle Profs dieses Feature ueberhaupt nutzten, habe ich die Sache vereinfacht.
 
 ![BaAbt - UI des Administrator, Alle Rechte für maximalen Überblick sowie Optionen für Wartungsoperatoren](prakt/m2/ba_abt/storyboard_4.jpeg)
 
