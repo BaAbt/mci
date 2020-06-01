@@ -83,7 +83,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 
 
-#### *\[Artefakt/e\]*  
+__***\[Artefakt/e\]***__
 
 $~$
 
@@ -228,7 +228,7 @@ __Impact/Machteinfluss:__
 
 hoch
 
-#### *\[Erläuterung\]*  
+__***\[Erläuterung\]***__
 
 $~$
 
@@ -241,7 +241,7 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 ### User Profiles  
 
-#### Changelog  
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -255,7 +255,7 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
 $~$
 
@@ -352,7 +352,7 @@ Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen 
 Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
 umfangreiche Funtkionalität.
 
-#### *\[Erläuterung\]*  
+__***\[Erläuterung\]***__  
 
 $~$
 
@@ -360,7 +360,7 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
 
 ### Personas  
 
-#### Changelog  
+__**Changelog**__  
 
 [//]: # (https://tableconvert.com/)
 
@@ -372,7 +372,7 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
            |                         |                              
            |                         |                              
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
 $~$
 
@@ -482,7 +482,7 @@ Eigentlich ist seine Aufgabe, neue Räume in Neubauten zu erschließen und mit T
 Rex wünscht sich ein stabileres System, welches im in den kommenden Jahre viel Zeit sparen könnte. Das System müsste eine funktionierende Kommunikation zwischen Dozenten, Pförtnern und Studenten gewährleisten und dabei leicht für Rex zu verwalten sein.
 Er hätte dann die Möglichkeit, Dozenten hinzuzufügen, zu bearbeiten und wieder zu löschen. Darüber hinaus kann er die Benutzer des Systems Benachrichtigen, beispielsweise bei einem Netzausfall.
 
-#### *\[Erläuterung\]*
+__***\[Erläuterung\]***__
 
 $~$
 
@@ -502,7 +502,7 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 
 ### Storyboards
 
-#### Changelog
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -515,7 +515,7 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
            |                         |                              
            |                         |                              
 
-#### *\[Artefakte\]*
+__***\[Artefakte\]***__
 
 $~$
 
@@ -650,7 +650,7 @@ $~$
 
 ### Figma Prototyp
 
-#### Changelog
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -662,9 +662,9 @@ $~$
            |                         |                              
            |                         |                              
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
-#### *\[Erläuterung\]*
+__***\[Erläuterung\]***__
 
 **Identifizierte Probleme aus dem Review**
 
@@ -682,7 +682,7 @@ $~$
 
 ### Funktionaler Prototyp
 
-#### Changelog
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -694,13 +694,13 @@ $~$
            |                         |                              
            |                         |                              
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
-#### *\[Erläuterung\]*
+__***\[Erläuterung\]***__
 
 ### Review
 
-#### Changelog
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -712,7 +712,7 @@ $~$
            |                         |                              
            |                         |                              
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
 ## Usability Evaluation
 
@@ -720,7 +720,7 @@ $~$
 
 ### Usability-Test Testplan
 
-#### Changelog
+__**Changelog**__
 
 [//]: # (https://tableconvert.com/)
 
@@ -732,6 +732,6 @@ $~$
            |                         |                              
            |                         |                              
 
-#### *\[Artefakt/e\]*
+__***\[Artefakt/e\]***__
 
-#### *\[Erläuterung\]*
+__***\[Erläuterung\]***__
