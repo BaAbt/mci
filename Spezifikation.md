@@ -76,7 +76,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
 10.5.2020  | initial commit          | damit es da ist                             
-           |                         |                              
+01.6.2020  | Various small things    | got from the first milestone
            |                         |                              
            |                         |                              
            |                         |                              
@@ -99,31 +99,11 @@ positiv
 
 __Einfluss des Stakeholders:__
 
-direkt (niedrig)
+direkt (niedrig) - verwendet das System selten
 
 __Impact/Machteinfluss:__
 
-hoch
-
----
-
-__**Papierverkäufer  - Antiuser**__  
-
-__Ziele:__
-
-Verdient Geld damit Papier zu verkaufen, das zur aktuellen Verwaltung verwendet wird.
-
-__Einstellung zum Projekt:__
-
-negativ
-
-__Einfluss des Stakeholders:__
-
-indirekt (sehr niedrig)
-
-__Impact/Machteinfluss:__
-
-sehr gering
+niedrig - keinen Einfluss
 
 ---
 
@@ -139,15 +119,15 @@ positiv
 
 __Einfluss des Stakeholders:__
 
-direkt (hoch)
+direkt (hoch) - verwendet System Tagtaeglich
 
 __Impact/Machteinfluss:__
 
-hoch
+hoch - Initiator und dadurch hohen Einfluss
 
 ---
 
-__**technik ablehnender Pförtner - primary stakeholder**__
+__**technik ablehnender Pförtner - Antiuser**__
 
 __Ziele:__
 
@@ -159,11 +139,11 @@ negativ
 
 __Einfluss des Stakeholders:__
 
-direkt (mittel)
+direkt (mittel) - verwendet das system etwas weniger wenn er es nicht mag
 
 __Impact/Machteinfluss:__
 
-mittel
+mittel - legt vielleicht beschwerden ein.
 
 ---
 
@@ -180,11 +160,11 @@ positiv
 
 __Einfluss des Stakeholders:__
 
-direkt (hoch)
+direkt (hoch) - verwendet das system regelmaessig und direkt
 
 __Impact/Machteinfluss:__
 
-mittel
+mittel - wichtiger kunde, aber kein geldgeber.
 
 ---
 
@@ -202,11 +182,11 @@ neutral
 
 __Einfluss des Stakeholders:__
 
-direkt (mittel)
+direkt (mittel) - verwendet das finale System, aber nicht intensiv
 
 __Impact/Machteinfluss:__
 
-mittel
+mittel - hat vermutlich einen einfluss ob es spaeter angenommen wird
 
 ---
 
@@ -214,7 +194,7 @@ __**Auftraggeber - primary stakeholder**__
 
 __Ziele:__
 
-Will die TH-Koeln effizienter machen
+Will die TH-Koeln moeglichst kosteneffizient effizienter machen
 
 __Einstellung zum Projekt:__
 
@@ -222,11 +202,11 @@ positiv
 
 __Einfluss des Stakeholders:__
 
-direkt (niedrig)
+direkt (niedrig) - verwendet nicht das finale System
 
 __Impact/Machteinfluss:__
 
-hoch
+hoch - er gibt das geld
 
 __***\[Erläuterung\]***__
 
