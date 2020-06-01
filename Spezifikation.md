@@ -76,7 +76,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
 10.5.2020  | initial commit          | damit es da ist                             
-01.6.2020  | Various small things    | got from the first milestone
+01.6.2020  | Various small things    | suggestions got from the first iteration
            |                         |                              
            |                         |                              
            |                         |                              
@@ -228,7 +228,7 @@ __**Changelog**__
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
 10.5.2020  | initial commit          | damit es da ist                             
-           |                         |                              
+01.6.2020  | Various small things    | suggestions got from feedback of the first iteration
            |                         |                              
            |                         |                              
            |                         |                              
@@ -284,6 +284,8 @@ __Motivation__
 
 Da dies eine regelmäßige Tätigkeit ist, hat der Pförtner sehr starkes Interesse an einer effektiveren Lösung.
 Aufgrund des festen Standorts bietet sich eine Desktop- oder Webapplikation an.
+Moeglich ist aber auch eine Ablehnung von Neuerungen anhand der Gewohnheit an das alte System.
+Auch eine Ablehnung aufgrund der Jobsicherheit ist moeglich.
 
 ---
 
@@ -331,6 +333,26 @@ Der Administrator arbeitet tagtäglich mit der Software, deswegen ist eine schne
 Außerdem will er eine strukturierte Verwaltung sicherstellen, sodass er seinen Job besser erledigen kann.
 Hat eventuell einen geringeren Anspruch an usability als andere Nutzer, hingegen legt er Wert auf Authentifizierung und
 umfangreiche Funtkionalität.
+Moeglich ist aber auch eine Ablehnung von Neuerungen anhand der Gewohnheit an das alte System.
+Auch eine Ablehnung aufgrund der Jobsicherheit ist moeglich.
+
+---
+
+__Auftragsgeber__
+
+Alter: 40-65
+
+__Charakteristiken__
+
+Ist sehr um die Effizient und die 
+
+__Kenntnisse__
+
+spielen keine Rolle da kein Enduser
+
+__Motivation__
+
+Moechte Kosten dauerhaft mit diesem Investment sparen und Effizient erhoehen
 
 __***\[Erläuterung\]***__  
 
