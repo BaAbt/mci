@@ -679,10 +679,118 @@ Gleichzeitig würden wir jedoch gerne diesen Ansatz weiterverfolgen und gehen da
 Die Zuweisung von Transpondern und Räumen findet dabei bei uns automatisch beim Ausleih statt.
 Dabei werden die Räume, auf die ein Student Zugriff hat einen Transponder zugewiesen, welcher dann ausgeliehen wird.
 
+Wenn der Transponder zurückgegeben wird (oder nach 11 Uhr abends) werden automatisch alle Zuweisungen von den Transponder gelöscht.
+
 Dies hat mehrere Vorteile: 
  - Konflikte zwischen Transpondern werden vermieden.
- - weniger Arbeit für den Pförtner und Admministrator
+ - weniger Arbeit für den Pförtner und Administrator
  - keine Sicherheitslücken von Transpondern mit zu großen Berechtigungen.
+
+__**Pförtner**__
+
+Der Pförtner hat eine Desktop oder Webanwendung mit 4 Unterpunkten.
+
+Es wurde eine grobe Tabellenstruktur gewählt um moglichst viele Informationen übersichtig zu gestallten.
+Ausserdem kann man die eizelnen Entries ausklappen, welches mehr Details preisgibt.
+Um das noch übersichtlich zu gestalten wird links an der Tabelle eine kleine Farbige leiste angezeigt.
+Diese zeigt genau, auf welcher Ebene der Nutzer sich zurzeit befindet.
+
+__In Ausleihe__
+
+Das Ziel des Tabs ist es alle relevanten Informationen über die zurzeit im Ausleihe befindenen Transponder zu bekommen
+
+Unter dem Status wird dem Pförtner eine Liste aller zurzeit ausgeliehenen Transponder angezeigt.
+Diese beinhaltet 
+- die Nummer des Transponder
+- die Person welche diesen ausgeliehen hat 
+- berechtigten Zeitraum.
+
+Diese Tabelle beinhaltet viele Infos und soll dem Pfoertner auf einem Blick alles Wichtige über den aktuellen Ausleihstand sagen. 
+Sie beinhaltet Informationen über:
+
+- alle zurzeit ausgeliehenen Transponder
+- alle Ausleihfristen der Transponder
+- die Dauer der Ausleihfrist
+
+Bei anklicken einer Zeile wird diese noch erweitert, sodass man mehr Informationen über den interessierten Transponder erfährt.
+Dieses wird gemacht, um Clutter auf dem Hauptfeld zu vermeiden.
+Folgene Informationen werden durch Klick auf die Tabellle ersichtlich
+
+- Alle Berechtigte Personen der Gruppe sowie denn zuständigen Verantwortlichen (den man auch direkt per mail anschreiben kann)
+- Alle Räume die für diesen Transponder aktuell in Ausgabe stehen.
+- Knopf für das Zurückgeben des Transponders
+
+Diese Information helfen dabei mehr Kontext über einen Transponder zu bekommen, sowie den Tranponder einfacher zurückgegeben. 
+Das schnelle überarbeiten wird auch unterstützt durch die Suchfunktion, die prominent über der Tabelle platziert wurde.
+Diese erweitert sich auf Knopfdruck um Filterfunktionen.
+
+Dort ist auch der Knopf fuer das manuelle Hinzufügen eines Transponderverleih verlinkt, welcher zum Vergabefenster führt.
+Dieser wurde da platziert um die Navigierbarkeit der Seite zu verbessern.
+
+Zusätzlich werden die Zeilen eingefärbt, um kritische Transponder hervorzuheben. 
+- Orange, falls die Berechtigte Zeit am gleichen Tag überschritten wurde, als leichte Warnfarbe.
+- Rot, falls der Transponder am Ende der Zeit immer noch nicht zurückgegeben wurde, als aggresive Warnfarbe.
+
+__Verlauf__
+
+Das Ziel des Verlauf ist es die vergangenen Ausleihen nachvollziehbar und durchsuchbar zu machen. 
+Diese ist grob ähnlich wie In-Ausleihe aufgebaut um die Konsistenz zwischen den Frames zu erhöhen, ändert sich aber in zwei entscheidenden punkten:
+
+- TODO
+- TODO
+
+Im Verlauf wird der Historische Verlauf des Verleihes gespeichert, um die Nachvollziehbarkeit besser einordnen zu können.
+Dort kann dann die Datenbank im Falle eines Problemes durchsucht werden. 
+
+__Personen__
+
+Das Ziel des Personen-tabs ist es den Transponderverleih schnell und schmerzlos zu gestallten.
+
+In den Personen werden alle Personen dargestellt und sortierbar gemacht. 
+Falls eine von diesen jetzt einen Transponder ausleihen will, kann hier nach der Person gesucht werden.
+diese kann man dann aufklappen und ihre relevanten Timeslots sehen.
+
+Neben dem Timeslot findet sich auch ein Knopf für den schnellen Verleih eines Transponders. 
+Falls dieser gedrückt wird, wird der Nutzer automatisch zu den ausgefüllten Vergabe Fenster weitergeleitet.
+
+Falls die aktuelle Zeit in einem Timeslot oder 30 Minuten vor einem Timeslot fällt, wird dieser Buttom farbig markiert, um direkt ins Auge zu fallen. 
+
+__Vergabe__
+
+Das Ziel des Vergabe-Tabs ist es den tatsächlichen Verleih vorzunehmen.
+Diese Möglichkeiten sollen die Software flexible und schnell zu bedienen machen.
+
+Dieses Tab kann durch 3 Weisen aufgerufen werden
+- per auflegen der multica auf den Reader
+- per Auswahl aus den Personen-tab
+- manuell durch die Sidebar
+
+Falls die Multica eines Studenten im System aufgelegt wird und dieser im System ist und die aktuelle Zeit in einem Timeslot oder 30 Minuten vor einem Timeslot fällt,
+Wird das Vergabe Feld automatisch mit den richtigen Daten befüllt.
+Das selbe gilt fuer aus den Personen-tab.
+
+In diesem werden alle notwendigen Felder angegeben werden, die ausgefüllt werden können.
+Diese Eingabe wird mit dynamischen und voneinander abhängigen Vorschlägen ergänzt, um ein möglichst schnelles und Fehlerfreies ausfüllen zu ermöglichen.
+
+Dynamisch heißt hier, das die Vorschläge abhängig von den zurzeit eingetippten Dateien sind.
+Falls zu Beispiel der Anfang eines Names eingetippt wird, wird automatisch ein Name, der den selben Namen hat vorgeschlagen.
+Dieser Vorschlag kann dann mit enter oder tab angenommen werden.
+
+"Voneinander abhängig" heißt hier, das wenn zum Beispiel nur eine Person mit demselben Namen existiert, wird die Martikelnummer automatisch ausgefuellt.
+
+Ausserdem werden die Räume und das Limit automatisch abhängig von der aktuellen Zeit und den Berechtigungen eingetragen wird.
+
+Dies kann alles aber auch manuell überschrieben werden.
+Falls allerdings am Ende nicht die geforderten Rechte da sind, muss bestätigt werden. 
+Dies wird per eingabe bestätigt um sicher zu gehen das keine falschen Transponder aus versehen verliehen werden.
+
+Ausserdem gibt es dort ein Unterschriften Feld was auf Wunsch per Grafiktablet angesteuert werden kann und so zur digitalen Unterschrift 
+
+Bei Bestätigung wird dann ein zurzeit nicht ausgeliehener Transponder zufällig ausgewählt und mit den richtigen Berechtigungen beschrieben.
+Dieser wird dann am Screen Prominent ausgegeben, sodass der Pförtner diesen nehmen und physisch holen und ausgeben kann.
+Falls das System nicht die Datenbank erreichen kann, wird eine Fehlermeldung angegeben, in die automatische findung eines Transponders manuell überschrieben wird.
+
+Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irgendwo auf der seite ersetzt, um fehlerhaftes confirmen zu vermeiden, bis der transponder auch tatsächlich ausgeliehen wurde.
 
 **Identifizierte Probleme aus dem Review**
 
