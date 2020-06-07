@@ -666,7 +666,23 @@ __**Changelog**__
 
 __***\[Artefakt/e\]***__
 
+[FIGMA PROTOTYPE](https://www.figma.com/file/buzQVswf0Y6DTCi9UF5fkY/Transponderapp?node-id=0%3A1)
+
 __***\[Erläuterung\]***__
+
+**Allgemein**
+
+Im Verlauf des Praktikas kam die Frage auf ob man die Zuweisung von Räumen auf Transpondern automatisieren kann.
+Aufgrund der aktuellen Lage kann dies allerdings nicht nachgeforscht werden.
+Gleichzeitig würden wir jedoch gerne diesen Ansatz weiterverfolgen und gehen daher von einem Szenario aus, in dem das möglich ist.
+
+Die Zuweisung von Transpondern und Räumen findet dabei bei uns automatisch beim Ausleih statt.
+Dabei werden die Räume, auf die ein Student Zugriff hat einen Transponder zugewiesen, welcher dann ausgeliehen wird.
+
+Dies hat mehrere Vorteile: 
+ - Konflikte zwischen Transpondern werden vermieden.
+ - weniger Arbeit für den Pförtner und Admministrator
+ - keine Sicherheitslücken von Transpondern mit zu großen Berechtigungen.
 
 **Identifizierte Probleme aus dem Review**
 
