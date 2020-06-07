@@ -29,7 +29,7 @@ jobs:
     - name: create documents
       run: |
         pandoc \
-          -H disable_float.tex
+          -H disable_float.tex \
           --verbose \
           --log=output/log\
           --wrap=preserve \
