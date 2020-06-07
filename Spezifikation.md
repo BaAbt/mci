@@ -695,6 +695,8 @@ Ausserdem kann man die eizelnen Entries ausklappen, welches mehr Details preisgi
 Um das noch übersichtlich zu gestalten wird links an der Tabelle eine kleine Farbige leiste angezeigt.
 Diese zeigt genau, auf welcher Ebene der Nutzer sich zurzeit befindet.
 
+Farblich wurden ansonsten klare Weiß und Grautöne gewählt, um die wichtigen farbliche Elemente weiter hinvorzuheben.
+
 __In Ausleihe__
 
 Das Ziel des Tabs ist es alle relevanten Informationen über die zurzeit im Ausleihe befindenen Transponder zu bekommen
@@ -733,14 +735,18 @@ Zusätzlich werden die Zeilen eingefärbt, um kritische Transponder hervorzuhebe
 
 __Verlauf__
 
-Das Ziel des Verlauf ist es die vergangenen Ausleihen nachvollziehbar und durchsuchbar zu machen. 
-Diese ist grob ähnlich wie In-Ausleihe aufgebaut um die Konsistenz zwischen den Frames zu erhöhen, ändert sich aber in zwei entscheidenden punkten:
+Das Ziel des Tabs ist es die vergangenen Ausleihen nachvollziehbar und durchsuchbar zu machen. 
 
-- TODO
-- TODO
+Diese filtert die Informationen weiter Runter und beschränkt sich in den einzelnen Entries auf die Transponder-Ids, den Zeitraum und die Räume.
+Meistens wird man im Verlauf schauen, falls der Transponder fehlt oder die Räume schlecht hinterlassen wurden.
+Dabei hilft der Fokus auf diese Inhalte, falls mehr Informationen gefordert sind kann der Eintrag wieder erweitert werden.
 
-Im Verlauf wird der Historische Verlauf des Verleihes gespeichert, um die Nachvollziehbarkeit besser einordnen zu können.
-Dort kann dann die Datenbank im Falle eines Problemes durchsucht werden. 
+Graphisch wurde hier auf Farben oder hervorhebungen verzichtet, damit die Seite sauber und klar zu verstehen wirkt.
+
+Wie in dem In Ausleihe Tab gibt es auch hier eine Suchfunktion, um den Verlauf weiter zu durchsuchen.
+
+Falls das System ausgefallen ist, kann man hier auch über den manual Entry den Verlauf nachtragen.
+
 
 __Personen__
 
