@@ -620,17 +620,29 @@ $~$
 
 $~$
 
-![olewue](prakt/m2/olewue/1.JPG)
+![olewue](prakt/m2/olewue/1.jpg)
 
-![olewue](prakt/m2/olewue/2.JPG)
+![olewue](prakt/m2/olewue/2.jpg)
 
-![olewue](prakt/m2/olewue/3.JPG)
+![olewue](prakt/m2/olewue/3.jpg)
 
-![olewue](prakt/m2/olewue/4.JPG)
+![olewue](prakt/m2/olewue/4.jpg)
 
-![olewue](prakt/m2/olewue/5.JPG)
+![olewue](prakt/m2/olewue/5.jpg)
 
-![olewue](prakt/m2/olewue/6.JPG)
+![olewue](prakt/m2/olewue/6.jpg)
+
+![olewue](prakt/m2/olewue/7.jpg)
+
+![olewue](prakt/m2/olewue/8.jpg)
+
+![olewue](prakt/m2/olewue/9.jpg)
+
+![olewue](prakt/m2/olewue/10.jpg)
+
+![olewue](prakt/m2/olewue/11.jpg)
+
+![olewue](prakt/m2/olewue/12.jpg)
 
 \newpage
 
