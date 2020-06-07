@@ -682,133 +682,180 @@ __***\[Artefakt/e\]***__
 
 __***\[Erläuterung\]***__
 
-**Allgemein**
 
-Im Verlauf des Praktikas kam die Frage auf ob man die Zuweisung von Räumen auf Transpondern automatisieren kann.
-Aufgrund der aktuellen Lage kann dies allerdings nicht nachgeforscht werden.
-Gleichzeitig würden wir jedoch gerne diesen Ansatz weiterverfolgen und gehen daher von einem Szenario aus, in dem das möglich ist.
 
-Die Zuweisung von Transpondern und Räumen findet dabei bei uns automatisch beim Ausleih statt.
-Dabei werden die Räume, auf die ein Student Zugriff hat einen Transponder zugewiesen, welcher dann ausgeliehen wird.
+**<span style="text-decoration:underline;">Allgemein</span>**
 
-Wenn der Transponder zurückgegeben wird (oder nach 11 Uhr abends) werden automatisch alle Zuweisungen von den Transponder gelöscht.
+Im Verlauf des Praktikums kam die Frage auf ob man die Zuweisung von Räumen auf Transpondern automatisieren kann. Aufgrund der aktuellen Lage kann dies allerdings nicht nachgeforscht werden. Gleichzeitig würden wir jedoch gerne diesen Ansatz weiterverfolgen und gehen daher von einem Szenario aus, in dem das möglich ist.
 
-Dies hat mehrere Vorteile: 
- - Konflikte zwischen Transpondern werden vermieden.
- - weniger Arbeit für den Pförtner und Administrator
- - keine Sicherheitslücken von Transpondern mit zu großen Berechtigungen.
+Die Zuweisung von Transpondern und Räumen findet dabei bei uns automatisch beim Ausleih statt. Dabei werden die Räume, auf die ein Student Zugriff hat einen Transponder zugewiesen, welcher dann ausgeliehen wird. Wenn der Transponder zurückgegeben wird (oder nach 11 Uhr abends) werden automatisch alle Zuweisungen von den Transponder gelöscht.
 
-__**Pförtner**__
+Dies hat mehrere Vorteile:
+
+- Konflikte zwischen Transpondern werden vermieden.
+
+- weniger Arbeit für den Pförtner und Administrator
+
+- keine Sicherheitslücken von Transpondern mit zu großen Berechtigungen.
+
+Als Zeitdarstellungen wird ein intuitives System verwendet, welches automatisch “gestern” oder “2 Minuten” anstelle von Daten eingefügt. Dies erleichtert die Lesbarkeit bei Daten ungemein.
+
+**<span style="text-decoration:underline;">Student</span>**
+
+ 
+
+Beim Studenten haben wir uns für eine App entschieden, da dieser auch auf dem Weg zur Uni nachschauen möchte ob der Transponder für den Raum ausgeliehen ist. Dabei wird dem Studenten nur einen Menüpunkt angezeigt. Ein Menü wird trotzdem verwendet, um zukünftigen Featuren Platz zu geben.
+
+ In dem Punkt Berechtigungen hat der Student dann eine Auflistung all seiner Berechtigungen. Wir haben uns dafür entschieden ihm direkt zu zeigen ob der Raum belegt ist und bis wann er noch die Berechtigung für den Raum hat, da dies für ihn die wichtigen Informationen sind. Wenn der Student noch mehr Informationen braucht, soll er einfach auf das Element klicken. Da uns diese aber nicht so wichtig erschienen sieht man diese nicht direkt. Außerdem verfügt er über die Möglichkeit zu Suchen um bei einer Menge an Berechtigung auch schnell die nötigen Infos zu bekommen.
+
+ 
+
+
+
+**<span style="text-decoration:underline;">Dozent</span>**
+
+Auch bei den Mitarbeitern haben wir uns für eine App fürs Smartphone entschieden, da sie wie die Studenten sehr mobil sind und auch unterwegs die Möglichkeit haben wollen, Management Aufgaben erledigen zu können. Im Menü werden ihnen ihre drei wichtigen Funktionen angezeigt. Unter _Students _werden den Mitarbeiter alle Studenten (später in alphabetischer Reihenfolge) angezeigt, welche an ihren Vorlesungen teilnehmen. Er kann die Studenten nach einem Namen durchsuchen, um schnell eine Person zu finden. Die Studenten werden automatisch mithilfe einer API der Liste auf dem aktuellen Stand gehalten. 
+
+Bei der Liste haben wir uns für zwei unterschiedliche Touch-Möglichkeiten entschieden, um das Design übersichtlich zu gestalten. Wenn der User nur kurz auf den Listeneintrag tippt, wird er zu dem Profil des jeweiligen Studenten weitergeleitet. Wenn er dagegen lange auf einen Eintrag drückt, wird dieses Element markiert und er kann weitere Elemente auswählen. Da diese Geste in vielen Applikationen verwendet wird, sollte der User mit dieser Funktionsweise bereits  vertraut sein. In dem Profil eines Studenten zeigen wir die wichtigsten Informationen und man kann den User Stories entsprechend einem Studenten die Berechtigung entziehen und erteilen. Beim Entziehen von Berechtigungen haben wir eine Liste gewählt, um es übersichtlich zu gestalten. Um die Möglichkeit zu verdeutlichen, dass der User mehrere Einträge einer Liste auswählen kann, haben wir bei all unseren Listen, bei denen dies möglich ist, mehrere Boxen mit Häkchen versehen. Wir haben auf jedem Profil jeweils einen Button für das Entziehen und das Hinzufügen von Berechtigungen eingefügt, da das der Hauptgrund des Users sein wird, auf ein bestimmtes Profil zu drücken. Dabei haben wir uns für die Farben Rot und Blau entschieden, da diese gut die Gegensätzlichkeit der beiden Optionen darstellen. Gleichzeitig wirken sie dabei aber seriöser als Rot und Grün.
+
+Beim Prozess des Vergebens und Entziehens von Berechtigungen haben wir versucht, die beiden Abläufe so ähnlich wie möglich zu gestalten, um dem User den Lerneffekt zu erleichtern. Desweiteren haben wir uns dazu entschieden dem User nach seiner Auswahl von Studenten und Räumen den Zwischenstand zu präsentieren, damit er nicht erst anschließend bemerkt, ob er alles richtig gemacht hat. Außerdem hat er dabei die Möglichkeit, den Zeitraum für die Berechtigung zu setzen und einen Timeslot auszuwählen. Dazu haben wir einen Kalender simuliert um dem User den Input zu erleichtern und den Prozess besonders interaktiv zu gestalten. Durch die Visualisierung der Timeslots sieht er auch, welche Räume bereits belegt sind und kann dadurch Überschneidungen vermeiden.
+
+Eine weitere Funktion der App wird sein, dass ein Dozent seine Arbeit auch delegieren kann, indem er Personen zu seinem Team hinzufügt. Dabei wurde das Design von den Studenten weitergeführt, um konsistent zu bleiben und den User nicht zu verwirren. Zusätzlich wird dem Nutzer ein Prompt angezeigt, sobald er Änderungen am Team vornimmt, um ungewollte Modifikationen zu verhindern.
+
+Die Menüoption Rooms sieht den vorigen Menüpunkten ebenfalls ähnlich, wobei hier statt Profilbildern kleine Icons zur Visualisierung verwendet, damit ~~auch die linke Gehirnhälfte des Users angesprochen wird~~ er dadurch schneller den richtigen Raum findet.
+
+
+
+**<span style="text-decoration:underline;">Admin</span>**
+
+Beim Admin haben wir uns für eine Desktop-Variante entschieden, da dieser Probleme nicht unterwegs lösen muss. Außerdem bietet sich der Desktop eher an als ein Handydisplay, da wir uns hauptsächlich für Listen entschieden haben, um Informationen möglichst übersichtlich darzustellen. Der Admin ist was das angeht sehr an die Benutzeroberfläche des Pförtner angelehnt, wie zum Beispiel die Menüleiste links, dem Add-Button in der rechten, unteren Ecke, sowie den Formularen. Dadurch ist auch zwischen den Anwendungen eine hohe Konsistenz gewahrt. Farblich ist das meiste in schlichtem Grau und Weiß gehalten. Als Akzentfarbe haben wir uns für ein strahlendes Blau entschieden, welches dem Admin die wichtigsten Buttons hervorheben soll und außerdem die einzelnen Tabellenspalten in transparenten Variante voneinander abgrenzt.
+
+**Employee**
+
+Unter Mitarbeiter sieht der Admin alle Personen und deren zugeordneten Räume übersichtlich dargestellt in zwei Spalten. Damit der Admin noch schneller die Liste überschauen kann, gibt es zudem eine Suchfunktion. Falls es in einem Fall mehrere identische Namen gibt, kann auch mit der Mitarbeiter-ID gesucht werden. 
+
+Um einen neuen Mitarbeiter hinzuzufügen, ist unten rechts ein blauer Button, der sich farblich von der Liste abhebt. Wenn eine neue Person hinzugefügt wird, öffnet sich ein Formular, in welchem der Namen des Mitarbeiters eingetragen wird. Die EmployeeID wird automatisch von der Datenbank generiert, um Personen auch weiterhin eindeutig zuordnen zu können, falls zwei Personen denselben Namen besitzen. Räume können nur nacheinander vergeben werden, damit diese anschließend auch wieder einzeln gelöscht werden können. Innerhalb des Formulars kann der Admin den Prozess jederzeit abbrechen, jedoch erst nach Eingabe des Namens und der ID den neuen Benutzer anlegen kann. Ein zugehöriger Raum ist dazu nicht erforderlich.
+
+Um sich weitere Informationen über eine Person anzeigen zu lassen, kann man diesen in der Tabelle anklicken. Das anschließende Fenster besitzt große Ähnlichkeit mit den Formularen zum Anlegen und Bearbeiten von Mitarbeitern. Der einzige Unterschied besteht darin, dass die Eingaben nicht bearbeitet werden können, bevor auf den entsprechenden Knopf in der Bildschirmecke geklickt wurde. Beim Bearbeiten können ähnlich wie beim Hinzufügen der Name geändert werden und einzelne Räume hinzugefügt oder gelöscht werden. Der Button zum Speichern ist erneut farblich hervorgehoben, links daneben ein grauer Button, welcher die aktuellen Änderungen verwirft und weniger Aufmerksamkeit bedarf als das Speichern.
+
+Um jemanden aus dem System zu löschen, befindet sich unten links auf der Seite mit den Informationen zur Person ein auffällig roter Button. Damit man aber nicht versehentlich eine Person unwiderruflich löscht, warnt ein Pop-Up den Admin, wenn er vorhat, jemanden zu löschen. Auf dem Pop-Up gibt es daher einen Button, der die Aktion beendet. Rechts daneben ist der farblich hervorgehobene Löschen-Button.  
+
+**Rooms**
+
+Unter dem Menüpunkt Rooms werden alle im System verwalteten Räume mit Nummer, eine kurzen Beschreibung (Descriptor) und der letzten Benutzung tabellarisch dargestellt, ähnlich wie bei den Mitarbeiter. Die Räume sind nach ihren Nummern sortiert und können auch danach gesucht werden. Zusätzlich kann der Admin im Suchfeld einen Descriptor eingeben, um nach diesem zu filtern.
+
+Bei der Auswahl eines Raumes werden weitere Informationen über diesen angezeigt, wie die berechtigten Mitarbeiter. Wie zuvor beim Mitarbeiter können die Informationen bearbeitet, einzelne Mitarbeiter hinzugefügt oder entfernt werden. Wir haben uns dafür entschieden, dass einzelne Räume nicht wieder aus dem System gelöscht werden können, außer man löscht sie innerhalb der Datenbank. Deswegen gibt es hier keine Möglichkeit, Räume zu löschen.
+
+Dass sowohl Räume Mitarbeitern zugeordnet werden können, sowie andersherum, ist gewollt, um dem Admin maximalen Komfort beim Verwalten des Systems zu bieten.
+
+**Settings**
+
+Unter dem letzten Menüpunkt Settings, kann der Admin die Systemsprache ändern, ein Software-Update zu installieren oder eine Nachricht schreiben. Es gibt zwei Textfelder, die wie beim Schreiben einer E-Mail aufgebaut sind. Die Nachricht kann an alle Benutzer des Systems gesendet werden oder aber an bestimmte Benutzer oder Benutzergruppen. Die Nachricht wird dann einfach im großen Textfeld eingegeben und mit dem blauen Button unten Links verschickt, der im selben Stil der anderen Buttons gehalten ist. Der erfolgreiche Versand der Nachricht wird mit einem Pop-Up-Fenster quittiert.
+
+**<span style="text-decoration:underline;">Pförtner</span>**
 
 Der Pförtner hat eine Desktop oder Webanwendung mit 4 Unterpunkten.
 
-Es wurde eine grobe Tabellenstruktur gewählt um moglichst viele Informationen übersichtig zu gestallten.
-Ausserdem kann man die eizelnen Entries ausklappen, welches mehr Details preisgibt.
-Um das noch übersichtlich zu gestalten wird links an der Tabelle eine kleine Farbige leiste angezeigt.
-Diese zeigt genau, auf welcher Ebene der Nutzer sich zurzeit befindet.
+Es wurde eine grobe Tabellenstruktur gewählt um möglichst viele Informationen übersichtlich zu gestalten. Außerdem kann man die einzelnen Entries ausklappen, welches mehr Details preisgibt. Um das noch übersichtlich zu gestalten wird links an der Tabelle eine kleine Farbige leiste angezeigt. Diese zeigt genau, auf welcher Ebene der Nutzer sich zurzeit befindet.
 
-Farblich wurden ansonsten klare Weiß und Grautöne gewählt, um die wichtigen farbliche Elemente weiter hinvorzuheben.
+Farblich wurden ansonsten klare Weiß und Grautöne gewählt, um die wichtigen farbliche Elemente weiter hervorzuheben.
 
-__In Ausleihe__
+**In Ausleihe**
 
-Das Ziel des Tabs ist es alle relevanten Informationen über die zurzeit im Ausleihe befindenen Transponder zu bekommen
+Das Ziel des Tabs ist es alle relevanten Informationen über die zurzeit im Ausleihe befindenden Transponder zu bekommen. Unter dem Status wird dem Pförtner eine Liste aller zurzeit ausgeliehenen Transponder angezeigt. Ein Listeneintrag enthält dabei die wichtigsten Informationen über den Stand eines Transponder Verleih Prozesses:
 
-Unter dem Status wird dem Pförtner eine Liste aller zurzeit ausgeliehenen Transponder angezeigt.
-Diese beinhaltet 
 - die Nummer des Transponder
-- die Person welche diesen ausgeliehen hat 
+
+- die Person welche diesen ausgeliehen hat
+
 - berechtigten Zeitraum.
 
-Diese Tabelle beinhaltet viele Infos und soll dem Pfoertner auf einem Blick alles Wichtige über den aktuellen Ausleihstand sagen. 
-Sie beinhaltet Informationen über:
+Mithilfe dieser Darstellungen ist es leicht zu erfahren, welche Transponder zurzeit ausgeliehen sind und welche Fristen und Zeiten diese beinhalten, um einen guten Überblick über die aktuelle Lage zu vermitteln.
 
-- alle zurzeit ausgeliehenen Transponder
-- alle Ausleihfristen der Transponder
-- die Dauer der Ausleihfrist
+Bei anklicken einer Zeile wird diese noch erweitert, sodass man mehr Informationen über den interessierten ausgeliehenen Transponder erfährt. Diese Ausklapp Struktur wird so verwendet, um relevante Informationen erst bei Bedarf anzuzeigen. Das dropdown Symbol ist dabei aufgrund der häufigen nutzung leicht zu verstehen. Folgende Informationen werden durch Klick auf die Tabelle ersichtlich:
 
-Bei anklicken einer Zeile wird diese noch erweitert, sodass man mehr Informationen über den interessierten Transponder erfährt.
-Dieses wird gemacht, um Clutter auf dem Hauptfeld zu vermeiden.
-Folgene Informationen werden durch Klick auf die Tabellle ersichtlich
+- Alle Berechtigte Personen der Gruppe sowie den zuständigen Verantwortlichen (den man auch direkt per mail anschreiben kann)
 
-- Alle Berechtigte Personen der Gruppe sowie denn zuständigen Verantwortlichen (den man auch direkt per mail anschreiben kann)
 - Alle Räume die für diesen Transponder aktuell in Ausgabe stehen.
+
 - Knopf für das Zurückgeben des Transponders
 
-Diese Information helfen dabei mehr Kontext über einen Transponder zu bekommen, sowie den Tranponder einfacher zurückgegeben. 
-Das schnelle überarbeiten wird auch unterstützt durch die Suchfunktion, die prominent über der Tabelle platziert wurde.
-Diese erweitert sich auf Knopfdruck um Filterfunktionen.
+Diese Information helfen dabei mehr Kontext über einen Transponder zu bekommen, sowie den Transponder einfacher zurückgegeben. Das schnelle überarbeiten wird auch unterstützt durch die Suchfunktion, die prominent über der Tabelle platziert wurde. Diese erweitert sich auf Knopfdruck um Filterfunktionen, um bei Bedarf mehr Funktion zu bieten.
 
-Dort ist auch der Knopf fuer das manuelle Hinzufügen eines Transponderverleih verlinkt, welcher zum Vergabefenster führt.
-Dieser wurde da platziert um die Navigierbarkeit der Seite zu verbessern.
+Dort ist auch der Knopf für das manuelle Hinzufügen eines Transponders Verleih verlinkt, welcher zum Vergabe Fenster führt. Dieser wurde da platziert um die Navigierbarkeit der Seite zu verbessern.
 
-Zusätzlich werden die Zeilen eingefärbt, um kritische Transponder hervorzuheben. 
+Zusätzlich werden die Zeilen eingefärbt, um kritische Transponder hervorzuheben.
+
 - Orange, falls die Berechtigte Zeit am gleichen Tag überschritten wurde, als leichte Warnfarbe.
-- Rot, falls der Transponder am Ende der Zeit immer noch nicht zurückgegeben wurde, als aggresive Warnfarbe.
 
-__Verlauf__
+- Rot, falls der Transponder am Ende der Zeit immer noch nicht zurückgegeben wurde, als aggressive Warnfarbe.
 
-Das Ziel des Tabs ist es die vergangenen Ausleihen nachvollziehbar und durchsuchbar zu machen. 
+**Verlauf**
 
-Diese filtert die Informationen weiter Runter und beschränkt sich in den einzelnen Entries auf die Transponder-Ids, den Zeitraum und die Räume.
-Meistens wird man im Verlauf schauen, falls der Transponder fehlt oder die Räume schlecht hinterlassen wurden.
-Dabei hilft der Fokus auf diese Inhalte, falls mehr Informationen gefordert sind kann der Eintrag wieder erweitert werden.
+Das Ziel des Tabs ist es die vergangenen Ausleihen nachvollziehbar und durchsuchbar zu machen.
 
-Graphisch wurde hier auf Farben oder hervorhebungen verzichtet, damit die Seite sauber und klar zu verstehen wirkt.
+Diese filtert die Informationen weiter Runter und beschränkt sich in den einzelnen Entries auf die Transponder-Ids, den Zeitraum und die Räume. Meistens wird man im Verlauf schauen, falls der Transponder fehlt oder die Räume schlecht hinterlassen wurden. Dabei hilft der Fokus auf diese Inhalte, falls mehr Informationen gefordert sind kann der Eintrag wieder erweitert werden.
 
-Wie in dem In Ausleihe Tab gibt es auch hier eine Suchfunktion, um den Verlauf weiter zu durchsuchen.
+Graphisch wurde hier auf Farben oder hervorhebungen verzichtet, damit die Seite sauber und klar zu verstehen wirkt. Wie in dem In Ausleihe Tab gibt es auch hier eine Suchfunktion, um den Verlauf weiter zu durchsuchen.
 
 Falls das System ausgefallen ist, kann man hier auch über den manual Entry den Verlauf nachtragen.
 
+**Personen**
 
-__Personen__
+Das Ziel des Personen-tabs ist es den Transponder Verleih schnell und schmerzlos zu gestalten.
 
-Das Ziel des Personen-tabs ist es den Transponderverleih schnell und schmerzlos zu gestallten.
+In den Personen werden alle Personen dargestellt und sortierbar gemacht.
 
-In den Personen werden alle Personen dargestellt und sortierbar gemacht. 
-Falls eine von diesen jetzt einen Transponder ausleihen will, kann hier nach der Person gesucht werden.
-diese kann man dann aufklappen und ihre relevanten Timeslots sehen.
+Falls eine von diesen jetzt einen Transponder ausleihen will, kann hier nach der Person gesucht werden. diese kann man dann aufklappen und ihre relevanten Timeslots sehen.
 
-Neben dem Timeslot findet sich auch ein Knopf für den schnellen Verleih eines Transponders. 
-Falls dieser gedrückt wird, wird der Nutzer automatisch zu den ausgefüllten Vergabe Fenster weitergeleitet.
+Neben dem Timeslot findet sich auch ein Knopf für den schnellen Verleih eines Transponders. Falls dieser gedrückt wird, wird der Nutzer automatisch zu den ausgefüllten Vergabe Fenster weitergeleitet.
 
-Falls die aktuelle Zeit in einem Timeslot oder 30 Minuten vor einem Timeslot fällt, wird dieser Buttom farbig markiert, um direkt ins Auge zu fallen. 
+Falls die aktuelle Zeit in einem Timeslot oder 30 Minuten vor einem Timeslot fällt, wird dieser Button farbig markiert, um direkt ins Auge zu fallen.
 
-__Vergabe__
+**Vergabe**
 
 Das Ziel des Vergabe-Tabs ist es den tatsächlichen Verleih vorzunehmen.
+
 Diese Möglichkeiten sollen die Software flexible und schnell zu bedienen machen.
 
 Dieses Tab kann durch 3 Weisen aufgerufen werden
+
 - per auflegen der multica auf den Reader
+
 - per Auswahl aus den Personen-tab
+
 - manuell durch die Sidebar
 
 Falls die Multica eines Studenten im System aufgelegt wird und dieser im System ist und die aktuelle Zeit in einem Timeslot oder 30 Minuten vor einem Timeslot fällt,
+
 Wird das Vergabe Feld automatisch mit den richtigen Daten befüllt.
-Das selbe gilt fuer aus den Personen-tab.
 
-In diesem werden alle notwendigen Felder angegeben werden, die ausgefüllt werden können.
-Diese Eingabe wird mit dynamischen und voneinander abhängigen Vorschlägen ergänzt, um ein möglichst schnelles und Fehlerfreies ausfüllen zu ermöglichen.
+Dasselbe gilt für aus den Personen-tab.
 
-Dynamisch heißt hier, das die Vorschläge abhängig von den zurzeit eingetippten Dateien sind.
-Falls zu Beispiel der Anfang eines Names eingetippt wird, wird automatisch ein Name, der den selben Namen hat vorgeschlagen.
+In diesem werden alle notwendigen Felder angegeben werden, die ausgefüllt werden können. Diese Eingabe wird mit <span style="text-decoration:underline;">dynamischen </span>und <span style="text-decoration:underline;">voneinander abhängigen</span> Vorschlägen ergänzt, um ein möglichst schnelles und Fehlerfreies ausfüllen zu ermöglichen.
+
+<span style="text-decoration:underline;">Dynamisch </span>heißt hier, dass die Vorschläge abhängig von den zurzeit eingetippten Dateien sind. Falls zum Beispiel der Anfang eines Namens eingetippt wird, wird automatisch ein Name, der denselben Namen hat vorgeschlagen.
+
 Dieser Vorschlag kann dann mit enter oder tab angenommen werden.
 
-"Voneinander abhängig" heißt hier, das wenn zum Beispiel nur eine Person mit demselben Namen existiert, wird die Martikelnummer automatisch ausgefuellt.
+<span style="text-decoration:underline;">Voneinander abhängig</span> heißt hier, das wenn zum Beispiel nur eine Person mit demselben Namen existiert, wird die Matrikelnummer automatisch ausgefüllt.
 
-Ausserdem werden die Räume und das Limit automatisch abhängig von der aktuellen Zeit und den Berechtigungen eingetragen wird.
+Außerdem werden die Räume und das Limit automatisch abhängig von der aktuellen Zeit und den Berechtigungen eingetragen wird.
 
 Dies kann alles aber auch manuell überschrieben werden.
-Falls allerdings am Ende nicht die geforderten Rechte da sind, muss bestätigt werden. 
+
+Falls allerdings am Ende nicht die geforderten Rechte da sind, muss bestätigt werden.
+
 Dies wird per eingabe bestätigt um sicher zu gehen das keine falschen Transponder aus versehen verliehen werden.
 
-Ausserdem gibt es dort ein Unterschriften Feld was auf Wunsch per Grafiktablet angesteuert werden kann und so zur digitalen Unterschrift 
+Außerdem gibt es dort ein Unterschriftenfeld was auf Wunsch per Grafiktablett angesteuert werden kann. Dies kann dann für eine digitale Unterschrift genutzt werden. Allerdings wird diese eigentlich nicht mehr benötigt, da die Autorisierung im besten Fall über die Multica verläuft.
 
-Bei Bestätigung wird dann ein zurzeit nicht ausgeliehener Transponder zufällig ausgewählt und mit den richtigen Berechtigungen beschrieben.
-Dieser wird dann am Screen Prominent ausgegeben, sodass der Pförtner diesen nehmen und physisch holen und ausgeben kann.
+Bei Bestätigung wird dann ein zurzeit nicht ausgeliehener Transponder zufällig ausgewählt und mit den richtigen Berechtigungen beschrieben. Dieser wird dann am Screen groß ausgegeben, sodass der Pförtner diesen nehmen, physisch holen und ausgeben kann.
+
 Falls das System nicht die Datenbank erreichen kann, wird eine Fehlermeldung angegeben, in die automatische findung eines Transponders manuell überschrieben wird.
 
 Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irgendwo auf der seite ersetzt, um fehlerhaftes confirmen zu vermeiden, bis der transponder auch tatsächlich ausgeliehen wurde.
+
 
 **Identifizierte Probleme aus dem Review**
 
