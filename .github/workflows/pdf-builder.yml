@@ -31,13 +31,13 @@ jobs:
         pandoc \
           --verbose \
           --log=output/log\
-          --wrap=preserve
-          --pdf-engine=xelatex
-          -V CJKmainfont="DejaVu Sans"
-          -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"
-          -V subparagraph
-          --toc -N
-          -f markdown-implicit_figures -t pdf
+          --wrap=preserve \
+          --pdf-engine=xelatex \
+          -V CJKmainfont="DejaVu Sans" \n
+          -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" \
+          -V subparagraph \
+          --toc -N \
+          -f markdown-implicit_figures -t pdf \
           Spezifikation.md -o output/Spezifikation.pdf
     - uses: actions/upload-artifact@v2
       with:
