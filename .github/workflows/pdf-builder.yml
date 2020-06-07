@@ -33,7 +33,7 @@ jobs:
           --log=output/log\
           --wrap=preserve \
           --pdf-engine=xelatex \
-          -V CJKmainfont="DejaVu Sans" \n
+          -V CJKmainfont="DejaVu Sans" \
           -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" \
           -V subparagraph \
           --toc -N \
