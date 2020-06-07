@@ -598,13 +598,13 @@ __Anmerkungen__
 
 In diesem Storyboard sieht man, dass ein Student einfach den Status seiner Transponder sehen kann (User Story #29)
 
-![JaAlex - student permission](prakt/m2/jalexan/StudentPerm.png)
+<img src="prakt/m2/jalexan/StudentPerm.png" alt="JaAlex - student permission" style="zoom:67%;" />
 
 __Anmerkungen__
 
 Rückblickend ist dieses Storyboard nicht nötig, da es nicht in einer User Story erwähnt wurde.
 
-![JaAlex - student request](prakt/m2/jalexan/StudentReq.png)
+<img src="prakt/m2/jalexan/StudentReq.png" alt="JaAlex - student request" style="zoom:67%;" />
 
 __Anmerkungen__
 
