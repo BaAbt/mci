@@ -686,6 +686,8 @@ Dies hat mehrere Vorteile:
 
 - keine Sicherheitslücken von Transpondern mit zu großen Berechtigungen.
 
+Als Zeitdarstellungen wird ein intuitives System verwendet, welches automatisch “gestern” oder “2 Minuten” anstelle von Daten eingefügt. Dies erleichtert die Lesbarkeit bei Daten ungemein.
+
 **<span style="text-decoration:underline;">Student</span>**
 
  
@@ -720,23 +722,23 @@ Beim Admin haben wir uns für eine Desktop-Variante entschieden, da dieser Probl
 
 Unter Mitarbeiter sieht der Admin alle Personen und deren zugeordneten Räume übersichtlich dargestellt in zwei Spalten. Damit der Admin noch schneller die Liste überschauen kann, gibt es zudem eine Suchfunktion. Falls es in einem Fall mehrere identische Namen gibt, kann auch mit der Mitarbeiter-ID gesucht werden. 
 
-Um einen neuen Mitarbeiter hinzuzufügen, ist unten rechts ein blauer Button, der sich farblich von der Liste abhebt. Wenn eine neue Person hinzugefügt wird, öffnet sich ein Formular, in welchem wir uns dafür entschieden haben, den Namen des Mitarbeiters einzutragen. Die EmployeeID wird automatisch von der Datenbank generiert, um , dass zwei Personen denselben Namen aufweisen. Räume können nur nacheinander vergeben werden, damit diese anschließend auch wieder einzeln gelöscht werden können. Innerhalb des Formulars kann der Admin den Prozess jederzeit abbrechen, jedoch erst nach Eingabe des Namens und der ID den neuen Benutzer anlegen kann. Ein zugehöriger Raum ist dazu nicht erforderlich.
+Um einen neuen Mitarbeiter hinzuzufügen, ist unten rechts ein blauer Button, der sich farblich von der Liste abhebt. Wenn eine neue Person hinzugefügt wird, öffnet sich ein Formular, in welchem der Namen des Mitarbeiters eingetragen wird. Die EmployeeID wird automatisch von der Datenbank generiert, um Personen auch weiterhin eindeutig zuordnen zu können, falls zwei Personen denselben Namen besitzen. Räume können nur nacheinander vergeben werden, damit diese anschließend auch wieder einzeln gelöscht werden können. Innerhalb des Formulars kann der Admin den Prozess jederzeit abbrechen, jedoch erst nach Eingabe des Namens und der ID den neuen Benutzer anlegen kann. Ein zugehöriger Raum ist dazu nicht erforderlich.
 
-Um sich weitere Informationen über eine Person anzeigen zu lassen, kann man diesen in der Tabelle anklicken. Das anschließende Fenster besitzt große Ähnlichkeit mit den Formularen zum Anlegen und Bearbeiten von Mitarbeitern. Der einzige Unterschied besteht darin, dass die Eingaben nicht bearbeitet werden können, bevor auf den entsprechenden Knopf in der Bildschirmecke geklickt wurde. Beim Bearbeiten können ähnlich wie beim Hinzufügen . Auch der Rest sieht wieder ähnlich zu der Vorherigen Seite aus. Nur die Räume, welche man hier bearbeiten kann haben neue Icons und Felder. Um einen Raum schnell löschen zu können, hat man hinter der Raumnummer ein Mülleimer Icon. Wenn man einen Raum hinzufügen möchte, benutzen wir die gleiche funktion wie beim hinzufügen von Mitarbeitern um alles möglichst einheitlich und einfach zu halten. Auch hier haben wir noch die Möglichkeit die Veränderung zu verhindern da wir einen Button dafür haben. Schlussendlich kann man all seine Veränderungen mit dem extra blau hervorgehobenen Button speichern. Um eine Person zu löschen haben wir einen großen roten Button im Menü der Person. Damit man aber nicht aus versehen eine Person löscht, gibt es ein Pop-Up das den Admin warnt, wenn er vor hat jemanden zu löschen. Auf dem Pop-Up was  
+Um sich weitere Informationen über eine Person anzeigen zu lassen, kann man diesen in der Tabelle anklicken. Das anschließende Fenster besitzt große Ähnlichkeit mit den Formularen zum Anlegen und Bearbeiten von Mitarbeitern. Der einzige Unterschied besteht darin, dass die Eingaben nicht bearbeitet werden können, bevor auf den entsprechenden Knopf in der Bildschirmecke geklickt wurde. Beim Bearbeiten können ähnlich wie beim Hinzufügen der Name geändert werden und einzelne Räume hinzugefügt oder gelöscht werden. Der Button zum Speichern ist erneut farblich hervorgehoben, links daneben ein grauer Button, welcher die aktuellen Änderungen verwirft und weniger Aufmerksamkeit bedarf als das Speichern.
+
+Um jemanden aus dem System zu löschen, befindet sich unten links auf der Seite mit den Informationen zur Person ein auffällig roter Button. Damit man aber nicht versehentlich eine Person unwiderruflich löscht, warnt ein Pop-Up den Admin, wenn er vorhat, jemanden zu löschen. Auf dem Pop-Up gibt es daher einen Button, der die Aktion beendet. Rechts daneben ist der farblich hervorgehobene Löschen-Button.  
 
 **Rooms**
 
-Das Ziel des Rooms-Tab ist es, alle im System verwalteten Räume zu speichern. Dies sollte eigentlich durch ein zentrales System der TH-Köln erfolgen, da wir aber aufgrund der jetzigen Situation dies nicht nachfragen können, wird im weiteren Verlauf von einer eigenen Verwaltung dieser ausgegangen.
+Unter dem Menüpunkt Rooms werden alle im System verwalteten Räume mit Nummer, eine kurzen Beschreibung (Descriptor) und der letzten Benutzung tabellarisch dargestellt, ähnlich wie bei den Mitarbeiter. Die Räume sind nach ihren Nummern sortiert und können auch danach gesucht werden. Zusätzlich kann der Admin im Suchfeld einen Descriptor eingeben, um nach diesem zu filtern.
 
-Die Initiale Darstellung gibt dabei die Raumnummer, den Descriptor und die letzte Nutzung der verwalteten Räume an. Automatisch wird diese dabei anhand des Descriptors sortiert, um eine einfache Gruppierung zu erkennen und Räume so besser einzuordnen. Dies hilft dem Administrator, da die Raumliste bei einer großen Institution wie der TH sehr lang wird.
+Bei der Auswahl eines Raumes werden weitere Informationen über diesen angezeigt, wie die berechtigten Mitarbeiter. Wie zuvor beim Mitarbeiter können die Informationen bearbeitet, einzelne Mitarbeiter hinzugefügt oder entfernt werden. Wir haben uns dafür entschieden, dass einzelne Räume nicht wieder aus dem System gelöscht werden können, außer man löscht sie innerhalb der Datenbank. Deswegen gibt es hier keine Möglichkeit, Räume zu löschen.
 
-Bei Auswahl eines Raumes können dabei weitere Informationen über den Raum dargestellt werden. Dies ist so gelöst worden, da so der Überblick immer gegeben ist. Hier ist auch die Option, den Raum noch anhand des Descriptors oder der zugewiesenen Mitarbeiter anzupassen.
-
-Diese Doppelung der Zuweisung zwischen Mitarbeitern und Räume ist gewollt, um so den Arbeitsablauf des Administrators möglichst effizient zu gestalten.
+Dass sowohl Räume Mitarbeitern zugeordnet werden können, sowie andersherum, ist gewollt, um dem Admin maximalen Komfort beim Verwalten des Systems zu bieten.
 
 **Settings**
 
-In seinem letzten Menüpunkt, den Settings kann der Admin eine Nachricht schreiben. Es gibt zwei Textfelder, die wie eine E-Mail aufgebaut sind. Die Nachricht kann an alle Benutzer des Systems gesendet werden oder aber an bestimmte Benutzer oder Benutzergruppen. Die Nachricht wird dann einfach im großen Textfelde eingegeben und mit dem blauen Button unten Links bestätigt, der wieder im gleichen Stil wie alle anderen Buttons ist, um alles einheitlich zu haben.
+Unter dem letzten Menüpunkt Settings, kann der Admin die Systemsprache ändern, ein Software-Update zu installieren oder eine Nachricht schreiben. Es gibt zwei Textfelder, die wie beim Schreiben einer E-Mail aufgebaut sind. Die Nachricht kann an alle Benutzer des Systems gesendet werden oder aber an bestimmte Benutzer oder Benutzergruppen. Die Nachricht wird dann einfach im großen Textfeld eingegeben und mit dem blauen Button unten Links verschickt, der im selben Stil der anderen Buttons gehalten ist. Der erfolgreiche Versand der Nachricht wird mit einem Pop-Up-Fenster quittiert.
 
 **<span style="text-decoration:underline;">Pförtner</span>**
 
