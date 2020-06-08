@@ -686,11 +686,65 @@ $~$
 
 ![spfeil - Legende](prakt/m2/spfeil/leg2.png)
 
-![spfeil - Bild 1](prakt/m2/spfeil/pic1.jpg)
+![spfeil - Legende](prakt/m2/spfeil/leg3.png)
 
-![spfeil - Bilder 2-5](prakt/m2/spfeil/pic2.jpg)
+![spfeil - Bild 1](prakt/m2/spfeil/1.png)
 
-![spfeil - Bilder 6-9](prakt/m2/spfeil/pic3.jpg)
+![spfeil - Bild 2](prakt/m2/spfeil/2_1.png)
+
+![spfeil - Bild 2](prakt/m2/spfeil/2_2.png)
+
+![spfeil - Bild 3](prakt/m2/spfeil/3_1.png)
+
+![spfeil - Bild 3](prakt/m2/spfeil/3_2.png)
+
+![spfeil - Bild 3](prakt/m2/spfeil/3_3.png)
+
+![spfeil - Bild 3](prakt/m2/spfeil/3_4.png)
+
+![spfeil - Bild 3](prakt/m2/spfeil/3_5.png)
+
+![spfeil - Bild 4](prakt/m2/spfeil/4.png)
+
+![spfeil - Bild 5](prakt/m2/spfeil/5_1.png)
+
+![spfeil - Bild 5](prakt/m2/spfeil/5_2.png)
+
+![spfeil - Bild 6](prakt/m2/spfeil/6.png)
+
+![spfeil - Bild 7](prakt/m2/spfeil/7.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_1.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_2.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_3.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_4.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_5.png)
+
+![spfeil - Bild 8](prakt/m2/spfeil/8_6.png)
+
+![spfeil - Bild 9](prakt/m2/spfeil/9.png)
+
+![spfeil - Bild 10](prakt/m2/spfeil/10_1.png)
+
+![spfeil - Bild 10](prakt/m2/spfeil/10_2.png)
+
+![spfeil - Bild 10](prakt/m2/spfeil/10_3.png)
+
+![spfeil - Bild 10](prakt/m2/spfeil/10_4.png)
+
+![spfeil - Bild 11](prakt/m2/spfeil/11.png)
+
+![spfeil - Bild 12](prakt/m2/spfeil/12_1.png)
+
+![spfeil - Bild 12](prakt/m2/spfeil/12_2.png)
+
+![spfeil - Bild 13](prakt/m2/spfeil/13_1.png)
+
+![spfeil - Bild 13](prakt/m2/spfeil/13_2.png)
 
 \newpage
 
