@@ -598,57 +598,57 @@ __Anmerkungen__
 
 In diesem Storyboard sieht man, dass ein Student einfach den Status seiner Transponder sehen kann (User Story #29)
 
-<img src="prakt/m2/jalexan/StudentPerm.png" alt="JaAlex - student permission" style="zoom: 50%;" />
+![JaAlex - student permission](prakt/m2/jalexan/StudentPerm.png)
 
 __Anmerkungen__
 
 Rückblickend ist dieses Storyboard nicht nötig, da es nicht in einer User Story erwähnt wurde.
 
-<img src="prakt/m2/jalexan/StudentReq.png" alt="JaAlex - student request" style="zoom: 50%;" />
+![JaAlex - student request](prakt/m2/jalexan/StudentReq.png)
 
 __Anmerkungen__
 
 In folgendem Storyboard wird gezeigt wie ein Dozent eine Zugangsberechtigung erteilt. (User Story #08 & #16)
 
-<img src="prakt/m2/jalexan/DozentBerechtigung1.png" alt="JaAlex - dozent grant permission1" style="zoom:50%;" />
+![JaAlex - dozent grant permission1](prakt/m2/jalexan/DozentBerechtigung1.png)
 
 
 
-<img src="prakt/m2/jalexan/DozentBerechtigung2.png" alt="JaAlex - dozent grant permission2" style="zoom:50%;" />
+![JaAlex - dozent grant permission2](prakt/m2/jalexan/DozentBerechtigung2.png)
 
 __Anmerkungen__
 
 Dieses Storyboard zeigt, wie ein Dozent seine Arbeit an ein neues Teammitglied delegieren kann (User Story #17)
 
-<img src="prakt/m2/jalexan/DozentDelegieren1.png" alt="JaAlex - dozent new member1" style="zoom:50%;" />
+![JaAlex - dozent new member1](prakt/m2/jalexan/DozentDelegieren1.png)
 
-<img src="prakt/m2/jalexan/DozentDelegieren2.png" alt="JaAlex - dozent new member2" style="zoom:50%;" />
+![JaAlex - dozent new member2](prakt/m2/jalexan/DozentDelegieren2.png)
 
 __Anmerkungen__
 
 Im folgenden Storyboard sieht man, wie ein Dozent Studierenden eine Berechtigung entziehen kann (User Story #10)
 
-<img src="prakt/m2/jalexan/DozentEntfernen.png" alt="JaAlex - dozent revoke permission" style="zoom:50%;" />
+![JaAlex - dozent revoke permission](prakt/m2/jalexan/DozentEntfernen.png)
 
 __Anmerkungen__
 
 In den folgenden zwei Frames sieht man, wie der Pförtner die sich in der Ausleihe befindlichen Transponder überprüfen kann (User Story #02 & #03), er sieht auch, wie lange diese Schon ausgeliehen sind (User Story #07). Desweiteren kann er durch das betätigen des Berechtigung anzeigen Buttons sich alle mit dem Transponder assoziierten Räume ausgeben lassen (User Story #04)
 
-<img src="prakt/m2/jalexan/Pförtner1.png" alt="JaAlex - gatekeeper 1" style="zoom:50%;" />
+![JaAlex - gatekeeper 1](prakt/m2/jalexan/Pförtner1.png)
 
 __Anmerkung__
 
 Hier kann der Pförtner einsehen ob eine Person berechtigt ist (User Story #06), verifikation erfolgt über die MultiCA (User Story #28), er kann dann direkt auf einen kleinen Button klicken um eine Ausgabe vorzubereiten, der Student muss dann nur noch Unterschreiben (entweder auf einem elektronischen Tablet, oder wenn das nicht geht halt auf Papier, was aber den sinn einer Applikation kaputt machen würde) und dann kann der Pförtner auf Ausgabe klicken um den Transponderstatus zu ändern. (User Stories # 01, 27) Bei einem Systemausfall kann der Pförtner einfach die Daten manuell in dem Tab ausgabe Eingeben, den Rest erledigt das lokale System (User Story #26)
 
-<img src="prakt/m2/jalexan/Pförtner2.png" alt="JaAlex - gatekeeper 2" style="zoom:50%;" />
+![JaAlex - gatekeeper 2](prakt/m2/jalexan/Pförtner2.png)
 
 __Anmerkungen__
 
 Hier kann der Admin alle Dozenten sehen und löschen (User Story #20) neue Räume werden dadurch hinzugefügt, dass sie entweder bei einem Professor oder einem Transponder verlinkt werden, da es sonst keiner weiterer infos bedarf als einer Nummer. (User Story #)
 
-<img src="prakt/m2/jalexan/Admin1.png" alt="JaAlex - admin 1" style="zoom:50%;" />
+![JaAlex - admin 1](prakt/m2/jalexan/Admin1.png)
 
-<img src="prakt/m2/jalexan/Admin2.png" alt="JaAlex - admin 2" style="zoom:50%;" />
+![JaAlex - admin 2](prakt/m2/jalexan/Admin2.png)
 
 \newpage
 
