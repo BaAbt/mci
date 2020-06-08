@@ -712,7 +712,7 @@ __**Changelog**__
 
 __***\[Artefakt/e\]***__
 
-[FIGMA PROTOTYPE](https://www.figma.com/file/buzQVswf0Y6DTCi9UF5fkY/Transponderapp?node-id=0%3A1)
+[https://www.figma.com/file/buzQVswf0Y6DTCi9UF5fkY/Transponderapp?node-id=75%3A2461](https://www.figma.com/file/buzQVswf0Y6DTCi9UF5fkY/Transponderapp?node-id=75%3A2461)
 
 __***\[Erläuterung\]***__
 
