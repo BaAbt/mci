@@ -69,7 +69,7 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 ### Stakeholder Analyse
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
 #### Changelog
 
@@ -215,7 +215,7 @@ $~$
 Die hier dargestellten primären Stakeholder sind die hauptsächlichen Nutzer des Systems. 
 Diese sind die Personen, welche tagtäglich mit dem System in Berührung kommen werden und damit am wichtigsten fuer uns sind.
 Das gemeinsame Ziel dieser ist es, das bestehende System effizienter zu machen.
- 
+
 Die hier dargestellten Anti-User haben dabei eher eine kleinen Einfluss.
 Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumverantwortlicher und Administrator eingegehen.
 
@@ -223,7 +223,7 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -240,7 +240,7 @@ __***\[Artefakt/e\]***__
 $~$
 
 ___Student___
-  
+
 alter: 16-99
 
 __Charakteristiken__
@@ -364,7 +364,7 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
 
 __**Changelog**__  
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -440,7 +440,7 @@ Außerdem sollen Studenten die Möglichkeit besitzen, online über die Verfügba
 ---
 
 ___Oliver Simpson (wissenschaftlicher Mitarbeiter)___
- 
+
 Oliver Simpson ist wissenschaftlicher Mitarbeiter im KI-Labor des Campus Gummersbach und muss daher oft die Berechtigung für die Transpondervergabe erteilen.
 Er kennt die Seite des Studenten, und wie nervig es sein kann, nicht rechtzeitig in den Raum zu können und deshalb wertvolle Arbeitszeit zu verlieren.
 Daher ist es im besonders wichtig, das Missverständnisse hinsichtlich der Ausgabe nicht vorkommen und versucht daher die Daten möglichst aktuell zu bleiben.
@@ -506,13 +506,13 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
 10.5.2020  | initial commit          | 
 15.05.2020 | [Anmerkungen baabt](https://github.com/BaAbt/mci/commit/18a7dcae925916f70122b879feae2f1b1aa90938) | Anmerkungen zum Feedback
-           |                         |                              
+ 08.06.2020 | Anmerkungen Jannik Alexander | Erläuterungen zum Storyboard 
            |                         |                              
            |                         |                              
            |                         |                              
@@ -594,27 +594,61 @@ Also muss es mindestens einen Prozess des Approvals geben, und da ich denke das 
 
 $~$
 
-![JaAlex - student permission](prakt/m2/jalexan/StudentPerm.png)
+__Anmerkungen__
 
-![JaAlex - student request](prakt/m2/jalexan/StudentReq.png)
+In diesem Storyboard sieht man, dass ein Student einfach den Status seiner Transponder sehen kann (User Story #29)
 
-![JaAlex - dozent grant permission1](prakt/m2/jalexan/DozentBerechtigung1.png)
+![JaAlex - student permission](prakt/m2/jalexan/StudentPerm.png){ height=80% }
 
-![JaAlex - dozent grant permission2](prakt/m2/jalexan/DozentBerechtigung2.png)
+__Anmerkungen__
 
-![JaAlex - dozent new member1](prakt/m2/jalexan/DozentDelegieren1.png)
+Rückblickend ist dieses Storyboard nicht nötig, da es nicht in einer User Story erwähnt wurde.
 
-![JaAlex - dozent new member2](prakt/m2/jalexan/DozentDelegieren2.png)
+![JaAlex - student request](prakt/m2/jalexan/StudentReq.png){ height=80% }
 
-![JaAlex - dozent revoke permission](prakt/m2/jalexan/DozentEntfernen.png)
+__Anmerkungen__
 
-![JaAlex - gatekeeper 1](prakt/m2/jalexan/Pförtner1.png)
+In folgendem Storyboard wird gezeigt wie ein Dozent eine Zugangsberechtigung erteilt. (User Story #08 & #16)
 
-![JaAlex - gatekeeper 2](prakt/m2/jalexan/Pförtner2.png)
+![JaAlex - dozent grant permission1](prakt/m2/jalexan/DozentBerechtigung1.png){ height=80% }
 
-![JaAlex - admin 1](prakt/m2/jalexan/Admin1.png)
 
-![JaAlex - admin 2](prakt/m2/jalexan/Admin2.png)
+
+![JaAlex - dozent grant permission2](prakt/m2/jalexan/DozentBerechtigung2.png){ height=80% }
+
+__Anmerkungen__
+
+Dieses Storyboard zeigt, wie ein Dozent seine Arbeit an ein neues Teammitglied delegieren kann (User Story #17)
+
+![JaAlex - dozent new member1](prakt/m2/jalexan/DozentDelegieren1.png){ height=80% }
+
+![JaAlex - dozent new member2](prakt/m2/jalexan/DozentDelegieren2.png){ height=80% }
+
+__Anmerkungen__
+
+Im folgenden Storyboard sieht man, wie ein Dozent Studierenden eine Berechtigung entziehen kann (User Story #10)
+
+![JaAlex - dozent revoke permission](prakt/m2/jalexan/DozentEntfernen.png){ height=80% }
+
+__Anmerkungen__
+
+In den folgenden zwei Frames sieht man, wie der Pförtner die sich in der Ausleihe befindlichen Transponder überprüfen kann (User Story #02 & #03), er sieht auch, wie lange diese Schon ausgeliehen sind (User Story #07). Desweiteren kann er durch das betätigen des Berechtigung anzeigen Buttons sich alle mit dem Transponder assoziierten Räume ausgeben lassen (User Story #04)
+
+![JaAlex - gatekeeper 1](prakt/m2/jalexan/Pförtner1.png){ height=80% }
+
+__Anmerkung__
+
+Hier kann der Pförtner einsehen ob eine Person berechtigt ist (User Story #06), verifikation erfolgt über die MultiCA (User Story #28), er kann dann direkt auf einen kleinen Button klicken um eine Ausgabe vorzubereiten, der Student muss dann nur noch Unterschreiben (entweder auf einem elektronischen Tablet, oder wenn das nicht geht halt auf Papier, was aber den sinn einer Applikation kaputt machen würde) und dann kann der Pförtner auf Ausgabe klicken um den Transponderstatus zu ändern. (User Stories # 01, 27) Bei einem Systemausfall kann der Pförtner einfach die Daten manuell in dem Tab ausgabe Eingeben, den Rest erledigt das lokale System (User Story #26)
+
+![JaAlex - gatekeeper 2](prakt/m2/jalexan/Pförtner2.png){ height=80% }
+
+__Anmerkungen__
+
+Hier kann der Admin alle Dozenten sehen und löschen (User Story #20) neue Räume werden dadurch hinzugefügt, dass sie entweder bei einem Professor oder einem Transponder verlinkt werden, da es sonst keiner weiterer infos bedarf als einer Nummer. (User Story #)
+
+![JaAlex - admin 1](prakt/m2/jalexan/Admin1.png){ height=80% }
+
+![JaAlex - admin 2](prakt/m2/jalexan/Admin2.png){ height=80% }
 
 \newpage
 
@@ -666,7 +700,7 @@ $~$
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -859,7 +893,7 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 
 **Identifizierte Probleme aus dem Review**
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -875,7 +909,7 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -893,7 +927,7 @@ __***\[Erläuterung\]***__
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -913,7 +947,7 @@ __***\[Artefakt/e\]***__
 
 __**Changelog**__
 
-[//]: # (https://tableconvert.com/)
+[//]: # "https://tableconvert.com/"
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
