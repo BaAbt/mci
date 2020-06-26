@@ -1,15 +1,11 @@
 package com.baabt.github.pfoertner
 
+import com.baabt.github.pfoertner.ListView.PopUp
 import javafx.beans.property.SimpleStringProperty
 import javafx.stage.StageStyle
 import tornadofx.*
-import internal.Course
 import internal.Room
 import internal.User
-import javafx.scene.Scene
-import javafx.scene.paint.Paint
-import javafx.stage.Stage
-import java.awt.Color
 
 class MasterView : View() {
     val controller:   myController by inject()

@@ -1,4 +1,4 @@
-package com.baabt.github.pfoertner
+package com.baabt.github.pfoertner.Login
 
 
 import tornadofx.*

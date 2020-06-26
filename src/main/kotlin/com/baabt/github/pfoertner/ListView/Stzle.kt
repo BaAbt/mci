@@ -1,18 +1,25 @@
-package com.baabt.github.pfoertner.Login
+package com.baabt.github.pfoertner.ListView
 
 
+import javafx.css.Styleable
+import javafx.css.converter.PaintConverter
+import javafx.scene.Cursor
+import javafx.scene.paint.Color
+import javafx.scene.paint.Paint
 import tornadofx.*
 
-class Styles : Stylesheet() {
-    companion object {
-        val loginScreen by cssclass()
-    }
 
+class MyStyle: Stylesheet() {
+    companion object {
+        val tackyButton by cssclass()
+    }
     init {
-        loginScreen {
-            padding = box(15.px)
-            vgap = 7.px
-            hgap = 10.px
+        tackyButton {
+            fitToWidth = true
+            and(hover){
+                
+            }
+
         }
     }
 }

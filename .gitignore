@@ -1,13 +1,48 @@
-/.idea/
-/mi.iml
-/mci.iml
-/prakt/m1/baAbt.pdf
-/prakt/m1/baAbt_sk.pdf
-/prakt/m1/m1.zip
-*.odt.gradle
-**/build/
-!src/**/build/
-/.gradle/
+
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,gradle,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,gradle,windows
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+### Gradle ###
+.gradle
+build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -20,4 +55,8 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
-output/
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,gradle,windows
