@@ -1,9 +1,8 @@
 {
     "compilerOptions": {
         "target": "ES5",
-        "module": "commonjs",
-        "outDir": "src",
-        "sourceMap": true
+        "module": "system",
+        "outFile": "build/build.js",
     },
     "exclude": [
         "node_modules"
