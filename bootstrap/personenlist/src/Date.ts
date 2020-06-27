@@ -3,7 +3,7 @@
 function dateToString(d: Date): string {
     let now = new Date()
     let s: String = ""
-    let minDiff = now.getMinutes() - d.getMinutes()
+    let minDiff = (now.getTime() - d.getTime()) * 1000 *60
     if (minDiff < 2) {
         return "Vor einem Moment"
     }
@@ -25,6 +25,13 @@ function fullDateToString(d: Date): string {
     } else {
         day = d.getDay + "." + d.getMonth + "." + d.getFullYear
     }
-    let time = d.getHours() + ":" + d.getMinutes()
+
+    let hours = d.getHours().toString()
+    if (hours.length == 1) hours = "0" + hours
+
+    let minutes = d.getMinutes().toString()
+    if (minutes.length == 1) minutes = "0" + minutes
+
+    let time = hours + ":" + minutes
     return day + " - " + time
 }
