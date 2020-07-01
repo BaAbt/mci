@@ -8,7 +8,7 @@ function addTrToTbl(tbl:HTMLTableElement, tr: Transponder) {
     addTableEntry(tbl,a)
 }
 
-function transponderTableEntryArray(tr: Transponder){
+function transponderTableEntryArray(tr: Transponder):Array<string>{
     return [
         "#" + tr.id,
         dateToString(tr.status.originalStart),
@@ -18,33 +18,27 @@ function transponderTableEntryArray(tr: Transponder){
 }
 
 function addTableEntry(table:HTMLTableElement, cells: Array<string>){
-    let newRow = table.tBodies[0].insertRow(-1);
+    let newRow = appendTableRow(table)
+    appendExpandButton(newRow)
     for (let i = 0; i < cells.length; i++) {
-        let cell = newRow.insertCell(i)
+        let cell = newRow.insertCell(-1)
         cell.classList.add("tableEntry")
         let textNode = document.createTextNode(cells[i])
         cell.appendChild(textNode)
     }
-    appendExpandButton(newRow)
+}
+
+// see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
+function appendTableRow(table:HTMLTableElement):HTMLTableRowElement {
+    let newRow = table.tBodies[0].insertRow(-1);
+    newRow.classList.add("accordion-toggle", "collapsed")
+    newRow.dataset.toggle = "collapse"
+    return newRow
 }
 
 function appendExpandButton(row: HTMLTableRowElement){
     let cell = row.insertCell(-1)
     cell.classList.add("expand-button")
-    let button = expandRowButton()
-    button.onclick = expandRow
-    cell.appendChild(button)
-}
-
-function expandRowButton(): HTMLButtonElement {
-    let button = document.createElement('button')
-    button.innerText = "expand"
-    button.classList.add("expandButton")
-    return button
-}
-
-function expandRow(){
-    console.log("hello World")
 }
 
 function refreshStatusTable() {
