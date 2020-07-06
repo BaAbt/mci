@@ -63,8 +63,8 @@ function addTrToTbl(tbl, tr) {
     addTableEntry(tbl, a);
 }
 function addTableEntry(table, cells) {
-    addShrinkedTableEntry(table, cells);
-    addExpandedTableEntry(table);
+    var rowIndex = addShrinkedTableEntry(table, cells);
+    addExpandedTableEntry(table, rowIndex);
 }
 function addShrinkedTableEntry(table, cells) {
     var row = appendShrinkedTableRow(table);
@@ -75,6 +75,7 @@ function addShrinkedTableEntry(table, cells) {
         var textNode = document.createTextNode(cells[i]);
         cell.appendChild(textNode);
     }
+    return row.rowIndex;
 }
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
 function appendShrinkedTableRow(table) {
@@ -85,7 +86,7 @@ function appendShrinkedTableRow(table) {
         ["id", "accordion1"],
         ["data-toggle", "collapse"],
         ["data-parent", "#accordion1"],
-        ["href", "#collapseOne"]
+        ["href", "#collapse" + newRow.rowIndex]
     ];
     attributes.forEach(function (l) {
         newRow.setAttribute(l[0], l[1]);
@@ -96,11 +97,12 @@ function appendExpandButton(row) {
     var cell = row.insertCell(-1);
     cell.classList.add("expand-button");
 }
-function addExpandedTableEntry(table) {
+function addExpandedTableEntry(table, index) {
     var row = appendExpandedTableRow(table);
     var div = document.createElement("div");
-    div.id = "collapseOne";
+    div.id = "collapse" + index;
     div.classList.add("collapse", "in", "p-3");
+    //todo refactor and make prettier
     var divRow = document.createElement("div");
     divRow.classList.add("row");
     var divCol = document.createElement("div");

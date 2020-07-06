@@ -8,8 +8,8 @@ function addTrToTbl(tbl:HTMLTableElement, tr: Transponder) {
 
 
 function addTableEntry(table:HTMLTableElement, cells: Array<string>){
-    addShrinkedTableEntry(table, cells)
-    addExpandedTableEntry(table)
+    let rowIndex  = addShrinkedTableEntry(table, cells)
+    addExpandedTableEntry(table, rowIndex)
 }
 
 function addShrinkedTableEntry(table: HTMLTableElement, cells: Array<string>){
@@ -21,6 +21,7 @@ function addShrinkedTableEntry(table: HTMLTableElement, cells: Array<string>){
         let textNode = document.createTextNode(cells[i])
         cell.appendChild(textNode)
     }
+    return row.rowIndex
 }
 
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
@@ -32,7 +33,7 @@ function appendShrinkedTableRow(table:HTMLTableElement):HTMLTableRowElement {
         ["id", "accordion1"],
         ["data-toggle", "collapse"],
         ["data-parent", "#accordion1"],
-        ["href", "#collapseOne"]
+        ["href", "#collapse" + newRow.rowIndex]
     ]
     attributes.forEach(l => {
         newRow.setAttribute(l[0],l[1])
@@ -46,11 +47,14 @@ function appendExpandButton(row: HTMLTableRowElement){
 }
 
 
-function addExpandedTableEntry(table: HTMLTableElement){
+function addExpandedTableEntry(table: HTMLTableElement, index: number){
     let row = appendExpandedTableRow(table)
     let div = document.createElement("div")
-    div.id = "collapseOne"
+    div.id = "collapse" + index
     div.classList.add("collapse", "in", "p-3")
+
+
+    //todo refactor and make prettier
 
     let divRow = document.createElement("div")
     divRow.classList.add("row")
