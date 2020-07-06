@@ -19,26 +19,15 @@ jobs:
     - uses: actions/checkout@v2
 
     #  installs all the needed stuff
-    - name: install tools
+    - name: build site
       run: |
-        sudo apt-get install -y pandoc texlive-xetex texlive texlive-latex-extra texlive-generic-extra
-        curl -L https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -o pandoc.deb
-        sudo dpkg -i pandoc.deb
-        mkdir output
+        cd site/personenlist
+        npm install
+        tsc
       #  generate the document
-    - name: create documents
-      run: |
-        pandoc \
-          -H disable_float.tex \
-          --verbose \
-          --log=output/log\
-          --wrap=preserve \
-          --pdf-engine=xelatex \
-          -V CJKmainfont="DejaVu Sans" \
-          -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" \
-          -V subparagraph \
-          --toc -N \
-          Spezifikation.md -o output/Spezifikation.pdf
-    - uses: actions/upload-artifact@v2
-      with:
-        path: output
+     - name: Deploy site
+       uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}.
+          BRANCH: gh-pages
+          FOLDER: site/personenlist
