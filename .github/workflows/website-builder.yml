@@ -25,9 +25,9 @@ jobs:
         npm install
         tsc
       #  generate the document
-     - name: Deploy site
-       uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}.
-          BRANCH: gh-pages
-          FOLDER: site/personenlist
+    - name: Deploy site
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+       with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}.
+         BRANCH: gh-pages
+         FOLDER: site/personenlist
