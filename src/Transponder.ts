@@ -1,12 +1,12 @@
 
 class Transponder {
     id: string = "";
-    inAusleihe: Boolean = false;
+    lendOut: Boolean = false;
     status: TransponderStatus = null;
     constructor(id: string, inAusleihe: boolean) {
         this.id = id;
         if (inAusleihe) {
-            this.inAusleihe = true;
+            this.lendOut = true;
             this.status = randomTransponderStatus();
         }
     }
@@ -33,7 +33,6 @@ function randomTransponderStatus(): TransponderStatus {
 }
 
 
-var transponderList: Array<Transponder> = randomTransponderList()
 
 function randomTransponderList(): Array<Transponder> {
     let a = Array<Transponder>()

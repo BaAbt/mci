@@ -57,28 +57,54 @@ var Room = /** @class */ (function () {
     return Room;
 }());
 // All functions that mess with the Table
-function addTrToTbl(tbl, tr) {
-    // get a string array from the transponder
-    var a = transponderTableEntryArray(tr);
-    addTableEntry(tbl, a);
+function buildTable(headerCells, rowsCells) {
+    setTableHead(headerCells);
+    cleanTableBody();
+    rowsCells.forEach(function (l) {
+        addShrinkedTableEntry(l);
+        addExpandedTableEntry();
+    });
 }
-function addTableEntry(table, cells) {
-    var rowIndex = addShrinkedTableEntry(table, cells);
-    addExpandedTableEntry(table, rowIndex);
+function cleanTableBody() {
+    var b = table.tBodies[0];
+    if (b == null)
+        b = table.createTBody();
+    var size = b.rows.length;
+    for (var i = 0; i < size; i++) {
+        b.deleteRow(-1);
+    }
 }
-function addShrinkedTableEntry(table, cells) {
-    var row = appendShrinkedTableRow(table);
-    appendExpandButton(row);
+function setTableHead(cells) {
+    var head = table.createTHead();
+    head.deleteRow(-1);
+    var row = head.insertRow(-1);
+    // all of our tables are expandable, so we add the place for the button every time
+    var th = document.createElement("th");
+    th.innerHTML = "#";
+    row.appendChild(th);
+    // add all the header strings
     for (var i = 0; i < cells.length; i++) {
-        var cell = row.insertCell(-1);
-        cell.classList.add("tableEntry");
+        var th_1 = document.createElement("th");
+        th_1.innerHTML = cells[i];
+        row.appendChild(th_1);
+    }
+}
+function addShrinkedTableEntry(cells) {
+    var row = appendShrinkedTableRow();
+    // expand button at the start Button
+    var cell = row.insertCell(-1);
+    cell.classList.add("expand-button");
+    // Adds all the cells 
+    for (var i = 0; i < cells.length; i++) {
+        var cell_1 = row.insertCell(-1);
+        cell_1.classList.add("tableEntry");
         var textNode = document.createTextNode(cells[i]);
-        cell.appendChild(textNode);
+        cell_1.appendChild(textNode);
     }
     return row.rowIndex;
 }
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
-function appendShrinkedTableRow(table) {
+function appendShrinkedTableRow() {
     var newRow = table.tBodies[0].insertRow(-1);
     newRow.classList.add("accordion-toggle", "collapsed");
     var attributes = [
@@ -93,21 +119,21 @@ function appendShrinkedTableRow(table) {
     });
     return newRow;
 }
-function appendExpandButton(row) {
-    var cell = row.insertCell(-1);
-    cell.classList.add("expand-button");
-}
-function addExpandedTableEntry(table, index) {
+function addExpandedTableEntry() {
     var row = appendExpandedTableRow(table);
     var div = document.createElement("div");
-    div.id = "collapse" + index;
+    // we can do this since we always add a expanded table entry after a normal one
+    // I know this is hacky, but it works and i dont wanne mess with it
+    var i = row.rowIndex - 1;
+    div.id = "collapse" + i;
     div.classList.add("collapse", "in", "p-3");
-    //todo refactor and make prettier
+    //todo this is just giberish. we need to actually create something useful here. maybe pass a div or something.
+    //also this is just copied from the link below, I currently have no idea about what classes or divs we use here.
     var divRow = document.createElement("div");
     divRow.classList.add("row");
     var divCol = document.createElement("div");
     divCol.classList.add("col-2");
-    var txt = document.createTextNode("FOOO BAR");
+    var txt = document.createTextNode("FOOO BAR" + i);
     divCol.appendChild(txt);
     divRow.appendChild(divCol);
     div.appendChild(divRow);
@@ -122,11 +148,11 @@ function appendExpandedTableRow(table) {
 var Transponder = /** @class */ (function () {
     function Transponder(id, inAusleihe) {
         this.id = "";
-        this.inAusleihe = false;
+        this.lendOut = false;
         this.status = null;
         this.id = id;
         if (inAusleihe) {
-            this.inAusleihe = true;
+            this.lendOut = true;
             this.status = randomTransponderStatus();
         }
     }
@@ -153,7 +179,6 @@ function randomTransponderStatus() {
     s.end = new Date(end);
     return s;
 }
-var transponderList = randomTransponderList();
 function randomTransponderList() {
     var a = Array();
     for (var i = 0; i < 100; i++) {
@@ -176,7 +201,31 @@ function randomId(length) {
 }
 var TrTblID = "statusTable";
 var statusTableID = "statusTable";
-function transponderTableEntryArray(tr) {
+var transponderList = randomTransponderList();
+var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt", "Ausleihfrist"];
+var historyTableHeader = ["Begin", "Ende", "Raeume", "Verantwortliche"];
+var personsTableHeader = ["Name", "Martikelnummer", "Kurs"];
+var table = document.getElementById("DynamicTable");
+//onload, we want to create the status table
+statusTable();
+// creates the status table
+function statusTable() {
+    var entries = statusTableEntries().map(function (tr) {
+        return transponderToStatusEntry(tr);
+    });
+    // todo find out what to to with the expandable
+    buildTable(statusTableHeader, entries);
+}
+// filters and sorts a list of all currently lend out transponders
+function statusTableEntries() {
+    var lendOutTrList = transponderList.filter(function (tr) { return tr.lendOut; });
+    lendOutTrList.sort(function (tr1, tr2) {
+        return tr1.status.end.getTime() - tr2.status.end.getTime();
+    });
+    return lendOutTrList;
+}
+// Builds an Array of strings from one Transponder which will represent one table array
+function transponderToStatusEntry(tr) {
     return [
         "#" + tr.id,
         dateToString(tr.status.originalStart),
@@ -184,25 +233,11 @@ function transponderTableEntryArray(tr) {
         fullDateToString(tr.status.end)
     ];
 }
-function refreshStatusTable() {
-    var table = document.getElementById(statusTableID);
-    cleanTable(table);
-    var entries = statusTableEntries();
-    entries.forEach(function (tr, index) {
-        addTrToTbl(table, tr);
-    });
+function historyTable() {
+    var entries = [["FOO", "BAR"]]; // todo filter and create entries
+    buildTable(historyTableHeader, entries);
 }
-function statusTableEntries() {
-    var inAusleihe = transponderList.filter(function (tr) { return tr.inAusleihe; });
-    inAusleihe.sort(function (tr1, tr2) {
-        return tr1.status.end.getTime() - tr2.status.end.getTime();
-    });
-    return inAusleihe;
-}
-function cleanTable(table) {
-    var b = table.tBodies[0];
-    var size = b.rows.length;
-    for (var i = 1; i < size; i++) {
-        b.deleteRow(-1);
-    }
+function personTable() {
+    var entries = [["FOO", "BAR"]]; // todo filter and create entries
+    buildTable(personsTableHeader, entries);
 }
