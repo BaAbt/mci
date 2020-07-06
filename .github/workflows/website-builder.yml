@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with Actions
+
+name: website
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: push
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    #  installs all the needed stuff
+    - name: install tools
+      run: |
+        sudo apt-get install -y pandoc texlive-xetex texlive texlive-latex-extra texlive-generic-extra
+        curl -L https://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb -o pandoc.deb
+        sudo dpkg -i pandoc.deb
+        mkdir output
+      #  generate the document
+    - name: create documents
+      run: |
+        pandoc \
+          -H disable_float.tex \
+          --verbose \
+          --log=output/log\
+          --wrap=preserve \
+          --pdf-engine=xelatex \
+          -V CJKmainfont="DejaVu Sans" \
+          -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" \
+          -V subparagraph \
+          --toc -N \
+          Spezifikation.md -o output/Spezifikation.pdf
+    - uses: actions/upload-artifact@v2
+      with:
+        path: output
