@@ -37,30 +37,16 @@
 
   <!-- Side navigation -->
   <div class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#" onclick="statusTable()">In Ausleihe</a>
+    <a href="#" onclick="historyTable()"> Verlauf </a>
+    <a href="#" onclick="personTable()"> Personen </a>
+    <a href="Vergabe.html"> Vergabe </a>
   </div>
 
   <!-- Page content -->
   <div class="main">
     <div class="table table-responsive">
-      <button onclick="refreshStatusTable()"> refresh </button>
-      <table id="statusTable" , class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Tansponder ID</th>
-            <th scope="col">Originaler Ausleihzeitpunkt</th>
-            <th scope="col">tatsechlicher Ausleihzeitpunkt</th>
-            <th scope="col">Ausleihfrist</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="accordion-toggle collapsed" id="accordion1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
-          </tr>
-        </tbody>
+      <table id="DynamicTable" , class="table">
       </table>
     </div>
   </div>

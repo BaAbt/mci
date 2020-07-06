@@ -1,8 +1,36 @@
 const TrTblID = "statusTable"
 const statusTableID = "statusTable"
+var transponderList: Array<Transponder> = randomTransponderList()
 
+var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt","Ausleihfrist"]
+var historyTableHeader: Array<string> = ["Begin", "Ende", "Raeume", "Verantwortliche"]
+var personsTableHeader: Array<string> = ["Name", "Martikelnummer", "Kurs"]
 
-function transponderTableEntryArray(tr: Transponder):Array<string>{
+var table = <HTMLTableElement> document.getElementById("DynamicTable")
+
+//onload, we want to create the status table
+statusTable()
+
+// creates the status table
+function statusTable() {
+    let entries: Array<Array<string>> = statusTableEntries().map(tr => {
+        return transponderToStatusEntry(tr)
+    })
+    // todo find out what to to with the expandable
+    buildTable(statusTableHeader, entries)
+}
+
+// filters and sorts a list of all currently lend out transponders
+function statusTableEntries(): Array<Transponder> {
+    let lendOutTrList = transponderList.filter(tr => tr.lendOut)
+    lendOutTrList.sort((tr1,tr2) => 
+        tr1.status.end.getTime() - tr2.status.end.getTime()
+     );
+     return lendOutTrList
+}
+
+// Builds an Array of strings from one Transponder which will represent one table array
+function transponderToStatusEntry(tr: Transponder):Array<string>{
     return [
         "#" + tr.id,
         dateToString(tr.status.originalStart),
@@ -11,27 +39,12 @@ function transponderTableEntryArray(tr: Transponder):Array<string>{
     ]
 }
 
-function refreshStatusTable() {
-    let table = <HTMLTableElement>document.getElementById(statusTableID);
-    cleanTable(table)
-    let entries = statusTableEntries()
-    entries.forEach((tr, index) => {
-            addTrToTbl(table, tr)
-    })
+function historyTable(){
+    let entries: Array<Array<string>> = [["FOO", "BAR"]] // todo filter and create entries
+    buildTable(historyTableHeader, entries)
 }
 
-function statusTableEntries(): Array<Transponder> {
-    let inAusleihe = transponderList.filter(tr => tr.inAusleihe)
-    inAusleihe.sort((tr1,tr2) => 
-        tr1.status.end.getTime() - tr2.status.end.getTime()
-     );
-     return inAusleihe
-}
-
-function cleanTable(table: HTMLTableElement) {
-    let b = table.tBodies[0]
-    let size = b.rows.length
-    for (let i = 1; i < size; i++) {
-        b.deleteRow(-1)
-    }
+function personTable(){
+    let entries: Array<Array<string>> = [["FOO", "BAR"]] // todo filter and create entries
+    buildTable(personsTableHeader, entries)
 }
