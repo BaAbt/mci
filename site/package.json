@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/main.ts",
   "dependencies": {
-    "mdbootstrap": "^4.19.1"
+    "mdbootstrap": "^4.19.1",
+    "typescript": "^3.9.6"
   },
   "devDependencies": {},
   "scripts": {

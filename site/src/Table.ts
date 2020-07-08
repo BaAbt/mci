@@ -1,12 +1,19 @@
 // All functions that mess with the Table
 
-function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>){
+class ExpandedTableEntry{
+    firstEntry: string
+    secondEntry: string
+    firstColSpan: number = 2
+    secondColspan: number = 2
+}
+
+function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<ExpandedTableEntry>){
     setTableHead(headerCells)
     cleanTableBody()
-    rowsCells.forEach (l => {
-        addShrinkedTableEntry(l)
-        addExpandedTableEntry()
-    })
+    for (let i = 0; i < rowsCells.length; i++) {
+        addShrinkedTableEntry(rowsCells[i])
+        addExpandedTableEntry(expandedTableEntries[i])
+    }
 }
 
 function cleanTableBody() {
@@ -44,10 +51,7 @@ function addShrinkedTableEntry(cells: Array<string>){
     cell.classList.add("expand-button")
     // Adds all the cells 
     for (let i = 0; i < cells.length; i++) {
-        let cell = row.insertCell(-1)
-        cell.classList.add("tableEntry")
-        let textNode = document.createTextNode(cells[i])
-        cell.appendChild(textNode)
+        appendTextCell(row,cells[i])
     }
     return row.rowIndex
 }
@@ -67,18 +71,36 @@ function appendShrinkedTableRow():HTMLTableRowElement {
     return newRow
 }
 
+function appendTextCell(row: HTMLTableRowElement, t:string){
+    let cell = row.insertCell(-1)
+    cell.classList.add("tableEntry")
+    let textNode = document.createTextNode(t)
+    cell.appendChild(textNode)
+    return cell
+}
 
-function addExpandedTableEntry(){
+function addExpandedTableEntry(expandedTableEntry: ExpandedTableEntry){
+    let i = table.tBodies[0].rows.length
     let row = appendExpandedTableRow(table)
-    let div = document.createElement("div")
     // we can do this since we always add a expanded table entry after a normal one
     // I know this is hacky, but it works and i dont wanne mess with it
-    let i = row.rowIndex - 1
-    div.id = "collapse"  + i
-    div.classList.add("collapse")
-    div.innerText = "FOO Bar"
-    table.tBodies[0].appendChild(div)
+    row.id = "collapse"  + i
+    row.insertCell(-1)
+    row.classList.add("collapse")
+    let cell1 = row.insertCell(-1)
+    cell1.colSpan = expandedTableEntry.firstColSpan
+    let cell2 = row.insertCell(-1)
+    cell2.colSpan = expandedTableEntry.secondColspan
+
+    let div1 = document.createElement("p")
+    div1.innerText = expandedTableEntry.firstEntry
+    cell1.appendChild(div1)
+
+    let div2 = document.createElement("p")
+    div2.innerText = expandedTableEntry.secondEntry
+    cell2.appendChild(div2)
 }
+
 
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
 function appendExpandedTableRow(table:HTMLTableElement):HTMLTableRowElement {
