@@ -40,7 +40,7 @@ function transponderToStatusEntry(tr: Transponder):Array<string>{
 }
 
 function historyTable(){
-    let entries: Array<Array<string>> = [["FOO", "BAR"]] // todo filter and create entries
+    let entries: Array<Array<string>> = [["not required"," will be added later"]] // todo filter and create entries
     buildTable(historyTableHeader, entries)
 }
 

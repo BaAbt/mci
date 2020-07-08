@@ -57,11 +57,9 @@ function appendShrinkedTableRow():HTMLTableRowElement {
     let newRow = table.tBodies[0].insertRow(-1);
     newRow.classList.add("accordion-toggle", "collapsed")
     let attributes = [
-        ["class", "accordion-toggle collapsed"],
-        ["id", "accordion1"],
         ["data-toggle", "collapse"],
-        ["data-parent", "#accordion1"],
-        ["href", "#collapse" + newRow.rowIndex]
+        ["href", "#collapse" + newRow.rowIndex],
+        ["aria-expanded", "false"],
     ]
     attributes.forEach(l => {
         newRow.setAttribute(l[0],l[1])
@@ -77,23 +75,9 @@ function addExpandedTableEntry(){
     // I know this is hacky, but it works and i dont wanne mess with it
     let i = row.rowIndex - 1
     div.id = "collapse"  + i
-    div.classList.add("collapse", "in", "p-3")
-
-
-    //todo this is just giberish. we need to actually create something useful here. maybe pass a div or something.
-    //also this is just copied from the link below, I currently have no idea about what classes or divs we use here.
-
-    let divRow = document.createElement("div")
-    divRow.classList.add("row")
-
-    let divCol = document.createElement("div")
-    divCol.classList.add("col-2")
-
-    let txt = document.createTextNode("FOOO BAR" + i)
-    divCol.appendChild(txt)
-    divRow.appendChild(divCol)
-    div.appendChild(divRow)
-    row.appendChild(div)
+    div.classList.add("collapse")
+    div.innerText = "FOO Bar"
+    table.tBodies[0].appendChild(div)
 }
 
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
