@@ -13,11 +13,18 @@ statusTable()
 
 // creates the status table
 function statusTable() {
-    let entries: Array<Array<string>> = statusTableEntries().map(tr => {
+    let entries = statusTableEntries()
+    let shrinkedEntries = entries.map(tr => {
         return transponderToStatusEntry(tr)
     })
-    // todo find out what to to with the expandable
-    buildTable(statusTableHeader, entries)
+    // todo refaktor in own function
+    let expandedEntries = entries.map(tr => {
+        let e = new ExpandedTableEntry()
+        e.firstEntry = "Gruppenmitglieder: \n\n "+ tr.status.students.join("\n")
+        e.secondEntry = "TODO Gruppenverantwortlicher\n\nRaumliste:\n" + tr.status.rooms.join("\n")
+        return e
+    })
+    buildTable(statusTableHeader, shrinkedEntries,expandedEntries)
 }
 
 // filters and sorts a list of all currently lend out transponders
