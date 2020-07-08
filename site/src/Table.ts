@@ -7,12 +7,13 @@ class ExpandedTableEntry{
     secondColspan: number = 2
 }
 
-function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<ExpandedTableEntry>){
+function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<ExpandedTableEntry> = []){
     setTableHead(headerCells)
     cleanTableBody()
     for (let i = 0; i < rowsCells.length; i++) {
         addShrinkedTableEntry(rowsCells[i])
-        addExpandedTableEntry(expandedTableEntries[i])
+        if (expandedTableEntries[i] != null)
+            addExpandedTableEntry(expandedTableEntries[i])
     }
 }
 
