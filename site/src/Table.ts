@@ -7,13 +7,13 @@ class ExpandedTableEntry{
     secondColspan: number = 2
 }
 
-function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<ExpandedTableEntry> = []){
+function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<Node> = []){
     setTableHead(headerCells)
     cleanTableBody()
     for (let i = 0; i < rowsCells.length; i++) {
         addShrinkedTableEntry(rowsCells[i])
         if (expandedTableEntries[i] != null)
-            addExpandedTableEntry(expandedTableEntries[i])
+            addExpandedTableEntry(expandedTableEntries[i],rowsCells[i].length)
     }
 }
 
@@ -80,7 +80,7 @@ function appendTextCell(row: HTMLTableRowElement, t:string){
     return cell
 }
 
-function addExpandedTableEntry(expandedTableEntry: ExpandedTableEntry){
+function addExpandedTableEntry(expandedTableEntry: Node, colspan: number){
     let i = table.tBodies[0].rows.length
     let row = appendExpandedTableRow(table)
     // we can do this since we always add a expanded table entry after a normal one
@@ -88,18 +88,10 @@ function addExpandedTableEntry(expandedTableEntry: ExpandedTableEntry){
     row.id = "collapse"  + i
     row.insertCell(-1)
     row.classList.add("collapse")
-    let cell1 = row.insertCell(-1)
-    cell1.colSpan = expandedTableEntry.firstColSpan
-    let cell2 = row.insertCell(-1)
-    cell2.colSpan = expandedTableEntry.secondColspan
+    let cell = row.insertCell(-1)
+    cell.colSpan = colspan
 
-    let div1 = document.createElement("p")
-    div1.innerText = expandedTableEntry.firstEntry
-    cell1.appendChild(div1)
-
-    let div2 = document.createElement("p")
-    div2.innerText = expandedTableEntry.secondEntry
-    cell2.appendChild(div2)
+    cell.appendChild(expandedTableEntry)
 }
 
 
