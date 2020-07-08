@@ -22,7 +22,7 @@ function statusTable() {
 
 function historyTable(){
     let entries: Array<Array<string>> = [["not required"," will be added later"]] // todo filter and create entries
-    buildTable(historyTableHeader, entries)
+    buildTable(historyTableHeader, entries, [])
 }
 
 function roomTable(){
@@ -35,6 +35,6 @@ function roomTable(){
             element.occupied.toString()
         ])
     });
-    buildTable(roomsTableHeader, table)
+    buildTable(roomsTableHeader, table,[])
 }
 
