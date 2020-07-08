@@ -4,7 +4,7 @@ var transponderList: Array<Transponder> = randomTransponderList()
 
 var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt","Ausleihfrist"]
 var historyTableHeader: Array<string> = ["Begin", "Ende", "Raeume", "Verantwortliche"]
-var personsTableHeader: Array<string> = ["Name", "Martikelnummer", "Kurs"]
+var roomsTableHeader: Array<string> = ["Nummer", "Bezeichnung", "Belegt"]
 
 var table = <HTMLTableElement> document.getElementById("DynamicTable")
 
@@ -44,7 +44,16 @@ function historyTable(){
     buildTable(historyTableHeader, entries)
 }
 
-function personTable(){
-    let entries: Array<Array<string>> = [["FOO", "BAR"]] // todo filter and create entries
-    buildTable(personsTableHeader, entries)
+function roomTable(){
+    let entries: Array<Room> = randomRoomList()
+    let table: Array<Array<string>> = []
+    entries.forEach(element => {
+        table.push([
+            element.nr,
+            element.name,
+            element.occupied.toString()
+        ])
+    });
+    buildTable(roomsTableHeader, table)
 }
+
