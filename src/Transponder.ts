@@ -28,7 +28,7 @@ function randomTransponderStatus(): TransponderStatus {
     let now = new Date().getTime()
     let o = now - 10000000 * Math.random()
     let act = o + ((now - o) * Math.random())
-    let end = now + 10000000 * Math.random()
+    let end = (now-1000000) + 10000000 * Math.random()
     s.originalStart = new Date(o)
     s.actualStart = new Date(act)
     s.end = new Date(end)

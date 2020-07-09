@@ -112,18 +112,18 @@ function randomStudent() {
     return s;
 }
 // All functions that mess with the Table
-var EntryLevel;
+var RowLevel;
 // All functions that mess with the Table
-(function (EntryLevel) {
-    EntryLevel["Danger"] = "danger-color";
-    EntryLevel["Warning"] = "warning-color";
-    EntryLevel["Info"] = "";
-})(EntryLevel || (EntryLevel = {}));
+(function (RowLevel) {
+    RowLevel["Danger"] = "danger-color";
+    RowLevel["Warning"] = "warning-color";
+    RowLevel["Info"] = "";
+})(RowLevel || (RowLevel = {}));
 var TableRow = /** @class */ (function () {
     function TableRow() {
         this.shrinkedEntries = [];
         this.expandedEntry = null;
-        this.level = EntryLevel.Info;
+        this.level = RowLevel.Info;
     }
     return TableRow;
 }());
@@ -131,9 +131,9 @@ function buildTable(headerCells, rows) {
     setTableHead(headerCells);
     cleanTableBody();
     rows.forEach(function (it) {
-        addShrinkedTableEntry(it.shrinkedEntries);
+        addShrinkedTableEntry(it);
         if (it.expandedEntry != null)
-            addExpandedTableEntry(it.expandedEntry, it.shrinkedEntries.length);
+            addExpandedTableEntry(it);
     });
 }
 function cleanTableBody() {
@@ -160,8 +160,9 @@ function setTableHead(cells) {
         row.appendChild(th_1);
     }
 }
-function addShrinkedTableEntry(cells) {
-    var row = appendShrinkedTableRow();
+function addShrinkedTableEntry(tableRow) {
+    var cells = tableRow.shrinkedEntries;
+    var row = appendShrinkedTableRow(tableRow.level);
     // expand button at the start Button
     var cell = row.insertCell(-1);
     cell.classList.add("expand-button");
@@ -172,9 +173,18 @@ function addShrinkedTableEntry(cells) {
     return row.rowIndex;
 }
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
-function appendShrinkedTableRow() {
+function appendShrinkedTableRow(level) {
+    var _a;
+    if (level === void 0) { level = RowLevel.Info; }
     var newRow = table.tBodies[0].insertRow(-1);
-    newRow.classList.add("accordion-toggle", "collapsed");
+    var classes = ["accordion-toggle", "collapsed"];
+    if (level == RowLevel.Warning) {
+        classes.push("warning-color-dark", "text-white");
+    }
+    if (level == RowLevel.Danger) {
+        classes.push("danger-color-dark", "text-white");
+    }
+    (_a = newRow.classList).add.apply(_a, classes);
     var attributes = [
         ["data-toggle", "collapse"],
         ["href", "#collapse" + newRow.rowIndex],
@@ -192,17 +202,25 @@ function appendTextCell(row, t) {
     cell.appendChild(textNode);
     return cell;
 }
-function addExpandedTableEntry(expandedTableEntry, colspan) {
+function addExpandedTableEntry(tableRow) {
+    var _a;
     var i = table.tBodies[0].rows.length;
     var row = appendExpandedTableRow(table);
     // we can do this since we always add a expanded table entry after a normal one
     // I know this is hacky, but it works and i dont wanne mess with it
+    var classes = ["collapse"];
+    if (tableRow.level == RowLevel.Warning) {
+        classes.push("warning-color", "text-white");
+    }
+    if (tableRow.level == RowLevel.Danger) {
+        classes.push("danger-color", "text-white");
+    }
+    (_a = row.classList).add.apply(_a, classes);
     row.id = "collapse" + i;
     row.insertCell(-1);
-    row.classList.add("collapse");
     var cell = row.insertCell(-1);
-    cell.colSpan = colspan;
-    cell.appendChild(expandedTableEntry);
+    cell.colSpan = tableRow.shrinkedEntries.length;
+    cell.appendChild(tableRow.expandedEntry);
 }
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
 function appendExpandedTableRow(table) {
@@ -240,7 +258,7 @@ function randomTransponderStatus() {
     var now = new Date().getTime();
     var o = now - 10000000 * Math.random();
     var act = o + ((now - o) * Math.random());
-    var end = now + 10000000 * Math.random();
+    var end = (now - 1000000) + 10000000 * Math.random();
     s.originalStart = new Date(o);
     s.actualStart = new Date(act);
     s.end = new Date(end);
@@ -278,7 +296,7 @@ var statusTableID = "statusTable";
 var roomList = randomRoomList();
 // this needs second
 var transponderList = randomTransponderList();
-var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt", "Ausleihfrist"];
+var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt", "Ausleihfrist"];
 var historyTableHeader = ["Begin", "Ende", "Raeume", "Verantwortliche"];
 var roomsTableHeader = ["Nummer", "Bezeichnung", "Belegt"];
 var table = document.getElementById("DynamicTable");
@@ -291,6 +309,9 @@ function statusTable() {
         var r = new TableRow();
         r.shrinkedEntries = transponderToStatusEntry(tr);
         r.expandedEntry = transponderToExpandedDom(tr);
+        if (tr.status.end.getTime() <= new Date().getTime()) {
+            r.level = RowLevel.Warning;
+        }
         return r;
     });
     buildTable(statusTableHeader, rows);
