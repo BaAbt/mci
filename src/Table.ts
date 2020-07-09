@@ -1,12 +1,20 @@
 // All functions that mess with the Table
 
-function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>){
+class ExpandedTableEntry{
+    firstEntry: string
+    secondEntry: string
+    firstColSpan: number = 2
+    secondColspan: number = 2
+}
+
+function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<Node> = []){
     setTableHead(headerCells)
     cleanTableBody()
-    rowsCells.forEach (l => {
-        addShrinkedTableEntry(l)
-        addExpandedTableEntry()
-    })
+    for (let i = 0; i < rowsCells.length; i++) {
+        addShrinkedTableEntry(rowsCells[i])
+        if (expandedTableEntries[i] != null)
+            addExpandedTableEntry(expandedTableEntries[i],rowsCells[i].length)
+    }
 }
 
 function cleanTableBody() {
@@ -44,10 +52,7 @@ function addShrinkedTableEntry(cells: Array<string>){
     cell.classList.add("expand-button")
     // Adds all the cells 
     for (let i = 0; i < cells.length; i++) {
-        let cell = row.insertCell(-1)
-        cell.classList.add("tableEntry")
-        let textNode = document.createTextNode(cells[i])
-        cell.appendChild(textNode)
+        appendTextCell(row,cells[i])
     }
     return row.rowIndex
 }
@@ -57,11 +62,9 @@ function appendShrinkedTableRow():HTMLTableRowElement {
     let newRow = table.tBodies[0].insertRow(-1);
     newRow.classList.add("accordion-toggle", "collapsed")
     let attributes = [
-        ["class", "accordion-toggle collapsed"],
-        ["id", "accordion1"],
         ["data-toggle", "collapse"],
-        ["data-parent", "#accordion1"],
-        ["href", "#collapse" + newRow.rowIndex]
+        ["href", "#collapse" + newRow.rowIndex],
+        ["aria-expanded", "false"],
     ]
     attributes.forEach(l => {
         newRow.setAttribute(l[0],l[1])
@@ -69,32 +72,28 @@ function appendShrinkedTableRow():HTMLTableRowElement {
     return newRow
 }
 
+function appendTextCell(row: HTMLTableRowElement, t:string){
+    let cell = row.insertCell(-1)
+    cell.classList.add("tableEntry")
+    let textNode = document.createTextNode(t)
+    cell.appendChild(textNode)
+    return cell
+}
 
-function addExpandedTableEntry(){
+function addExpandedTableEntry(expandedTableEntry: Node, colspan: number){
+    let i = table.tBodies[0].rows.length
     let row = appendExpandedTableRow(table)
-    let div = document.createElement("div")
     // we can do this since we always add a expanded table entry after a normal one
     // I know this is hacky, but it works and i dont wanne mess with it
-    let i = row.rowIndex - 1
-    div.id = "collapse"  + i
-    div.classList.add("collapse", "in", "p-3")
+    row.id = "collapse"  + i
+    row.insertCell(-1)
+    row.classList.add("collapse")
+    let cell = row.insertCell(-1)
+    cell.colSpan = colspan
 
-
-    //todo this is just giberish. we need to actually create something useful here. maybe pass a div or something.
-    //also this is just copied from the link below, I currently have no idea about what classes or divs we use here.
-
-    let divRow = document.createElement("div")
-    divRow.classList.add("row")
-
-    let divCol = document.createElement("div")
-    divCol.classList.add("col-2")
-
-    let txt = document.createTextNode("FOOO BAR" + i)
-    divCol.appendChild(txt)
-    divRow.appendChild(divCol)
-    div.appendChild(divRow)
-    row.appendChild(div)
+    cell.appendChild(expandedTableEntry)
 }
+
 
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
 function appendExpandedTableRow(table:HTMLTableElement):HTMLTableRowElement {

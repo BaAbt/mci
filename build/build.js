@@ -50,20 +50,76 @@ var Course;
     Course[Course["WI"] = 2] = "WI";
 })(Course || (Course = {}));
 var Room = /** @class */ (function () {
-    function Room() {
-        this.id = 0;
+    function Room(number, name, occupied) {
         this.nr = "";
+        this.name = "";
+        this.occupied = false;
+        this.nr = number;
+        this.name = name;
+        this.occupied = occupied;
     }
     return Room;
 }());
+function randomRoomList() {
+    var result = [];
+    for (var index = 0; index < 100; index++) {
+        result.push(randomRoom());
+    }
+    return result;
+}
+function randomRoom() {
+    var roomNames = ["PC-Pool", "Labor", "Seminarraum", "Abstellraum", "Hexenkammer", "Kammer des Schreckens"];
+    return new Room((Math.random() * 4 + 1).toString(), roomNames[Math.floor(Math.random() * roomNames.length)], false);
+}
+var names = [
+    "Fives",
+    "Echo",
+    "Coric",
+    "Appo",
+    "Fox",
+    "Retired clone trooper",
+    "Denal",
+    "Kix",
+    "Jesse",
+    "Dogma",
+    "Hardcase",
+    "Tup",
+    "Kano",
+    "Boomer",
+    "Sterling",
+    "Alpha",
+    "Mixer",
+];
+function randomStudentList() {
+    var a = [];
+    for (var i = 0; i < 1 + Math.random() * 10; i++) {
+        a.push(randomStudent());
+    }
+    return a;
+}
+function randomStudent() {
+    var s = new Student();
+    s.name = names[Math.floor(Math.random() * names.length)];
+    s.id = Math.round((Math.random() * 1000000));
+    return s;
+}
 // All functions that mess with the Table
-function buildTable(headerCells, rowsCells) {
+var ExpandedTableEntry = /** @class */ (function () {
+    function ExpandedTableEntry() {
+        this.firstColSpan = 2;
+        this.secondColspan = 2;
+    }
+    return ExpandedTableEntry;
+}());
+function buildTable(headerCells, rowsCells, expandedTableEntries) {
+    if (expandedTableEntries === void 0) { expandedTableEntries = []; }
     setTableHead(headerCells);
     cleanTableBody();
-    rowsCells.forEach(function (l) {
-        addShrinkedTableEntry(l);
-        addExpandedTableEntry();
-    });
+    for (var i = 0; i < rowsCells.length; i++) {
+        addShrinkedTableEntry(rowsCells[i]);
+        if (expandedTableEntries[i] != null)
+            addExpandedTableEntry(expandedTableEntries[i], rowsCells[i].length);
+    }
 }
 function cleanTableBody() {
     var b = table.tBodies[0];
@@ -96,10 +152,7 @@ function addShrinkedTableEntry(cells) {
     cell.classList.add("expand-button");
     // Adds all the cells 
     for (var i = 0; i < cells.length; i++) {
-        var cell_1 = row.insertCell(-1);
-        cell_1.classList.add("tableEntry");
-        var textNode = document.createTextNode(cells[i]);
-        cell_1.appendChild(textNode);
+        appendTextCell(row, cells[i]);
     }
     return row.rowIndex;
 }
@@ -108,36 +161,33 @@ function appendShrinkedTableRow() {
     var newRow = table.tBodies[0].insertRow(-1);
     newRow.classList.add("accordion-toggle", "collapsed");
     var attributes = [
-        ["class", "accordion-toggle collapsed"],
-        ["id", "accordion1"],
         ["data-toggle", "collapse"],
-        ["data-parent", "#accordion1"],
-        ["href", "#collapse" + newRow.rowIndex]
+        ["href", "#collapse" + newRow.rowIndex],
+        ["aria-expanded", "false"],
     ];
     attributes.forEach(function (l) {
         newRow.setAttribute(l[0], l[1]);
     });
     return newRow;
 }
-function addExpandedTableEntry() {
+function appendTextCell(row, t) {
+    var cell = row.insertCell(-1);
+    cell.classList.add("tableEntry");
+    var textNode = document.createTextNode(t);
+    cell.appendChild(textNode);
+    return cell;
+}
+function addExpandedTableEntry(expandedTableEntry, colspan) {
+    var i = table.tBodies[0].rows.length;
     var row = appendExpandedTableRow(table);
-    var div = document.createElement("div");
     // we can do this since we always add a expanded table entry after a normal one
     // I know this is hacky, but it works and i dont wanne mess with it
-    var i = row.rowIndex - 1;
-    div.id = "collapse" + i;
-    div.classList.add("collapse", "in", "p-3");
-    //todo this is just giberish. we need to actually create something useful here. maybe pass a div or something.
-    //also this is just copied from the link below, I currently have no idea about what classes or divs we use here.
-    var divRow = document.createElement("div");
-    divRow.classList.add("row");
-    var divCol = document.createElement("div");
-    divCol.classList.add("col-2");
-    var txt = document.createTextNode("FOOO BAR" + i);
-    divCol.appendChild(txt);
-    divRow.appendChild(divCol);
-    div.appendChild(divRow);
-    row.appendChild(div);
+    row.id = "collapse" + i;
+    row.insertCell(-1);
+    row.classList.add("collapse");
+    var cell = row.insertCell(-1);
+    cell.colSpan = colspan;
+    cell.appendChild(expandedTableEntry);
 }
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
 function appendExpandedTableRow(table) {
@@ -177,6 +227,7 @@ function randomTransponderStatus() {
     s.originalStart = new Date(o);
     s.actualStart = new Date(act);
     s.end = new Date(end);
+    s.students = randomStudentList();
     return s;
 }
 function randomTransponderList() {
@@ -204,17 +255,32 @@ var statusTableID = "statusTable";
 var transponderList = randomTransponderList();
 var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt", "Ausleihfrist"];
 var historyTableHeader = ["Begin", "Ende", "Raeume", "Verantwortliche"];
-var personsTableHeader = ["Name", "Martikelnummer", "Kurs"];
+var roomsTableHeader = ["Nummer", "Bezeichnung", "Belegt"];
 var table = document.getElementById("DynamicTable");
 //onload, we want to create the status table
 statusTable();
 // creates the status table
 function statusTable() {
-    var entries = statusTableEntries().map(function (tr) {
-        return transponderToStatusEntry(tr);
+    var entries = statusTableEntries();
+    var shrinkedEntries = entries.map(function (tr) { return transponderToStatusEntry(tr); });
+    var expandedEntries = entries.map(function (tr) { return transponderToExpandedDom(tr); });
+    buildTable(statusTableHeader, shrinkedEntries, expandedEntries);
+}
+function historyTable() {
+    var entries = [["not required", " will be added later"]]; // todo filter and create entries
+    buildTable(historyTableHeader, entries, []);
+}
+function roomTable() {
+    var entries = randomRoomList();
+    var table = [];
+    entries.forEach(function (element) {
+        table.push([
+            element.nr,
+            element.name,
+            element.occupied.toString()
+        ]);
     });
-    // todo find out what to to with the expandable
-    buildTable(statusTableHeader, entries);
+    buildTable(roomsTableHeader, table, []);
 }
 // filters and sorts a list of all currently lend out transponders
 function statusTableEntries() {
@@ -224,6 +290,40 @@ function statusTableEntries() {
     });
     return lendOutTrList;
 }
+function transponderToExpandedDom(tr) {
+    var div = document.createElement("div");
+    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdList(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        <b>Dozent: " + randomStudent().name + "</b>\n      </div>\n      <button type=\"button\" class=\"btn btn-primary\">zurueckgegeben</button>\n    </div>\n    ";
+    var button = div.querySelector("button");
+    button.addEventListener("click", function (e) { return removeTransponder(tr); });
+    return div;
+}
+function studentIdList(a) {
+    var m = a.map(function (e) { return "" + e.id + " - " + e.name; });
+    return arrayToHtmlList(m, "Studenten:");
+}
+function arrayToHtmlList(array, caption, ordered) {
+    if (caption === void 0) { caption = ""; }
+    if (ordered === void 0) { ordered = false; }
+    var html = "";
+    if (caption != "")
+        html += "<b>" + caption + "</b>";
+    if (ordered)
+        html += "<ol>";
+    else
+        html += "<ul>";
+    html += array.map(function (a) { return "<li>" + a + "</li>"; }).join("");
+    if (ordered)
+        html += "</ol>";
+    else
+        html += "</ul>";
+    return html;
+}
+function removeTransponder(tr) {
+    tr.lendOut = false;
+    tr.status = null;
+    statusTable();
+    //todo popup
+}
 // Builds an Array of strings from one Transponder which will represent one table array
 function transponderToStatusEntry(tr) {
     return [
@@ -232,12 +332,4 @@ function transponderToStatusEntry(tr) {
         dateToString(tr.status.actualStart),
         fullDateToString(tr.status.end)
     ];
-}
-function historyTable() {
-    var entries = [["FOO", "BAR"]]; // todo filter and create entries
-    buildTable(historyTableHeader, entries);
-}
-function personTable() {
-    var entries = [["FOO", "BAR"]]; // todo filter and create entries
-    buildTable(personsTableHeader, entries);
 }

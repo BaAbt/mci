@@ -29,6 +29,9 @@ function randomTransponderStatus(): TransponderStatus {
     s.originalStart = new Date(o)
     s.actualStart = new Date(act)
     s.end = new Date(end)
+
+    s.students = randomStudentList()
+
     return s
 }
 
