@@ -24,7 +24,7 @@ function fullDateToString(d) {
         day = "gestern";
     }
     else {
-        day = d.getDay + "." + d.getMonth + "." + d.getFullYear;
+        day = d.getDay() + "." + d.getMonth() + "." + d.getFullYear();
     }
     var hours = d.getHours().toString();
     if (hours.length == 1)
