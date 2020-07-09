@@ -31,7 +31,7 @@ function transponderToExpandedDom(tr:Transponder): Node{
     `
     let buttons = div.querySelectorAll("button")
     buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr))
-    buttons[1].addEventListener("click",(e:Event) => statusTable())
+    buttons[1].addEventListener("click",(e:Event) => removeTransponder(tr))
     return div
 }
 
