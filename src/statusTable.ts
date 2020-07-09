@@ -13,22 +13,37 @@ function transponderToExpandedDom(tr:Transponder): Node{
     div.innerHTML = `
     <div class="row">
       <div class="col-sm">
-        ${studentIdList(tr.status.students)}
+        ${studentIdListToHtml(tr.status.students)}
       </div>
       <div class="col-sm">
-        <b>Dozent: ${randomStudent().name}</b>
+        ${studentIdListToHtml(tr.status.responsible, "Verantwortliche Dozenten:")}
+        ${roomListToHtml(tr.status.rooms)}
       </div>
-      <button type="button" class="btn btn-primary">zurueckgegeben</button>
+      <div class="col-sm">
+      <div class="row">
+      <button type="button" class="row btn btn-primary btn-rounded btn-sm return-btn">zurueckgegeben</button>
+      </div>
+      <div class="row">
+      <button type="button" class="row btn btn-danger btn-rounded btn-sm return-btn">Ausleihe abbrechen</button>
+      </div>
+      </div>
     </div>
     `
-    let button = div.querySelector("button")
-    button.addEventListener("click",(e:Event) => removeTransponder(tr))
+    let buttons = div.querySelectorAll("button")
+    buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr))
+    buttons[1].addEventListener("click",(e:Event) => statusTable())
     return div
 }
 
-function studentIdList(a: Array<Student>):string{
+
+function roomListToHtml(a: Array<Room>, caption: string = "Räume:"):string {
+    let m = a.map( e => "" + e.name)
+    return arrayToHtmlList(m,"Rooms:")
+}
+
+function studentIdListToHtml(a: Array<Student>, caption: string = "Studentent:"):string{
     let m = a.map( e => "" + e.id + " - " + e.name)
-    return arrayToHtmlList(m,"Studenten:")
+    return arrayToHtmlList(m,caption)
 }
 
 function arrayToHtmlList(array: Array<string>, caption: string = "", ordered: boolean = false) {
@@ -53,7 +68,6 @@ function removeTransponder(tr: Transponder){
     tr.lendOut = false
     tr.status = null
     statusTable()
-    //todo popup
 }
 
 // Builds an Array of strings from one Transponder which will represent one table array

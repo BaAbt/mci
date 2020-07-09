@@ -56,9 +56,9 @@ const names = [
         "Mixer",
 ]
 
-function randomStudentList(){
+function randomStudentList(minSize: number = 5, maxSize: number = 10){
     let a : Array<Student>= []
-    for (let i = 0; i < 1 + Math.random() * 10; i++) {
+    for (let i = 0; i < minSize + Math.random() * (maxSize-minSize); i++) {
         a.push(randomStudent())
     }
     return a

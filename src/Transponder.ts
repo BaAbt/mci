@@ -15,10 +15,13 @@ class Transponder {
 class TransponderStatus {
     rooms: Array<Room> = []
     students: Array<Student> = []
+    // this should be its own class, but this will work for now
+    responsible: Array<Student> = []
     originalStart: Date = new Date()
     actualStart: Date = new Date()
     end: Date = new Date()
 }
+
 
 function randomTransponderStatus(): TransponderStatus {
     let s = new TransponderStatus
@@ -31,7 +34,10 @@ function randomTransponderStatus(): TransponderStatus {
     s.end = new Date(end)
 
     s.students = randomStudentList()
-
+    s.responsible = randomStudentList(0,3)
+    let r = roomList[Math.floor(Math.random() * roomList.length)];
+    r.occupied = true
+    s.rooms = [r]
     return s
 }
 

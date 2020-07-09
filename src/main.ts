@@ -1,5 +1,8 @@
 const TrTblID = "statusTable"
 const statusTableID = "statusTable"
+// this needs first
+var roomList = randomRoomList()
+// this needs second
 var transponderList: Array<Transponder> = randomTransponderList()
 
 var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt","Ausleihfrist"]
@@ -26,7 +29,7 @@ function historyTable(){
 }
 
 function roomTable(){
-    let entries: Array<Room> = randomRoomList()
+    let entries: Array<Room> = roomList
     let table: Array<Array<string>> = []
     entries.forEach(element => {
         table.push([

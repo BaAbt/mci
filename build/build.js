@@ -90,9 +90,11 @@ var names = [
     "Alpha",
     "Mixer",
 ];
-function randomStudentList() {
+function randomStudentList(minSize, maxSize) {
+    if (minSize === void 0) { minSize = 5; }
+    if (maxSize === void 0) { maxSize = 10; }
     var a = [];
-    for (var i = 0; i < 1 + Math.random() * 10; i++) {
+    for (var i = 0; i < minSize + Math.random() * (maxSize - minSize); i++) {
         a.push(randomStudent());
     }
     return a;
@@ -212,6 +214,8 @@ var TransponderStatus = /** @class */ (function () {
     function TransponderStatus() {
         this.rooms = [];
         this.students = [];
+        // this should be its own class, but this will work for now
+        this.responsible = [];
         this.originalStart = new Date();
         this.actualStart = new Date();
         this.end = new Date();
@@ -228,6 +232,10 @@ function randomTransponderStatus() {
     s.actualStart = new Date(act);
     s.end = new Date(end);
     s.students = randomStudentList();
+    s.responsible = randomStudentList(0, 3);
+    var r = roomList[Math.floor(Math.random() * roomList.length)];
+    r.occupied = true;
+    s.rooms = [r];
     return s;
 }
 function randomTransponderList() {
@@ -252,6 +260,9 @@ function randomId(length) {
 }
 var TrTblID = "statusTable";
 var statusTableID = "statusTable";
+// this needs first
+var roomList = randomRoomList();
+// this needs second
 var transponderList = randomTransponderList();
 var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt", "Ausleihfrist"];
 var historyTableHeader = ["Begin", "Ende", "Raeume", "Verantwortliche"];
@@ -271,7 +282,7 @@ function historyTable() {
     buildTable(historyTableHeader, entries, []);
 }
 function roomTable() {
-    var entries = randomRoomList();
+    var entries = roomList;
     var table = [];
     entries.forEach(function (element) {
         table.push([
@@ -292,14 +303,21 @@ function statusTableEntries() {
 }
 function transponderToExpandedDom(tr) {
     var div = document.createElement("div");
-    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdList(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        <b>Dozent: " + randomStudent().name + "</b>\n      </div>\n      <button type=\"button\" class=\"btn btn-primary\">zurueckgegeben</button>\n    </div>\n    ";
-    var button = div.querySelector("button");
-    button.addEventListener("click", function (e) { return removeTransponder(tr); });
+    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.responsible, "Verantwortliche Dozenten:") + "\n        " + roomListToHtml(tr.status.rooms) + "\n      </div>\n      <div class=\"col-sm\">\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-primary btn-rounded btn-sm return-btn\">zurueckgegeben</button>\n      </div>\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-danger btn-rounded btn-sm return-btn\">Ausleihe abbrechen</button>\n      </div>\n      </div>\n    </div>\n    ";
+    var buttons = div.querySelectorAll("button");
+    buttons[0].addEventListener("click", function (e) { return removeTransponder(tr); });
+    buttons[1].addEventListener("click", function (e) { return statusTable(); });
     return div;
 }
-function studentIdList(a) {
+function roomListToHtml(a, caption) {
+    if (caption === void 0) { caption = "Räume:"; }
+    var m = a.map(function (e) { return "" + e.name; });
+    return arrayToHtmlList(m, "Rooms:");
+}
+function studentIdListToHtml(a, caption) {
+    if (caption === void 0) { caption = "Studentent:"; }
     var m = a.map(function (e) { return "" + e.id + " - " + e.name; });
-    return arrayToHtmlList(m, "Studenten:");
+    return arrayToHtmlList(m, caption);
 }
 function arrayToHtmlList(array, caption, ordered) {
     if (caption === void 0) { caption = ""; }
@@ -322,7 +340,6 @@ function removeTransponder(tr) {
     tr.lendOut = false;
     tr.status = null;
     statusTable();
-    //todo popup
 }
 // Builds an Array of strings from one Transponder which will represent one table array
 function transponderToStatusEntry(tr) {
