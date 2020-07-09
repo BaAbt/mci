@@ -30,8 +30,8 @@ function transponderToExpandedDom(tr:Transponder): Node{
     </div>
     `
     let buttons = div.querySelectorAll("button")
-    buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr))
-    buttons[1].addEventListener("click",(e:Event) => removeTransponder(tr))
+    buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr, "Transponder " + tr.id + " Zurueckgeben?"))
+    buttons[1].addEventListener("click",(e:Event) => removeTransponder(tr, "Ausleihe wirklich abbrechen?"))
     return div
 }
 
@@ -64,10 +64,15 @@ function arrayToHtmlList(array: Array<string>, caption: string = "", ordered: bo
     return html
 }
 
-function removeTransponder(tr: Transponder){
+function removeTransponder(tr: Transponder, message: string = ""){
+    let confResp = true
+    if (message != "")
+        confResp = confirm(message)
+    if (confResp){
     tr.lendOut = false
     tr.status = null
     statusTable()
+    }
 }
 
 // Builds an Array of strings from one Transponder which will represent one table array
