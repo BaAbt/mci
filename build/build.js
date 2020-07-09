@@ -320,8 +320,8 @@ function transponderToExpandedDom(tr) {
     var div = document.createElement("div");
     div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.responsible, "Verantwortliche Dozenten:") + "\n        " + roomListToHtml(tr.status.rooms) + "\n      </div>\n      <div class=\"col-sm\">\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-primary btn-rounded btn-sm return-btn\">zurueckgegeben</button>\n      </div>\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-danger btn-rounded btn-sm return-btn\">Ausleihe abbrechen</button>\n      </div>\n      </div>\n    </div>\n    ";
     var buttons = div.querySelectorAll("button");
-    buttons[0].addEventListener("click", function (e) { return removeTransponder(tr); });
-    buttons[1].addEventListener("click", function (e) { return statusTable(); });
+    buttons[0].addEventListener("click", function (e) { return removeTransponder(tr, "Transponder " + tr.id + " Zurueckgeben?"); });
+    buttons[1].addEventListener("click", function (e) { return removeTransponder(tr, "Ausleihe wirklich abbrechen?"); });
     return div;
 }
 function roomListToHtml(a, caption) {
@@ -353,10 +353,16 @@ function arrayToHtmlList(array, caption, ordered, cssClass) {
         html += "</ul>";
     return html;
 }
-function removeTransponder(tr) {
-    tr.lendOut = false;
-    tr.status = null;
-    statusTable();
+function removeTransponder(tr, message) {
+    if (message === void 0) { message = ""; }
+    var confResp = true;
+    if (message != "")
+        confResp = confirm(message);
+    if (confResp) {
+        tr.lendOut = false;
+        tr.status = null;
+        statusTable();
+    }
 }
 // Builds an Array of strings from one Transponder which will represent one table array
 function transponderToStatusEntry(tr) {
