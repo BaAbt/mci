@@ -21,7 +21,7 @@ jobs:
     #  installs all the needed stuff
     - name: build site
       run: |
-        cd site/personenlist
+        cd site
         npm install
         tsc
       #  generate the document
