@@ -75,3 +75,127 @@ th{
 .associatedTransponder{
   padding: 2px;
 }
+
+
+
+
+#loan .disabled
+{
+	opacity: 0; filter: alpha(opacity=0);
+
+	pointer-events: none;
+}
+		
+#loan
+{
+	width: 50%;
+}
+
+#loan fieldset
+{
+	border-color: #818181;
+
+	margin: 25px auto;
+
+	padding-top: 25px;
+	padding-left: 25px;
+
+	transition: opacity 0.5s, filter 0.5s;
+}
+
+#loan fieldset legend
+{
+	background-color: #818181;
+	color: #FFFFFF;
+
+	padding: 5px 10px 5px 10px;
+
+	font-size: 14pt;
+
+	text-decoration: underline;
+}
+
+#loan label
+{
+
+}
+
+#loan input[type=text]
+{
+	min-width: 400px;
+
+	margin-bottom: 25px;
+
+	padding: 5px;
+	padding-left: 15px;
+
+	font-size: 12pt;
+}
+
+#loan input[type=radio]
+{
+	width: 25px;
+	height: 25px;
+
+	padding: 5px;
+}
+
+#loan table
+{
+	min-width: 424px;
+
+	margin-bottom: 25px;
+
+	border: 2px solid rgb(129, 129, 129, 0.5);
+	border-collapse: collapse;
+}
+
+#loan table tr:nth-child(even)
+{
+	background-color: rgb(129, 129, 129, 0.5);
+}
+
+#loan table th
+{
+	padding: 5px;
+
+	border-bottom: 2px solid rgb(129, 129, 129, 0.5);
+	border-left: 2px solid rgb(129, 129, 129, 0.5);
+}
+
+#loan table td
+{
+	padding: 10px;
+
+	border-bottom: 2px solid rgb(129, 129, 129, 0.5);
+	border-left: 2px solid rgb(129, 129, 129, 0.5);
+}
+
+#loan button
+{
+	width: 200px;
+	height: 30px;
+
+	margin-bottom: 25px;
+
+	font-size: 12pt;
+}
+
+#loan #sign
+{
+	width: 250px;
+	height: 50px;
+
+	margin-bottom: 25px;
+
+	font-size: 18pt;
+}
+
+#loan #submitButton
+{
+	display: block;
+
+	margin: 25px;
+
+	transition: opacity 0.5s, filter 0.5s;
+}

@@ -12,7 +12,7 @@
   <title>Transponderverleih</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- MDB icon -->
+  <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -36,17 +36,51 @@
     <a href="#" onclick="statusTable()">In Ausleihe</a>
     <a href="#" onclick="historyTable()"> Verlauf </a>
     <a href="#" onclick="roomTable()"> Räume </a>
-    <a href="Vergabe.html"> Vergabe </a>
+    <a href="#" onclick="toggleTable(false)"> Vergabe </a>
   </div>
 
   <!-- Page content -->
   <div class="main">
-    <div class ="row" style="margin-left: 0px;">
-      <input class="btn btn-rounded" type="text" placeholder="Search..."> </input>
-      <button class="btn btn-rounded">Neuer Eintrag</button>
+    <div id="tableView">
+      <div class="row" style="margin-left: 0px;">
+        <input class="btn btn-rounded" type="text" placeholder="Search..."> </input>
+        <button class="btn btn-rounded">Neuer Eintrag</button>
+      </div>
+      <table id="DynamicTable" , class="table table-hover">
+      </table>
     </div>
-    <table id="DynamicTable" , class="table table-hover">
-    </table>
+
+    <form id="loan">
+      <fieldset>
+        <legend>Student</legend>
+        <label for="name">Vor- und Nachname:</label>
+        <br />
+        <input id="name" type="text" required="required" />
+        <br />
+        <label for="number">Matrikelnummer (8stellig):</label>
+        <br />
+        <input id="number" type="text" maxlength="8" required="required" />
+        <br />
+        <button type="button" onclick="checkInputs();">Daten einloggen</button>
+      </fieldset>
+      <fieldset id="permission" class="disabled">
+        <legend>Auswahl des Transponders</legend>
+        <table style="border: 0pt;">
+          <tr>
+            <th></th>
+            <th>TransponderID</th>
+            <th>Raum</th>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset id="signature" class="disabled">
+        <legend>Unterschrift</legend>
+        <button id="sign" type="button"
+          onclick="this.innerHTML = 'Unterschrieben'; document.getElementById('submit').removeAttribute('disabled'); document.getElementById('submit').classList.remove('disabled');"
+          required="required">Unterschreiben...</button>
+      </fieldset>
+      <button id="submit" class="disabled" type="submit" disabled="disabled">Ausleihen</button>
+    </form>
   </div>
 
   <!-- Our script -->

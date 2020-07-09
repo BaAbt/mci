@@ -47,4 +47,15 @@ function roomTable(){
 }
 
 
+function toggleTable(showTable: boolean){
+    let tableView = document.getElementById("tableView")
+    let loanView = document.getElementById("loan")
+    if (showTable){
+        tableView.style.display= "block"
+        loanView.style.display= "none"
+    }else{
+        tableView.style.display= "none"
+        loanView.style.display= "block"
+    }
+}
 
