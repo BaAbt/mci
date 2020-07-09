@@ -69,7 +69,13 @@ function randomRoomList() {
 }
 function randomRoom() {
     var roomNames = ["PC-Pool", "Labor", "Seminarraum", "Abstellraum", "Hexenkammer", "Kammer des Schreckens"];
-    return new Room((Math.random() * 4 + 1).toString(), roomNames[Math.floor(Math.random() * roomNames.length)], false);
+    return new Room(randomRoomNumber(), roomNames[Math.floor(Math.random() * roomNames.length)], false);
+}
+function randomRoomNumber() {
+    var firstDigit = (Math.random() * 4 + 1).toString().charAt(0);
+    var secondPart = (Math.random() * 500 + 100).toString().split(".")[0];
+    var result = firstDigit + "." + secondPart;
+    return result;
 }
 var names = [
     "Fives",
