@@ -289,15 +289,21 @@ function historyTable() {
 }
 function roomTable() {
     var entries = roomList;
-    var table = [];
-    entries.forEach(function (element) {
-        table.push([
-            element.nr,
-            element.name,
-            element.occupied.toString()
-        ]);
-    });
-    buildTable(roomsTableHeader, table, []);
+    var shrinkedEntries = entries.map(function (r) { return roomToShrinkedEntry(r); });
+    var expandedEntries = entries.map(function (r) { return roomToExpandedDom(r); });
+    buildTable(roomsTableHeader, shrinkedEntries, expandedEntries);
+}
+function roomToExpandedDom(r) {
+    var div = document.createElement("div");
+    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        html fuer erste collum\n      </div>\n      <div class=\"col-sm\">\n       html fuer zweite\n      </div>\n    </div>\n    ";
+    return div;
+}
+function roomToShrinkedEntry(r) {
+    return [
+        r.nr,
+        r.name,
+        r.occupied.toString()
+    ];
 }
 // filters and sorts a list of all currently lend out transponders
 function statusTableEntries() {
