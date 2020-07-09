@@ -24,7 +24,7 @@ jobs:
         cd site
         npm install
         tsc
-        touch site/.nojekyll
+        touch .nojekyll
       #  generate the document
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@releases/v3
