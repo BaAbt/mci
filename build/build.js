@@ -363,7 +363,7 @@ function transponderToExpandedDom(tr) {
 }
 function roomListToHtml(a, caption) {
     if (caption === void 0) { caption = "Räume:"; }
-    var m = a.map(function (e) { return "" + e.name; });
+    var m = a.map(function (e) { return e.nr + ": " + e.name; });
     return arrayToHtmlList(m, "Rooms:");
 }
 function studentIdListToHtml(a, caption) {

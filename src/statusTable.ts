@@ -37,7 +37,7 @@ function transponderToExpandedDom(tr:Transponder): Node{
 
 
 function roomListToHtml(a: Array<Room>, caption: string = "Räume:"):string {
-    let m = a.map( e => "" + e.name)
+    let m = a.map( e => e.nr + ": " + e.name)
     return arrayToHtmlList(m,"Rooms:")
 }
 
