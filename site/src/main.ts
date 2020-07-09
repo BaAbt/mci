@@ -30,14 +30,9 @@ function historyTable(){
 
 function roomTable(){
     let entries: Array<Room> = roomList
-    let table: Array<Array<string>> = []
-    entries.forEach(element => {
-        table.push([
-            element.nr,
-            element.name,
-            element.occupied.toString()
-        ])
-    });
-    buildTable(roomsTableHeader, table,[])
+    let shrinkedEntries = entries.map(r => roomToShrinkedEntry(r))
+    let expandedEntries = entries.map(r => roomToExpandedDom(r))
+    buildTable(roomsTableHeader, shrinkedEntries,expandedEntries)
 }
+
 
