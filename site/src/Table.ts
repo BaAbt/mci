@@ -24,9 +24,9 @@ function buildTable(headerCells: Array<string>, rows: Array<TableRow>){
     })
 }
 
-function cleanTableBody() {
-   let b = table.tBodies[0]
-    if (b == null) b = table.createTBody()
+function cleanTableBody(t: HTMLTableElement = table) {
+   let b = t.tBodies[0]
+    if (b == null) b = t.createTBody()
     let size = b.rows.length
     for (let i = 0; i < size; i++) {
         b.deleteRow(-1)
