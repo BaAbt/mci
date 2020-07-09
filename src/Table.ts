@@ -15,6 +15,7 @@ class TableRow{
 
 function buildTable(headerCells: Array<string>, rows: Array<TableRow>){
     setTableHead(headerCells)
+    toggleTable(true)
     cleanTableBody()
     rows.forEach(it => {
         addShrinkedTableEntry(it)

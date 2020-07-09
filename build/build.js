@@ -130,6 +130,7 @@ var TableRow = /** @class */ (function () {
 }());
 function buildTable(headerCells, rows) {
     setTableHead(headerCells);
+    toggleTable(true);
     cleanTableBody();
     rows.forEach(function (it) {
         addShrinkedTableEntry(it);
@@ -291,6 +292,49 @@ function randomId(length) {
     }
     return result;
 }
+function checkInputs() {
+    var name = document.getElementById("name");
+    var number = document.getElementById("name");
+    if ((name.value != "") && (number.value != "")) {
+        name.setAttribute("readonly", "readonly");
+        number.setAttribute("readonly", "readonly");
+        document.getElementById("permission").classList.remove("disabled");
+        fillPermissionTable(Math.ceil(Math.random() * 3));
+    }
+    else if (name.value == "") {
+        name.focus();
+    }
+    else {
+        number.focus();
+    }
+}
+function fillPermissionTable(rows) {
+    var transponderList = randomTransponderList(rows).map(function (element) { return ("#" + element.id); });
+    for (var i = 0; i < rows; i++) {
+        var tr = document.createElement("tr");
+        var roomList_1 = randomRoomList(Math.ceil(Math.random() * 4)).map(function (element) { return (element.nr + " (" + element.name + ")"); });
+        for (var j = 0; j < 3; j++) {
+            var td = document.createElement("td");
+            switch (j) {
+                case 0:
+                    var input = document.createElement("input");
+                    input.setAttribute("type", "radio");
+                    input.setAttribute("name", "permission");
+                    input.setAttribute("value", i.toString());
+                    input.setAttribute("onclick", "document.getElementById('signature').classList.remove('disabled');");
+                    td.appendChild(input);
+                    break;
+                case 1:
+                    td.innerHTML = transponderList[i];
+                    break;
+                case 2:
+                    td.innerHTML = roomList_1.join(", ");
+            }
+            tr.appendChild(td);
+        }
+        document.getElementById("permissionTable");
+    }
+}
 var TrTblID = "statusTable";
 var statusTableID = "statusTable";
 // this needs first
@@ -330,6 +374,18 @@ function roomTable() {
         return row;
     });
     buildTable(roomsTableHeader, rows);
+}
+function toggleTable(showTable) {
+    var tableView = document.getElementById("tableView");
+    var loanView = document.getElementById("loan");
+    if (showTable) {
+        tableView.style.display = "block";
+        loanView.style.display = "none";
+    }
+    else {
+        tableView.style.display = "none";
+        loanView.style.display = "block";
+    }
 }
 function roomToExpandedDom(r) {
     var div = document.createElement("div");
