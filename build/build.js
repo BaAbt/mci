@@ -112,22 +112,29 @@ function randomStudent() {
     return s;
 }
 // All functions that mess with the Table
-var ExpandedTableEntry = /** @class */ (function () {
-    function ExpandedTableEntry() {
-        this.firstColSpan = 2;
-        this.secondColspan = 2;
+var EntryLevel;
+// All functions that mess with the Table
+(function (EntryLevel) {
+    EntryLevel["Danger"] = "danger-color";
+    EntryLevel["Warning"] = "warning-color";
+    EntryLevel["Info"] = "";
+})(EntryLevel || (EntryLevel = {}));
+var TableRow = /** @class */ (function () {
+    function TableRow() {
+        this.shrinkedEntries = [];
+        this.expandedEntry = null;
+        this.level = EntryLevel.Info;
     }
-    return ExpandedTableEntry;
+    return TableRow;
 }());
-function buildTable(headerCells, rowsCells, expandedTableEntries) {
-    if (expandedTableEntries === void 0) { expandedTableEntries = []; }
+function buildTable(headerCells, rows) {
     setTableHead(headerCells);
     cleanTableBody();
-    for (var i = 0; i < rowsCells.length; i++) {
-        addShrinkedTableEntry(rowsCells[i]);
-        if (expandedTableEntries[i] != null)
-            addExpandedTableEntry(expandedTableEntries[i], rowsCells[i].length);
-    }
+    rows.forEach(function (it) {
+        addShrinkedTableEntry(it.shrinkedEntries);
+        if (it.expandedEntry != null)
+            addExpandedTableEntry(it.expandedEntry, it.shrinkedEntries.length);
+    });
 }
 function cleanTableBody() {
     var b = table.tBodies[0];
@@ -280,19 +287,27 @@ statusTable();
 // creates the status table
 function statusTable() {
     var entries = statusTableEntries();
-    var shrinkedEntries = entries.map(function (tr) { return transponderToStatusEntry(tr); });
-    var expandedEntries = entries.map(function (tr) { return transponderToExpandedDom(tr); });
-    buildTable(statusTableHeader, shrinkedEntries, expandedEntries);
+    var rows = entries.map(function (tr) {
+        var r = new TableRow();
+        r.shrinkedEntries = transponderToStatusEntry(tr);
+        r.expandedEntry = transponderToExpandedDom(tr);
+        return r;
+    });
+    buildTable(statusTableHeader, rows);
 }
 function historyTable() {
     var entries = [["not required", " will be added later"]]; // todo filter and create entries
-    buildTable(historyTableHeader, entries, []);
+    buildTable(historyTableHeader, []);
 }
 function roomTable() {
     var entries = roomList;
-    var shrinkedEntries = entries.map(function (r) { return roomToShrinkedEntry(r); });
-    var expandedEntries = entries.map(function (r) { return roomToExpandedDom(r); });
-    buildTable(roomsTableHeader, shrinkedEntries, expandedEntries);
+    var rows = entries.map(function (room) {
+        var row = new TableRow();
+        row.shrinkedEntries = roomToShrinkedEntry(room);
+        row.expandedEntry = roomToExpandedDom(room);
+        return row;
+    });
+    buildTable(roomsTableHeader, rows);
 }
 function roomToExpandedDom(r) {
     var div = document.createElement("div");

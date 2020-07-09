@@ -17,22 +17,31 @@ statusTable()
 // creates the status table
 function statusTable() {
     let entries = statusTableEntries()
-    let shrinkedEntries = entries.map(tr => transponderToStatusEntry(tr))
-    let expandedEntries = entries.map(tr => transponderToExpandedDom(tr))
-    buildTable(statusTableHeader, shrinkedEntries,expandedEntries)
+    let rows = entries.map(tr => {
+        let r = new TableRow()
+        r.shrinkedEntries = transponderToStatusEntry(tr)
+        r.expandedEntry = transponderToExpandedDom(tr)
+        return r
+    })
+    buildTable(statusTableHeader, rows)
 }
 
 
 function historyTable(){
     let entries: Array<Array<string>> = [["not required"," will be added later"]] // todo filter and create entries
-    buildTable(historyTableHeader, entries, [])
+    buildTable(historyTableHeader, [])
 }
 
 function roomTable(){
     let entries: Array<Room> = roomList
-    let shrinkedEntries = entries.map(r => roomToShrinkedEntry(r))
-    let expandedEntries = entries.map(r => roomToExpandedDom(r))
-    buildTable(roomsTableHeader, shrinkedEntries,expandedEntries)
+    let rows = entries.map(room => {
+        let row = new TableRow()
+        row.shrinkedEntries = roomToShrinkedEntry(room)
+        row.expandedEntry = roomToExpandedDom(room)
+        return row
+    })
+    buildTable(roomsTableHeader, rows)
 }
+
 
 
