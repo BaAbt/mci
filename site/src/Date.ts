@@ -23,7 +23,7 @@ function fullDateToString(d: Date): string {
     } else if (now.getDay() - d.getDay() == 1) {
         day = "gestern"
     } else {
-        day = d.getDay + "." + d.getMonth + "." + d.getFullYear
+        day = d.getDay() + "." + d.getMonth() + "." + d.getFullYear()
     }
 
     let hours = d.getHours().toString()
