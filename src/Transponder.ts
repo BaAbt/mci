@@ -43,9 +43,9 @@ function randomTransponderStatus(): TransponderStatus {
 
 
 
-function randomTransponderList(): Array<Transponder> {
+function randomTransponderList(n: Number = 100): Array<Transponder> {
     let a = Array<Transponder>()
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < n; i++) {
         a.push(randomTransponder())
     }
     return a

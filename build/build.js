@@ -35,20 +35,6 @@ function fullDateToString(d) {
     var time = hours + ":" + minutes;
     return day + " - " + time;
 }
-var Student = /** @class */ (function () {
-    function Student() {
-        this.id = 0;
-        this.name = "";
-        this.course = Course.AI;
-    }
-    return Student;
-}());
-var Course;
-(function (Course) {
-    Course[Course["AI"] = 0] = "AI";
-    Course[Course["MI"] = 1] = "MI";
-    Course[Course["WI"] = 2] = "WI";
-})(Course || (Course = {}));
 var Room = /** @class */ (function () {
     function Room(number, name, occupied) {
         this.nr = "";
@@ -77,6 +63,20 @@ function randomRoomNumber() {
     var result = firstDigit + "." + secondPart;
     return result;
 }
+var Student = /** @class */ (function () {
+    function Student() {
+        this.id = 0;
+        this.name = "";
+        this.course = Course.AI;
+    }
+    return Student;
+}());
+var Course;
+(function (Course) {
+    Course[Course["AI"] = 0] = "AI";
+    Course[Course["MI"] = 1] = "MI";
+    Course[Course["WI"] = 2] = "WI";
+})(Course || (Course = {}));
 var names = [
     "Fives",
     "Echo",
@@ -244,9 +244,10 @@ function randomTransponderStatus() {
     s.rooms = [r];
     return s;
 }
-function randomTransponderList() {
+function randomTransponderList(n) {
+    if (n === void 0) { n = 100; }
     var a = Array();
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < n; i++) {
         a.push(randomTransponder());
     }
     return a;
@@ -295,7 +296,9 @@ function roomTable() {
 }
 function roomToExpandedDom(r) {
     var div = document.createElement("div");
-    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        html fuer erste collum\n      </div>\n      <div class=\"col-sm\">\n       html fuer zweite\n      </div>\n    </div>\n    ";
+    var transponders = randomTransponderList(6);
+    var transponderIds = transponders.map(function (element) { return "#" + element.id; });
+    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">  \n      <p style=\"margin-top:10px; margin-bottom:5px; margin-left:11px;\"> Assoziierte Transponder </p>\n      " + arrayToHtmlList(transponderIds, "", true, "associatedTransponder") + "\n      </div>\n      <div class=\"col-sm\">\n      </div>\n    </div>\n    ";
     return div;
 }
 function roomToShrinkedEntry(r) {
@@ -331,17 +334,19 @@ function studentIdListToHtml(a, caption) {
     var m = a.map(function (e) { return "" + e.id + " - " + e.name; });
     return arrayToHtmlList(m, caption);
 }
-function arrayToHtmlList(array, caption, ordered) {
+function arrayToHtmlList(array, caption, ordered, cssClass) {
     if (caption === void 0) { caption = ""; }
     if (ordered === void 0) { ordered = false; }
+    if (cssClass === void 0) { cssClass = ""; }
     var html = "";
+    cssClass = '"' + cssClass + '"';
     if (caption != "")
         html += "<b>" + caption + "</b>";
     if (ordered)
         html += "<ol>";
     else
         html += "<ul>";
-    html += array.map(function (a) { return "<li>" + a + "</li>"; }).join("");
+    html += array.map(function (a) { return "<li class=" + cssClass + ">" + a + "</li>"; }).join("");
     if (ordered)
         html += "</ol>";
     else
