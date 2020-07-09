@@ -64,6 +64,10 @@ tr.hide-table-padding td {
 .return-btn
 {
   max-height: 50px;
-  margin: top;
-    padding: 10px;
+  min-width: 200px;
+  float: right;
+}
+
+th{
+    font-weight: heavy;
 }
