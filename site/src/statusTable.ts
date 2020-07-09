@@ -46,17 +46,16 @@ function studentIdListToHtml(a: Array<Student>, caption: string = "Studentent:")
     return arrayToHtmlList(m,caption)
 }
 
-function arrayToHtmlList(array: Array<string>, caption: string = "", ordered: boolean = false) {
+function arrayToHtmlList(array: Array<string>, caption: string = "", ordered: boolean = false, cssClass: string ="") {
     let html = ""
+    cssClass = '"'+cssClass+'"'
     if (caption != "")
         html += "<b>" + caption + "</b>"
     if (ordered)
         html += "<ol>"
     else
         html += "<ul>"
-
-    html += array.map(a => "<li>" + a + "</li>").join("")
-
+        html += array.map(a => "<li class="+cssClass+">" + a + "</li>").join("")
     if (ordered)
         html += "</ol>"
     else
