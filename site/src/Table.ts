@@ -1,20 +1,26 @@
 // All functions that mess with the Table
 
-class ExpandedTableEntry{
-    firstEntry: string
-    secondEntry: string
-    firstColSpan: number = 2
-    secondColspan: number = 2
+enum EntryLevel{
+    Danger = "danger-color",
+    Warning = "warning-color",
+    Info = ""
 }
 
-function buildTable(headerCells: Array<string>, rowsCells: Array<Array<string>>, expandedTableEntries: Array<Node> = []){
+class TableRow{
+    shrinkedEntries: Array<string> = []
+    expandedEntry: Node = null
+    level:  EntryLevel = EntryLevel.Info
+}
+
+
+function buildTable(headerCells: Array<string>, rows: Array<TableRow>){
     setTableHead(headerCells)
     cleanTableBody()
-    for (let i = 0; i < rowsCells.length; i++) {
-        addShrinkedTableEntry(rowsCells[i])
-        if (expandedTableEntries[i] != null)
-            addExpandedTableEntry(expandedTableEntries[i],rowsCells[i].length)
-    }
+    rows.forEach(it => {
+        addShrinkedTableEntry(it.shrinkedEntries)
+        if (it.expandedEntry != null)
+            addExpandedTableEntry(it.expandedEntry,it.shrinkedEntries.length)
+    })
 }
 
 function cleanTableBody() {
