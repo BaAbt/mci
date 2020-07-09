@@ -46,9 +46,10 @@ var Room = /** @class */ (function () {
     }
     return Room;
 }());
-function randomRoomList() {
+function randomRoomList(n) {
+    if (n === void 0) { n = 100; }
     var result = [];
-    for (var index = 0; index < 100; index++) {
+    for (var index = 0; index < n; index++) {
         result.push(randomRoom());
     }
     return result;

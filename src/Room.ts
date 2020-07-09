@@ -9,9 +9,9 @@ class Room {
     }
 }
 
-function randomRoomList(): Array<Room>{
+function randomRoomList(n: Number = 100): Array<Room>{
     let result: Array<Room> = []
-    for (let index = 0; index < 100; index++) {
+    for (let index = 0; index < n; index++) {
         result.push(randomRoom())
     }
     return result
