@@ -71,3 +71,7 @@ tr.hide-table-padding td {
 th{
     font-weight: heavy;
 }
+
+.associatedTransponder{
+  padding: 2px;
+}
