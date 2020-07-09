@@ -18,7 +18,7 @@ function transponderToExpandedDom(tr:Transponder): Node{
       <div class="col-sm">
         <b>Dozent: ${randomStudent().name}</b>
       </div>
-      <button type="button" class="btn btn-primary">zurueckgegeben</button>
+      <button type="button" class="btn btn-primary btn-rounded btn-sm return-btn">zurueckgegeben</button>
     </div>
     `
     let button = div.querySelector("button")
@@ -53,7 +53,6 @@ function removeTransponder(tr: Transponder){
     tr.lendOut = false
     tr.status = null
     statusTable()
-    //todo popup
 }
 
 // Builds an Array of strings from one Transponder which will represent one table array

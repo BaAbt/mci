@@ -60,3 +60,10 @@ tr.hide-table-padding td {
 {
   content: '+';
 }
+
+.return-btn
+{
+  max-height: 50px;
+  margin: top;
+    padding: 10px;
+}
