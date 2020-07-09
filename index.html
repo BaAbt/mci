@@ -61,11 +61,11 @@
         <br />
         <input id="number" type="text" maxlength="8" required="required" />
         <br />
-        <button type="button" onclick="checkInputs();">Daten einloggen</button>
+        <button id="login" type="button" onclick="checkInputs();">Daten einloggen</button>
       </fieldset>
       <fieldset id="permission" class="disabled">
         <legend>Auswahl des Transponders</legend>
-        <table style="border: 0pt;">
+        <table id="permissionTable" border="0">
           <tr>
             <th></th>
             <th>TransponderID</th>
@@ -76,10 +76,10 @@
       <fieldset id="signature" class="disabled">
         <legend>Unterschrift</legend>
         <button id="sign" type="button"
-          onclick="this.innerHTML = 'Unterschrieben'; document.getElementById('submit').removeAttribute('disabled'); document.getElementById('submit').classList.remove('disabled');"
+          onclick="this.innerHTML = 'Unterschrieben'; document.getElementById('submitButton').removeAttribute('disabled'); document.getElementById('submitButton').classList.remove('disabled');"
           required="required">Unterschreiben...</button>
       </fieldset>
-      <button id="submit" class="disabled" type="submit" disabled="disabled">Ausleihen</button>
+      <button id="submitButton" class="disabled" type="button" disabled="disabled" onclick="submitLoanForm();">Ausleihen</button>
     </form>
   </div>
 
