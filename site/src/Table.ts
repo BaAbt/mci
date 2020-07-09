@@ -1,6 +1,6 @@
 // All functions that mess with the Table
 
-enum EntryLevel{
+enum RowLevel{
     Danger = "danger-color",
     Warning = "warning-color",
     Info = ""
@@ -9,7 +9,7 @@ enum EntryLevel{
 class TableRow{
     shrinkedEntries: Array<string> = []
     expandedEntry: Node = null
-    level:  EntryLevel = EntryLevel.Info
+    level:  RowLevel = RowLevel.Info
 }
 
 
@@ -17,9 +17,9 @@ function buildTable(headerCells: Array<string>, rows: Array<TableRow>){
     setTableHead(headerCells)
     cleanTableBody()
     rows.forEach(it => {
-        addShrinkedTableEntry(it.shrinkedEntries)
+        addShrinkedTableEntry(it)
         if (it.expandedEntry != null)
-            addExpandedTableEntry(it.expandedEntry,it.shrinkedEntries.length)
+            addExpandedTableEntry(it)
     })
 }
 
@@ -51,8 +51,9 @@ function setTableHead(cells: Array<string>){
 }
 
 
-function addShrinkedTableEntry(cells: Array<string>){
-    let row = appendShrinkedTableRow()
+function addShrinkedTableEntry(tableRow: TableRow){
+    let cells = tableRow.shrinkedEntries
+    let row = appendShrinkedTableRow(tableRow.level)
     // expand button at the start Button
     let cell = row.insertCell(-1)
     cell.classList.add("expand-button")
@@ -64,9 +65,18 @@ function addShrinkedTableEntry(cells: Array<string>){
 }
 
 // see https://mdbootstrap.com/docs/jquery/tables/basic/, https://mdbootstrap.com/snippets/jquery/cam/979615
-function appendShrinkedTableRow():HTMLTableRowElement {
+function appendShrinkedTableRow(level: RowLevel = RowLevel.Info):HTMLTableRowElement {
     let newRow = table.tBodies[0].insertRow(-1);
-    newRow.classList.add("accordion-toggle", "collapsed")
+    let classes = ["accordion-toggle", "collapsed"]
+
+    if(level == RowLevel.Warning){
+        classes.push("warning-color-dark", "text-white")
+    }
+    if(level == RowLevel.Danger){
+        classes.push("danger-color-dark","text-white")
+    }
+
+    newRow.classList.add(...classes)
     let attributes = [
         ["data-toggle", "collapse"],
         ["href", "#collapse" + newRow.rowIndex],
@@ -86,18 +96,27 @@ function appendTextCell(row: HTMLTableRowElement, t:string){
     return cell
 }
 
-function addExpandedTableEntry(expandedTableEntry: Node, colspan: number){
+function addExpandedTableEntry(tableRow: TableRow){
     let i = table.tBodies[0].rows.length
     let row = appendExpandedTableRow(table)
     // we can do this since we always add a expanded table entry after a normal one
     // I know this is hacky, but it works and i dont wanne mess with it
+
+    let classes = ["collapse"]
+
+    if(tableRow.level == RowLevel.Warning){
+        classes.push("warning-color", "text-white")
+    }
+    if(tableRow.level == RowLevel.Danger){
+        classes.push("danger-color","text-white")
+    }
+
+    row.classList.add(...classes)
     row.id = "collapse"  + i
     row.insertCell(-1)
-    row.classList.add("collapse")
     let cell = row.insertCell(-1)
-    cell.colSpan = colspan
-
-    cell.appendChild(expandedTableEntry)
+    cell.colSpan = tableRow.shrinkedEntries.length
+    cell.appendChild(tableRow.expandedEntry)
 }
 
 

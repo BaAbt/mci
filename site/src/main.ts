@@ -5,7 +5,7 @@ var roomList = randomRoomList()
 // this needs second
 var transponderList: Array<Transponder> = randomTransponderList()
 
-var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihyeitpunkt","Ausleihfrist"]
+var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt","Ausleihfrist"]
 var historyTableHeader: Array<string> = ["Begin", "Ende", "Raeume", "Verantwortliche"]
 var roomsTableHeader: Array<string> = ["Nummer", "Bezeichnung", "Belegt"]
 
@@ -21,6 +21,9 @@ function statusTable() {
         let r = new TableRow()
         r.shrinkedEntries = transponderToStatusEntry(tr)
         r.expandedEntry = transponderToExpandedDom(tr)
+        if(tr.status.end.getTime() <= new Date().getTime()){
+            r.level = RowLevel.Warning
+        }
         return r
     })
     buildTable(statusTableHeader, rows)
