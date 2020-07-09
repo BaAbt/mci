@@ -21,7 +21,7 @@ jobs:
     #  installs all the needed stuff
     - name: build site
       run: |
-        cd site/personenlist
+        cd site
         npm install
         tsc
       #  generate the document
@@ -30,4 +30,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}.
         BRANCH: gh-pages
-        FOLDER: site/personenlist
+        FOLDER: site

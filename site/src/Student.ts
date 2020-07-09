@@ -31,7 +31,6 @@ function randomRoomList(): Array<Room>{
 }
 function randomRoom(): Room{
     let roomNames: Array<string> = ["PC-Pool","Labor","Seminarraum","Abstellraum","Hexenkammer","Kammer des Schreckens"]
-
     return new Room(randomRoomNumber(),roomNames[Math.floor(Math.random()*roomNames.length)], false)
 }
 
@@ -40,4 +39,39 @@ function randomRoomNumber(): string{
     let secondPart: string = (Math.random()*500+100).toString().split(".")[0]
     let result = firstDigit+"."+secondPart
     return result
+}
+
+
+const names = [
+        "Fives",
+        "Echo",
+        "Coric",
+        "Appo",
+        "Fox",
+        "Retired clone trooper",
+        "Denal",
+        "Kix",
+        "Jesse",
+        "Dogma",
+        "Hardcase",
+        "Tup",
+        "Kano",
+        "Boomer",
+        "Sterling",
+        "Alpha",
+        "Mixer",
+]
+
+function randomStudentList(minSize: number = 5, maxSize: number = 10){
+    let a : Array<Student>= []
+    for (let i = 0; i < minSize + Math.random() * (maxSize-minSize); i++) {
+        a.push(randomStudent())
+    }
+    return a
+}
+function randomStudent(): Student{
+    let s = new Student()
+    s.name = names[Math.floor(Math.random() * names.length)]
+    s.id = Math.round((Math.random() * 1000000))
+    return s
 }
