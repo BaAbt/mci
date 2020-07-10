@@ -968,7 +968,7 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+           |   Confirm buttom |   Um Benutzung stabiler und sicherer zu gestalten
            |                         |                              
            |                         |                              
            |                         |                              
@@ -976,7 +976,52 @@ __**Changelog**__
 
 __***\[Artefakt/e\]***__
 
+
+Git Repo unter https://baabt.github.io/mci/index.html#
+Dort sind Anweisungen zum Bau und Link zur Webseite zu finden.
+
 __***\[Erläuterung\]***__
+
+Dies ist leider nicht so ausfuehrlich, wie wir es gerne haetten, sollte allerdings alle Punkte erfuellen.
+Man sollte vielleicht erwaehnen das vor dieser Aufgabe keiner aus dem Team Erfahrung mit Frontendentwicklung hatte und die Klausuren sich annaeherten.
+Jetzt wo die Entschuldigungen aus dem Weg sind hier die Erlaeuterungen:
+
+__Allgemein:__
+
+- Die Anwendungen wurde mit Typescript und ohne Frameworks entwickelt.
+- Sie Arbeitet bei In Ausleihe, Raeume und Verlauf mit einem Internen Array
+- Sie arbeitet intern auf einer in der Typescript verwalteten liste
+
+__In Ausleihe:__
+
+- Anpassen der Informationen in der collapsed Zeile auf Relevantere Informationen
+- Die Ausleihfrist wurde weiterhin uebernommen. Diese ist bei unseren System (Transponderraumzuweisung bei Ausleihe) noetig, um Berechtigungen wieder freizugeben und blockieren. Dadurch hilft sie das ganze System sicherer zu machen.
+- Weiterhin warn die App, wenn die Frist eines Transponder abgelaufen ist um das ganze System noch sicherer zu sein
+- Die Liste wird nach der Frist sortiert, da diese am wahrscheinlichsten sind um sie wieder zurueckzugeben.
+- Bei Zurueckgabe wird nun ein Confirm Meldung eingefuehrt, die das System fehlerressistenter macht
+- Das AusklappenSymbol wurde durch ein plus Symbol ersetzt und ein hover effekt wurde eingefuehrt, um die Anklickbarkeit besser erkaehntlich zu machen.
+- Das Ausklappen wurde weiterhin uebernommen um clutter zu vermeiden
+- Die Hoehe der Zeilen wurde reduziert, um mehr Informationen auf den Bildschirm zu packen. Dies ist auf nen vernuenftigen Bildschirm ohne Probleme moeglich
+
+__Verlauf__
+
+- nur der Vollstaendigkeit hier, wurde nicht gefordert, waere aber sehr einfach zu implementieren
+
+__Raumliste:__
+
+Die Raumliste zeigt alle Räume, ihre Bezeichnung und ob sie belegt sind, an. Bei einem Klick auf einen Raum werden alle assoziierten Transponder angezeigt. Diese werden nicht schon in der Übersicht angezeigt um mehrere Räume gleichzeitig auf dem Bildschirm darzustellen.
+
+__Vergabe:__
+
+- Intern geht die Ausleihe an Gruppen von Studenten, welche dann ueber einen Zeitraum Zugriff auf Raeume haben.
+Wir haben bewusst die Gruppe von der Ausleihe wegabstrahiert um die Ausleihe schneller und einfacher zu gestalten.
+Die Gruppe wird dann bei hinzufuegen automatisch verwendet.
+- Die Liste zur Auswahl des Tranponders wird nur nach den Dateneingabe erzeugt, da das System dieses dynamisch anhand der freihen Transponder und Raeume erstellt, 
+welche auf die Berechtigungen des Studenten passen.
+- Die Raumberechtigungen die bei der Auswahl des Transponders angezeigt werden, sind jene, __fuer die diese Person an den aktuellen Tag berechtigt ist__.
+Dadurch entfaellt die eingabe des Limits. Meistens wird hier in tatsaechlichen fall nur ein Tranpsonder angezeigt werden. 
+- Es ist keine Logik von Pruefen des Students. Dies wuerde vom System der TH uebernommen werden. 
+- Die Unterschrift wird im Prototyp ueber einen simplen Button geloest. Die Simulation des Drawpads entfaellt
 
 ### Review
 
@@ -1013,6 +1058,178 @@ __**Changelog**__
            |                         |                              
 
 __***\[Artefakt/e\]***__
+
+
+**Testplan  MCI**
+
+<span style="text-decoration:underline;">Zweck, Ziele</span>
+
+ 
+
+Dieses Dokument dient dazu, einen Testplan für die Transponder Vergabe an der Th-Köln zu beschreiben.
+
+Das Ziel von dem Usability-Tests ist es, potenzielle Probleme im Design zu finden, welche die Effizienz, Produktivität und Zufriedenheit des Endnutzers negativ beeinträchtigen und verbessert werden sollten.
+
+ 
+
+<span style="text-decoration:underline;">Beschreibung des Produkts/Systems</span>
+
+Unser Produkt soll das Ausleihen eines Transponders an der TH-Köln digitalisieren und vereinfachen.
+
+Der Fokus liegt dabei auf der Ausleihe und Rückgabe der Transponder, welche sich zwischen Student und Pförtner abspielen. Wenn ein Student einen Transponder ausleihen möchte, geht dieser zur Pforte, zeigt seine MultiCa vor und sagt dem Pförtner die Nummer des gewünschten Transponders. Die Daten werden im Folgenden von unserem Produkt geprüft.  
+
+Der Pförtner legt die MultiCa entweder (falls vorhanden) auf einen NFC-Reader, oder überträgt die Daten manuell ins System ein. Anschließend wählt er aus den verfügbaren Transpondern den richtigen aus (es werden nur die Transponder angezeigt für die der Student auch eine Berechtigung hat).
+
+Am Ende er lässt sich die Eingabe mit einer Unterschrift auf einem entsprechenden Zeichenpad bestätigen.
+
+Um einen Transponder zurückzugeben muss der Student ihn lediglich an der Pforte abgeben oder in die Rückgabe-Box werfen. Der Pförtner kann dann den Transponder im System Suchen und auf zurückgegeben drücken, bestätigen und damit den Transponder als zurückgegeben markieren.
+
+ 
+
+<span style="text-decoration:underline;">Testpersonen (Eigenschaften, Anzahl)</span>
+
+<span style="text-decoration:underline;"> </span>
+
+Als Testpersonen wird in diesem Fall der Pförtner benötigt. Dieser ist 25-65 Jahre alt und arbeitet hauptberuflich als Pförtner, weswegen er auch schon einige Erfahrung mit ähnlicher Software oder der Vergabe von Schlüsseln haben.
+
+Um den Großteil der Fehler in unserem System zu finden, benötigen wir 6 bis 9 Personen, die den Pförtner in unserem Usability Test spielen.
+
+Auch einige Studenten werden benötigt, um die Authentifizierung mit einer MultiCa zu testen. Des Weiteren können die Studenten gut beurteilen, ob der Prozess schnell genug abläuft.
+
+ 
+
+<span style="text-decoration:underline;">Testaufgaben (Gesamt Szenario und Testszenarien)</span>
+
+Gesamt Szenario:
+
+
+<table>
+  <tr>
+   <td>User Task
+   </td>
+   <td>Testszenario
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder verleihen und entziehen
+   </td>
+   <td>Sie sind ein Pförtner an der TH-Köln und ein Student will einen Transponder ausleihen. Am Ende des Tages will der Student den Transponder wieder zurückgeben.
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder ausleihen und zurückgeben
+   </td>
+   <td>Sie sind Student an der TH-Köln und wollen einen Transponder ausleihen. Am Ende des Tages wollen sie den Transponder wieder abgeben.
+   </td>
+  </tr>
+</table>
+
+
+ 
+
+Testszenarien
+
+
+<table>
+  <tr>
+   <td>Daten der Person eingeben
+   </td>
+   <td>Sie sind an der Pforte und eine Person möchte einen Transponder ausleihen, also geben Sie die Daten von der Person ein.
+   </td>
+  </tr>
+  <tr>
+   <td>Berechtigung überprüfen
+   </td>
+   <td>Bevor Sie den Schlüssel aushändigen, wollen Sie wissen ob diese Person überhaupt die Berechtigung für den Raum besitzt.
+   </td>
+  </tr>
+  <tr>
+   <td>Unterschrift hinzufügen
+   </td>
+   <td>Sie möchten die Ausgabe des Transponders mittels einer Unterschrift bestätigen lassen.
+   </td>
+  </tr>
+  <tr>
+   <td>Person verifizieren
+   </td>
+   <td>Sie wollen überprüfen, ob die Person, die den Transponder ausleiht, nicht nur vorgibt die Person zu sein.
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder ausgeben
+   </td>
+   <td>Wenn die Berechtigung und die Identifikation der Person überprüft wurde, geben Sie den entsprechenden Transponder aus.
+   </td>
+  </tr>
+  <tr>
+   <td>Infos über Ausgeliehene Transponder
+   </td>
+   <td>Sie möchten sehen, welche Transponder zurzeit ausgeliehen sind.
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder wird zurückgebracht
+   </td>
+   <td>Sie wollen einen Schlüssel  aus der Liste ausgeliehener Transponder streichen.
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder ausleihen (Student)
+   </td>
+   <td>Sie wollen einen Transponder ausleihen
+   </td>
+  </tr>
+  <tr>
+   <td>Transponder abgeben (Student)
+   </td>
+   <td>Sie wollen einen Transponder zurückgeben
+   </td>
+  </tr>
+</table>
+
+
+ 
+
+<span style="text-decoration:underline;">Testumgebung, Ausrüstung</span>
+
+ 
+
+Als Testumgebung wählen wir eine Feldstudie, da wir das System in der realen Umgebung testen wollen, um so eventuelle Fehler zu finden. Das Programm kann somit direkt an den verschiedenen Zielgruppen getestet werden.
+
+Als Ausrüstung benötigen wir eine Kamera, die das Auge des Benutzers tracken kann. Außerdem werden Fragebögen benötigt, welche die Teilnehmer am Ende ausfüllen. Natürlich darf auch ein Computer nicht fehlen, sowie ein Zeichenpad für die Unterschriften und einen NFC-Reader, falls vorhanden.
+
+ 
+
+<span style="text-decoration:underline;">Verwendete Usability-Methoden der Datenerhebung</span>
+
+ 
+
+Zur Datenerhebung nutzen wir drei Methoden:
+
+1. Log-Files, um die Abläufe aufzuzeichnen. Außerdem wird die Interaktion mit dem System protokolliert. Dadurch können wir einfacher nachvollziehen wie die Nutzer durch die App navigieren.
+
+2. Eye-Tracking. Das soll uns helfen, aufzuzeichnen wo die Testperson bei bestimmten Aufgaben hinschaut und damit Aufschluss über die Intuitivität unserer Anwendung gibt.
+
+3. Als letztes benutzen wir einen Fragebogen. Auf diesem sollen die Teilnehmer Fragen vor allem zu den Themen: (Zeit-)Effizienz, Übersichtlichkeit und Verständnis der Applikation (im Bezug auf Design und Feedback) beantworten.
+
+<span style="text-decoration:underline;"> </span>
+
+<span style="text-decoration:underline;">Rolle und Aufgaben des Test-Moderators</span>
+
+Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht. Andererseits hilft er ihnen, wenn sie noch Fragen haben.
+
+Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern  
+
+<span style="text-decoration:underline;">Bericht und Präsentation</span>
+
+Am Ende wertet man die Ergebnisse aller drei Datenerhebungens-Methoden aus dem Test aus, die Log-Files, der Eye-Tracker und die Fragebögen. Die Probleme werden gesammelt und genau beschrieben. Anschließend sollen Optimierungen für die Probleme gefunden werden und am Schluss wird eine Gewichtung für das Problem angegeben.
+
+ 
+
+ 
+
+**<span style="text-decoration:underline;"> </span>**
+
 
 __***\[Erläuterung\]***__
 <!--stackedit_data:
