@@ -977,7 +977,7 @@ __**Changelog**__
 __***\[Artefakt/e\]***__
 
 
-Git Repo unter https://baabt.github.io/mci/index.html#
+Git Repo unter [https://baabt.github.io/mci](https://baabt.github.io/mci)
 Dort sind Anweisungen zum Bau und Link zur Webseite zu finden.
 
 __***\[Erläuterung\]***__
