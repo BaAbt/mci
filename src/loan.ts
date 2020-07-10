@@ -83,8 +83,11 @@ function submitLoanForm() {
 		"\nMatrikelnummer: " + number.value +
 		"\nTransponderID: " + document.getElementsByClassName("transponderID")[permission].innerHTML +
 		"\nRäume: " + document.getElementsByClassName("rooms")[permission].innerHTML);
-	if(a)
+	if(a){
+		let tr = new Transponder(document.getElementsByClassName("transponderID")[permission].innerHTML, true)
+		transponderList.push(tr)
 		statusTable()
+	}
 
 
 }
