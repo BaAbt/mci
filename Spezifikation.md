@@ -65,13 +65,15 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 # Spezifikation
 
+Im folgenden ist die eigene Spezifikation zu lesen
+
 ## Nutzungskontext verstehen und beschreiben
+
+Im folgenden Bereich ist der Nutzungskontext aufgefuehrt
 
 ### Stakeholder Analyse
 
-[//]: # "https://tableconvert.com/"
-
-#### Changelog
+__**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
@@ -499,8 +501,13 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 
 ## Nutzungsanforderungen spezifizieren
 
+User Storys: https://agile02.gm.fh-koeln.de/pages/viewpage.action?pageId=19464219
+
+Ist-Szenarien: https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenarien
 
 ## Gestaltungslösungen entwickeln, die die Nutzungsanforderungen erfüllen
+
+Im folgenden sind die individuellen Gestalltungsloesungen aufgefuehrt.
 
 ### Storyboards
 
@@ -772,8 +779,7 @@ __***\[Artefakt/e\]***__
 __***\[Erläuterung\]***__
 
 
-
-**<span style="text-decoration:underline;">Allgemein</span>**
+**Allgemein**
 
 Im Verlauf des Praktikums kam die Frage auf ob man die Zuweisung von Räumen auf Transpondern automatisieren kann. Aufgrund der aktuellen Lage kann dies allerdings nicht nachgeforscht werden. Gleichzeitig würden wir jedoch gerne diesen Ansatz weiterverfolgen und gehen daher von einem Szenario aus, in dem das möglich ist.
 
@@ -789,19 +795,15 @@ Dies hat mehrere Vorteile:
 
 Als Zeitdarstellungen wird ein intuitives System verwendet, welches automatisch “gestern” oder “2 Minuten” anstelle von Daten eingefügt. Dies erleichtert die Lesbarkeit bei Daten ungemein.
 
-**<span style="text-decoration:underline;">Student</span>**
 
- 
+**Student**
 
 Beim Studenten haben wir uns für eine App entschieden, da dieser auch auf dem Weg zur Uni nachschauen möchte ob der Transponder für den Raum ausgeliehen ist. Dabei wird dem Studenten nur einen Menüpunkt angezeigt. Ein Menü wird trotzdem verwendet, um zukünftigen Featuren Platz zu geben.
 
  In dem Punkt Berechtigungen hat der Student dann eine Auflistung all seiner Berechtigungen. Wir haben uns dafür entschieden ihm direkt zu zeigen ob der Raum belegt ist und bis wann er noch die Berechtigung für den Raum hat, da dies für ihn die wichtigen Informationen sind. Wenn der Student noch mehr Informationen braucht, soll er einfach auf das Element klicken. Da uns diese aber nicht so wichtig erschienen sieht man diese nicht direkt. Außerdem verfügt er über die Möglichkeit zu Suchen um bei einer Menge an Berechtigung auch schnell die nötigen Infos zu bekommen.
 
- 
 
-
-
-**<span style="text-decoration:underline;">Dozent</span>**
+**Dozent**
 
 Auch bei den Mitarbeitern haben wir uns für eine App fürs Smartphone entschieden, da sie wie die Studenten sehr mobil sind und auch unterwegs die Möglichkeit haben wollen, Management Aufgaben erledigen zu können. Im Menü werden ihnen ihre drei wichtigen Funktionen angezeigt. Unter _Students _werden den Mitarbeiter alle Studenten (später in alphabetischer Reihenfolge) angezeigt, welche an ihren Vorlesungen teilnehmen. Er kann die Studenten nach einem Namen durchsuchen, um schnell eine Person zu finden. Die Studenten werden automatisch mithilfe einer API der Liste auf dem aktuellen Stand gehalten. 
 
@@ -815,7 +817,7 @@ Die Menüoption Rooms sieht den vorigen Menüpunkten ebenfalls ähnlich, wobei h
 
 
 
-**<span style="text-decoration:underline;">Admin</span>**
+**Admin**
 
 Beim Admin haben wir uns für eine Desktop-Variante entschieden, da dieser Probleme nicht unterwegs lösen muss. Außerdem bietet sich der Desktop eher an als ein Handydisplay, da wir uns hauptsächlich für Listen entschieden haben, um Informationen möglichst übersichtlich darzustellen. Der Admin ist was das angeht sehr an die Benutzeroberfläche des Pförtner angelehnt, wie zum Beispiel die Menüleiste links, dem Add-Button in der rechten, unteren Ecke, sowie den Formularen. Dadurch ist auch zwischen den Anwendungen eine hohe Konsistenz gewahrt. Farblich ist das meiste in schlichtem Grau und Weiß gehalten. Als Akzentfarbe haben wir uns für ein strahlendes Blau entschieden, welches dem Admin die wichtigsten Buttons hervorheben soll und außerdem die einzelnen Tabellenspalten in transparenten Variante voneinander abgrenzt.
 
@@ -841,7 +843,7 @@ Dass sowohl Räume Mitarbeitern zugeordnet werden können, sowie andersherum, is
 
 Unter dem letzten Menüpunkt Settings, kann der Admin die Systemsprache ändern, ein Software-Update zu installieren oder eine Nachricht schreiben. Es gibt zwei Textfelder, die wie beim Schreiben einer E-Mail aufgebaut sind. Die Nachricht kann an alle Benutzer des Systems gesendet werden oder aber an bestimmte Benutzer oder Benutzergruppen. Die Nachricht wird dann einfach im großen Textfeld eingegeben und mit dem blauen Button unten Links verschickt, der im selben Stil der anderen Buttons gehalten ist. Der erfolgreiche Versand der Nachricht wird mit einem Pop-Up-Fenster quittiert.
 
-**<span style="text-decoration:underline;">Pförtner</span>**
+**Pförtner**
 
 Der Pförtner hat eine Desktop oder Webanwendung mit 4 Unterpunkten.
 
@@ -921,13 +923,13 @@ Wird das Vergabe Feld automatisch mit den richtigen Daten befüllt.
 
 Dasselbe gilt für aus den Personen-tab.
 
-In diesem werden alle notwendigen Felder angegeben werden, die ausgefüllt werden können. Diese Eingabe wird mit <span style="text-decoration:underline;">dynamischen </span>und <span style="text-decoration:underline;">voneinander abhängigen</span> Vorschlägen ergänzt, um ein möglichst schnelles und Fehlerfreies ausfüllen zu ermöglichen.
+In diesem werden alle notwendigen Felder angegeben werden, die ausgefüllt werden können. Diese Eingabe wird mit dynamischen und voneinander abhängigen Vorschlägen ergänzt, um ein möglichst schnelles und Fehlerfreies ausfüllen zu ermöglichen.
 
-<span style="text-decoration:underline;">Dynamisch </span>heißt hier, dass die Vorschläge abhängig von den zurzeit eingetippten Dateien sind. Falls zum Beispiel der Anfang eines Namens eingetippt wird, wird automatisch ein Name, der denselben Namen hat vorgeschlagen.
+Dynamisch heißt hier, dass die Vorschläge abhängig von den zurzeit eingetippten Dateien sind. Falls zum Beispiel der Anfang eines Namens eingetippt wird, wird automatisch ein Name, der denselben Namen hat vorgeschlagen.
 
 Dieser Vorschlag kann dann mit enter oder tab angenommen werden.
 
-<span style="text-decoration:underline;">Voneinander abhängig</span> heißt hier, das wenn zum Beispiel nur eine Person mit demselben Namen existiert, wird die Matrikelnummer automatisch ausgefüllt.
+Voneinander abhängig heißt hier, das wenn zum Beispiel nur eine Person mit demselben Namen existiert, wird die Matrikelnummer automatisch ausgefüllt.
 
 Außerdem werden die Räume und das Limit automatisch abhängig von der aktuellen Zeit und den Berechtigungen eingetragen wird.
 
@@ -1039,6 +1041,14 @@ __**Changelog**__
 
 __***\[Artefakt/e\]***__
 
+Es wurden einige "Identifizierte Probleme" beim Prototyp angepasst:
+
+- Fehlende Bestaetigung verschiedener Aktionen 
+    - Es wurden mehrere Confirm-Felder eingebaut, welche dies deutlicher machen
+- Die Struktur der Auswahl wurde nicht uebermittelt
+  - Die Struktur wir nun schritt fuer schritt eingeblendet, so dass dem Nutzer immer der naechste Schritt klar ist
+- 
+
 ## Usability Evaluation
 
 [ ]{.underline}
@@ -1062,17 +1072,14 @@ __***\[Artefakt/e\]***__
 
 **Testplan  MCI**
 
-<span style="text-decoration:underline;">Zweck, Ziele</span>
-
- 
+__Zweck, Ziele__
 
 Dieses Dokument dient dazu, einen Testplan für die Transponder Vergabe an der Th-Köln zu beschreiben.
 
 Das Ziel von dem Usability-Tests ist es, potenzielle Probleme im Design zu finden, welche die Effizienz, Produktivität und Zufriedenheit des Endnutzers negativ beeinträchtigen und verbessert werden sollten.
 
- 
 
-<span style="text-decoration:underline;">Beschreibung des Produkts/Systems</span>
+__Beschreibung des Produkts/Systems__
 
 Unser Produkt soll das Ausleihen eines Transponders an der TH-Köln digitalisieren und vereinfachen.
 
@@ -1084,11 +1091,8 @@ Am Ende er lässt sich die Eingabe mit einer Unterschrift auf einem entsprechend
 
 Um einen Transponder zurückzugeben muss der Student ihn lediglich an der Pforte abgeben oder in die Rückgabe-Box werfen. Der Pförtner kann dann den Transponder im System Suchen und auf zurückgegeben drücken, bestätigen und damit den Transponder als zurückgegeben markieren.
 
- 
 
-<span style="text-decoration:underline;">Testpersonen (Eigenschaften, Anzahl)</span>
-
-<span style="text-decoration:underline;"> </span>
+__Testpersonen (Eigenschaften, Anzahl)__
 
 Als Testpersonen wird in diesem Fall der Pförtner benötigt. Dieser ist 25-65 Jahre alt und arbeitet hauptberuflich als Pförtner, weswegen er auch schon einige Erfahrung mit ähnlicher Software oder der Vergabe von Schlüsseln haben.
 
@@ -1096,11 +1100,10 @@ Um den Großteil der Fehler in unserem System zu finden, benötigen wir 6 bis 9 
 
 Auch einige Studenten werden benötigt, um die Authentifizierung mit einer MultiCa zu testen. Des Weiteren können die Studenten gut beurteilen, ob der Prozess schnell genug abläuft.
 
- 
 
-<span style="text-decoration:underline;">Testaufgaben (Gesamt Szenario und Testszenarien)</span>
+__Testaufgaben (Gesamt Szenario und Testszenarien):__
 
-Gesamt Szenario:
+__Gesamt Szenario:__
 
 |||
 |--- |--- |
@@ -1124,19 +1127,14 @@ __Testszenarien:__
 |Transponder abgeben (Student)|Sie wollen einen Transponder zurückgeben|
 
 
-<span style="text-decoration:underline;">Testumgebung, Ausrüstung</span>
-
- 
+__Testumgebung, Ausrüstung__
 
 Als Testumgebung wählen wir eine Feldstudie, da wir das System in der realen Umgebung testen wollen, um so eventuelle Fehler zu finden. Das Programm kann somit direkt an den verschiedenen Zielgruppen getestet werden.
 
 Als Ausrüstung benötigen wir eine Kamera, die das Auge des Benutzers tracken kann. Außerdem werden Fragebögen benötigt, welche die Teilnehmer am Ende ausfüllen. Natürlich darf auch ein Computer nicht fehlen, sowie ein Zeichenpad für die Unterschriften und einen NFC-Reader, falls vorhanden.
 
- 
 
-<span style="text-decoration:underline;">Verwendete Usability-Methoden der Datenerhebung</span>
-
- 
+__Verwendete Usability-Methoden der Datenerhebung__
 
 Zur Datenerhebung nutzen wir drei Methoden:
 
@@ -1146,24 +1144,16 @@ Zur Datenerhebung nutzen wir drei Methoden:
 
 3. Als letztes benutzen wir einen Fragebogen. Auf diesem sollen die Teilnehmer Fragen vor allem zu den Themen: (Zeit-)Effizienz, Übersichtlichkeit und Verständnis der Applikation (im Bezug auf Design und Feedback) beantworten.
 
-<span style="text-decoration:underline;"> </span>
 
-<span style="text-decoration:underline;">Rolle und Aufgaben des Test-Moderators</span>
+__Rolle und Aufgaben des Test-Moderators__
 
 Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht. Andererseits hilft er ihnen, wenn sie noch Fragen haben.
 
 Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern  
 
-<span style="text-decoration:underline;">Bericht und Präsentation</span>
+Bericht und Präsentation
 
 Am Ende wertet man die Ergebnisse aller drei Datenerhebungens-Methoden aus dem Test aus, die Log-Files, der Eye-Tracker und die Fragebögen. Die Probleme werden gesammelt und genau beschrieben. Anschließend sollen Optimierungen für die Probleme gefunden werden und am Schluss wird eine Gewichtung für das Problem angegeben.
-
- 
-
- 
-
-**<span style="text-decoration:underline;"> </span>**
-
 
 __***\[Erläuterung\]***__
 <!--stackedit_data:
