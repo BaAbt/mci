@@ -21,10 +21,10 @@ function transponderToExpandedDom(tr:Transponder): Node{
       </div>
       <div class="col-sm">
       <div class="row">
-      <button type="button" class="row btn btn-primary btn-rounded btn-sm return-btn">zurueckgegeben</button>
+      <button type="button" class="row btn btn-primary btn-rounded btn-sm return-btn">zurückgegeben</button>
       </div>
       <div class="row">
-      <button type="button" class="row btn btn-danger btn-rounded btn-sm return-btn">Ausleihe abbrechen</button>
+      <button type="button" class="row btn btn-danger btn-rounded btn-sm return-btn">entziehen</button>
       </div>
       </div>
     </div>
