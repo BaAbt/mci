@@ -377,7 +377,7 @@ var statusTableID = "statusTable";
 var roomList = randomRoomList();
 // this needs second
 var transponderList = randomTransponderList();
-var statusTableHeader = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt", "Ausleihfrist"];
+var statusTableHeader = ["Transponder ID", "Ausgeliehen von", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt", "Ausleihfrist"];
 var historyTableHeader = ["Begin", "Ende", "Raeume", "Verantwortliche"];
 var roomsTableHeader = ["Nummer", "Bezeichnung", "Belegt"];
 var table = document.getElementById("DynamicTable");
@@ -449,10 +449,9 @@ function statusTableEntries() {
 }
 function transponderToExpandedDom(tr) {
     var div = document.createElement("div");
-    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.responsible, "Verantwortliche Dozenten:") + "\n        " + roomListToHtml(tr.status.rooms) + "\n      </div>\n      <div class=\"col-sm\">\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-primary btn-rounded btn-sm return-btn\">zur\u00FCckgegeben</button>\n      </div>\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-danger btn-rounded btn-sm return-btn\">entziehen</button>\n      </div>\n      </div>\n    </div>\n    ";
+    div.innerHTML = "\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.students) + "\n      </div>\n      <div class=\"col-sm\">\n        " + studentIdListToHtml(tr.status.responsible, "Verantwortliche Dozenten:") + "\n        " + roomListToHtml(tr.status.rooms) + "\n      </div>\n      <div class=\"col-sm\">\n      <div class=\"row\">\n      <button type=\"button\" class=\"row btn btn-primary btn-rounded btn-sm return-btn\">zur\u00FCckgegeben</button>\n      </div>\n      </div>\n    </div>\n    ";
     var buttons = div.querySelectorAll("button");
-    buttons[0].addEventListener("click", function (e) { return removeTransponder(tr, "Transponder " + tr.id + " Zurueckgeben?"); });
-    buttons[1].addEventListener("click", function (e) { return removeTransponder(tr, "Ausleihe wirklich abbrechen?"); });
+    buttons[0].addEventListener("click", function (e) { return removeTransponder(tr, "Wurde Transponder #" + tr.id + " zurückgeben?\nAusgeliehen von: " + tr.status.students[0].name); });
     return div;
 }
 function roomListToHtml(a, caption) {
@@ -499,6 +498,7 @@ function removeTransponder(tr, message) {
 function transponderToStatusEntry(tr) {
     return [
         "#" + tr.id,
+        tr.status.students[0].name.toString(),
         dateToString(tr.status.originalStart),
         dateToString(tr.status.actualStart),
         fullDateToString(tr.status.end)

@@ -5,7 +5,7 @@ var roomList = randomRoomList()
 // this needs second
 var transponderList: Array<Transponder> = randomTransponderList()
 
-var statusTableHeader: Array<string> = ["Transponder ID", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt","Ausleihfrist"]
+var statusTableHeader: Array<string> = ["Transponder ID", "Ausgeliehen von", "Originaler Ausleihzeitpunkt", "tatsächlicher Ausleihzeitpunkt","Ausleihfrist"]
 var historyTableHeader: Array<string> = ["Begin", "Ende", "Raeume", "Verantwortliche"]
 var roomsTableHeader: Array<string> = ["Nummer", "Bezeichnung", "Belegt"]
 
