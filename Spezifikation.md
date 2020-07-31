@@ -971,7 +971,7 @@ __**Changelog**__
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
            |   Confirm buttom |   Um Benutzung stabiler und sicherer zu gestalten
-           |                         |                              
+ 31.07.2020| Bessere und Ausfuehrlichere Erlaeuterung | Fuer mehr Verstaendnis der Applikation
            |                         |                              
            |                         |                              
            |                         |                              
@@ -994,6 +994,14 @@ __Allgemein:__
 - Sie Arbeitet bei In Ausleihe, Raeume und Verlauf mit einem Internen Array
 - Sie arbeitet intern auf einer in der Typescript verwalteten liste
 
+__Zeitslots bei der Ausleihe:__
+
+Unser System verwendet Berechtigungen von Gruppen von Studenten auf Gruppen von Räumen ueber einen gewissen Zeitraum.
+Dies ermoeglicht ein sicheres, übersichtliches und vor allem konfliktfreies Zuweisen.
+Ohne festen Zeitraum und Raumzuweisung könnte das System nicht eindeutig Konflikte erkennen.
+Hierdurch wird auch der Verleih beschleunigt, da nicht darauf geachtet werden muss.
+Das Zuweisen von Transpondern geschieht dabei automatisch bei Verleih des Transponders.
+
 __In Ausleihe:__
 
 - Anpassen der Informationen in der collapsed Zeile auf Relevantere Informationen
@@ -1015,13 +1023,15 @@ Die Raumliste zeigt alle Räume, ihre Bezeichnung und ob sie belegt sind, an. Be
 
 __Vergabe:__
 
-- Intern geht die Ausleihe an Gruppen von Studenten, welche dann ueber einen Zeitraum Zugriff auf Raeume haben.
+- Durch eine Auflage der Multica auf einen Sensor werden die Studentendaten automatisch eingetragen, dies spart Zeit. Notfalls koennen diese auch per Hand nachgetragen werden
+- Intern geht die Ausleihe an Gruppen von Studenten, welche dann über einen Zeitraum Zugriff auf Raeume haben.
 Wir haben bewusst die Gruppe von der Ausleihe wegabstrahiert um die Ausleihe schneller und einfacher zu gestalten.
 Die Gruppe wird dann bei hinzufuegen automatisch verwendet.
 - Die Liste zur Auswahl des Tranponders wird nur nach den Dateneingabe erzeugt, da das System dieses dynamisch anhand der freihen Transponder und Raeume erstellt, 
 welche auf die Berechtigungen des Studenten passen.
 - Die Raumberechtigungen die bei der Auswahl des Transponders angezeigt werden, sind jene, __fuer die diese Person an den aktuellen Tag berechtigt ist__.
-Dadurch entfaellt die eingabe des Limits. Meistens wird hier in tatsaechlichen fall nur ein Tranpsonder angezeigt werden. 
+Dadurch entfaellt die eingabe des Limits. Meistens wird hier in tatsaechlichen fall nur ein Tranpsonder angezeigt werden. Falls ein Student in mehreren berechtigungsgruppen ist, werden mehrere Transponder angezeigt.
+- Ab Auswahl wird der Transponder reserviert, die tatsaechliche Zuweisung geschieht erst mit der Ausleihe. Bei Abruch wird die Reservierung zurueckgezogen.
 - Es ist keine Logik von Pruefen des Students. Dies wuerde vom System der TH uebernommen werden. 
 - Die Unterschrift wird im Prototyp ueber einen simplen Button geloest. Die Simulation des Drawpads entfaellt
 
