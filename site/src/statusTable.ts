@@ -23,15 +23,11 @@ function transponderToExpandedDom(tr:Transponder): Node{
       <div class="row">
       <button type="button" class="row btn btn-primary btn-rounded btn-sm return-btn">zurückgegeben</button>
       </div>
-      <div class="row">
-      <button type="button" class="row btn btn-danger btn-rounded btn-sm return-btn">entziehen</button>
-      </div>
       </div>
     </div>
     `
     let buttons = div.querySelectorAll("button")
-    buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr, "Transponder " + tr.id + " Zurueckgeben?"))
-    buttons[1].addEventListener("click",(e:Event) => removeTransponder(tr, "Ausleihe wirklich abbrechen?"))
+    buttons[0].addEventListener("click",(e:Event) => removeTransponder(tr, "Wurde Transponder #" + tr.id + " zurückgeben?\nAusgeliehen von: "+ tr.status.students[0].name))
     return div
 }
 
@@ -78,6 +74,7 @@ function removeTransponder(tr: Transponder, message: string = ""){
 function transponderToStatusEntry(tr: Transponder):Array<string>{
     return [
         "#" + tr.id,
+        tr.status.students[0].name.toString(),
         dateToString(tr.status.originalStart),
         dateToString(tr.status.actualStart),
         fullDateToString(tr.status.end)
