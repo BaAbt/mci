@@ -1098,7 +1098,7 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+31.07.2020      |  Gesamtszenario hinzugefügt, Rollen/Aufgaben Moderator verbessert, Anzahl Probanten angepasst                      |       Feedback eingearbeitet                       
            |                         |                              
            |                         |                              
            |                         |                              
@@ -1133,7 +1133,7 @@ __Testpersonen (Eigenschaften, Anzahl)__
 
 Als Testpersonen wird in diesem Fall der Pförtner benötigt. Dieser ist 25-65 Jahre alt und arbeitet hauptberuflich als Pförtner, weswegen er auch schon einige Erfahrung mit ähnlicher Software oder der Vergabe von Schlüsseln haben.
 
-Um den Großteil der Fehler in unserem System zu finden, benötigen wir 6 bis 9 Personen, die den Pförtner in unserem Usability Test spielen.
+Da es sich bei unserem Programm nur um ein sehr kleines handelt, brauchen wir nur 2-3 Testpersonen, die das Programm testen.
 
 Auch einige Studenten werden benötigt, um die Authentifizierung mit einer MultiCa zu testen. Des Weiteren können die Studenten gut beurteilen, ob der Prozess schnell genug abläuft.
 
@@ -1186,7 +1186,9 @@ __Rolle und Aufgaben des Test-Moderators__
 
 Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht. Andererseits hilft er ihnen, wenn sie noch Fragen haben.
 
-Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern  
+Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern kann.
+
+Der Rest des Teams bleibt erstmal bei der Befragung im Hintergrund und kümmert sich um die Technik, wie zum Beispiel den Eye-Tracker und die Log-Files.   
 
 Bericht und Präsentation
 
