@@ -947,18 +947,42 @@ Falls das System nicht die Datenbank erreichen kann, wird eine Fehlermeldung ang
 
 Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irgendwo auf der seite ersetzt, um fehlerhaftes confirmen zu vermeiden, bis der transponder auch tatsächlich ausgeliehen wurde.
 
-
 **Identifizierte Probleme aus dem Review**
+
+**Fehlend:**
+
+- (Issue #01) Eine Übersicht aller Räume und der assoziierten Transpondernummern.
+
+**In Ausleihe:**
+
+- (Issue #02) Die Tabelleneinträge sind zu groß, die Zeilenhöhe sollte verringert werden.
+- (Issue #03) Einen Timeslot auszuwählen wäre ein neuer Punkt im Ablauf.
+- (Issue #04) Die Farbliche Kodierung der Einträge wurde nicht vollständig verstanden.
+- (Issue #05) Das Dropdown Symbol wurde nicht als solches erkannt.
+
+**Vergabe:**
+
+- (Issue #06) Unser System zum Zuweisen der Transponder wurde missverstanden. Besser wäre eine Dreiteilung für den Pförtner in:
+  1. Authentifizierung
+  2. Auswahl eines Transponders (Bei uns: einer Raumgruppe)
+  3. Unterschreiben
+- (Issue #07) Timeslot-Anderungen sollten nicht vom Pförtner unternommen werden können.
+- (Issue #10) Man muss den gesamten Namen und die Matrikelnummer eingeben.
+
+**Rückgabe**
+
+- (Issue #08) Es fehlt Systemfeedback / eine Bestätigungsaufforderung
+- (Issue #09) Der Rückgabebutton ist nicht ersichtlich
 
 [//]: # "https://tableconvert.com/"
 
- **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
------------|-------------------------|------------------------------
-           |                         |                              
-           |                         |                              
-           |                         |                              
-           |                         |                              
-           |                         |                              
+ **Datum**  | **Was wurde geändert?**                     | **Warum wurde es geändert?**                                 
+ ---------- | ------------------------------------------- | ------------------------------------------------------------ 
+ 31.07.2020 | Identifizierte Probleme wurden hinzugefügt. | Wir hatten vergessen die Probleme explizit in die Spezifikation einzubinden. Der Vollständigkeit halber ist es jetzt vorhanden. 
+            |                                             |                                                              
+            |                                             |                                                              
+            |                                             |                                                              
+            |                                             |                                                              
 
 [ ]{.underline}
 
@@ -970,12 +994,12 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |   Confirm buttom |   Um Benutzung stabiler und sicherer zu gestalten
- 31.07.2020| Bessere und Ausfuehrlichere Erlaeuterung | Fuer mehr Verstaendnis der Applikation
- 31.07.2020 | Entferntenung des Abruch-Buttons | Wird nicht vorgesehen                             
- 31.07.2020 | Hinzufuegen des Multica einlesen Knopf | gestaltet den Ablauf eingängiger und stabiler hinsichtlich Fehler
+ 20.07.2020 | Confirm buttons (Ausleihe und Rückgabe) | Um dem Benutzer mehr Kontrolle über den Fluss der Applikation zu geben. (Issue #08 & #09) 
+ 31.07.2020| Bessere und Ausfuehrlichere Erlaeuterung | Fuer mehr Verstaendnis der Applikation (Issue #06) 
+ 31.07.2020 | Entferntenung des Abbruch-Buttons | Ist keine Nutzungsanforderung für den Pförtner 
+ 31.07.2020 | Hinzufuegen des Multica einlesen Knopf | macht dem Nutzer klar dass es diese Option gibt und dass er nicht den Namen und die Matrikelnummer manuell eingeben muss (Issue #10) 
  31.07.2020 | Hinzufuegen des Spalte ´Ausgeliehen von´ | weist einer Ausleihe einen festen Verantwortlichen zu.
-           |                         |                              
+  |  |                              
            |                         |                              
 
 __***\[Artefakt/e\]***__
@@ -1007,13 +1031,14 @@ Das Zuweisen von Transpondern geschieht dabei automatisch bei Verleih des Transp
 __In Ausleihe:__
 
 - Anpassen der Informationen in der collapsed Zeile auf Relevantere Informationen
-- Die Ausleihfrist wurde weiterhin uebernommen. Diese ist bei unseren System (Transponderraumzuweisung bei Ausleihe) noetig, um Berechtigungen wieder freizugeben und blockieren. Dadurch hilft sie das ganze System sicherer zu machen.
-- Weiterhin warn die App, wenn die Frist eines Transponder abgelaufen ist um das ganze System noch sicherer zu sein
+- Die Ausleihfrist wurde weiterhin uebernommen. Diese ist bei unseren System (Transponderraumzuweisung bei Ausleihe) noetig, um Berechtigungen wieder freizugeben und blockieren. Dadurch hilft sie das ganze System sicherer zu machen. Das behandelt nicht wirklich das Problem, dass es ein neuer Punkt im Ablauf ist, allerdings macht der erhöhte Organisationsaufwand (Timeslots vergeben oder aussuchen) Sinn, um ungestörtes Arbeiten in den Räumen zu gewährleisten.
+
+- Weiterhin färben wir Einträge ein, wenn die Frist eines Transponder abgelaufen ist um das ganze System sicherer zu machen. (Issue #04) 
 - Die Liste wird nach der Frist sortiert, da diese am wahrscheinlichsten sind um sie wieder zurueckzugeben.
-- Bei Zurueckgabe wird nun ein Confirm Meldung eingefuehrt, die das System fehlerressistenter macht
-- Das AusklappenSymbol wurde durch ein plus Symbol ersetzt und ein hover effekt wurde eingefuehrt, um die Anklickbarkeit besser erkaehntlich zu machen.
+- Bei Zurueckgabe wird nun ein Confirm Meldung eingefuehrt, die das System fehlerressistenter macht (Issue #08)
+- Das AusklappenSymbol wurde durch ein plus Symbol ersetzt und ein hover effekt wurde eingefuehrt, um die Anklickbarkeit besser erkaehntlich zu machen. (Issue #05)
 - Das Ausklappen wurde weiterhin uebernommen um clutter zu vermeiden
-- Die Hoehe der Zeilen wurde reduziert, um mehr Informationen auf den Bildschirm zu packen. Dies ist auf nen vernuenftigen Bildschirm ohne Probleme moeglich
+- Die Hoehe der Zeilen wurde reduziert, um mehr Informationen auf den Bildschirm zu packen. Dies ist auf nen vernuenftigen Bildschirm ohne Probleme moeglich (Issue #01)
 
 __Verlauf__
 
@@ -1029,7 +1054,7 @@ __Vergabe:__
 - Intern geht die Ausleihe an Gruppen von Studenten, welche dann über einen Zeitraum Zugriff auf Raeume haben.
 Wir haben bewusst die Gruppe von der Ausleihe wegabstrahiert um die Ausleihe schneller und einfacher zu gestalten.
 Die Gruppe wird dann bei hinzufuegen automatisch verwendet.
-- Die Liste zur Auswahl des Tranponders wird nur nach den Dateneingabe erzeugt, da das System dieses dynamisch anhand der freihen Transponder und Raeume erstellt, 
+- Die Liste zur Auswahl des Tranponders wird nur nach den Dateneingabe erzeugt, da das System dieses dynamisch anhand der freien Transponder und Raeume erstellt, 
 welche auf die Berechtigungen des Studenten passen.
 - Die Raumberechtigungen die bei der Auswahl des Transponders angezeigt werden, sind jene, __fuer die diese Person an den aktuellen Tag berechtigt ist__.
 Dadurch entfaellt die eingabe des Limits. Meistens wird hier in tatsaechlichen fall nur ein Tranpsonder angezeigt werden. Falls ein Student in mehreren berechtigungsgruppen ist, werden mehrere Transponder angezeigt.
