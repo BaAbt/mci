@@ -1156,6 +1156,3 @@ Bericht und Präsentation
 Am Ende wertet man die Ergebnisse aller drei Datenerhebungens-Methoden aus dem Test aus, die Log-Files, der Eye-Tracker und die Fragebögen. Die Probleme werden gesammelt und genau beschrieben. Anschließend sollen Optimierungen für die Probleme gefunden werden und am Schluss wird eine Gewichtung für das Problem angegeben.
 
 __***\[Erläuterung\]***__
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MTg3NDExN119
--->
