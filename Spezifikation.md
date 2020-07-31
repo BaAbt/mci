@@ -972,7 +972,9 @@ __**Changelog**__
 -----------|-------------------------|------------------------------
            |   Confirm buttom |   Um Benutzung stabiler und sicherer zu gestalten
  31.07.2020| Bessere und Ausfuehrlichere Erlaeuterung | Fuer mehr Verstaendnis der Applikation
-           |                         |                              
+ 31.07.2020 | Entferntenung des Abruch-Buttons | Wird nicht vorgesehen                             
+ 31.07.2020 | Hinzufuegen des Multica einlesen Knopf | gestaltet den Ablauf eingängiger und stabiler hinsichtlich Fehler
+ 31.07.2020 | Hinzufuegen des Spalte ´Ausgeliehen von´ | weist einer Ausleihe einen festen Verantwortlichen zu.
            |                         |                              
            |                         |                              
 
@@ -1043,7 +1045,7 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+31.07.2020 | Gesamtszenarion hinzugefuegt | Feedback einarbeitet
            |                         |                              
            |                         |                              
            |                         |                              
