@@ -401,6 +401,13 @@ function resetLoan() {
     document.getElementById("login").removeAttribute("disabled");
     document.getElementById("permissionTable").innerHTML = "<tr><th></th><th>TransponderID</th><th>Raum</th></tr>";
 }
+function fillInputs() {
+    var name = document.getElementById("name");
+    var matnr = document.getElementById("number");
+    var student = randomStudent();
+    name.value = student.name;
+    matnr.value = student.id.toString();
+}
 var TrTblID = "statusTable";
 var statusTableID = "statusTable";
 // this needs first

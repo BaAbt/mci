@@ -104,3 +104,11 @@ function resetLoan()
 	document.getElementById("login").removeAttribute("disabled");
 	document.getElementById("permissionTable").innerHTML = "<tr><th></th><th>TransponderID</th><th>Raum</th></tr>";
 }
+
+function fillInputs(){
+    let name = document.getElementById("name") as HTMLInputElement
+    let matnr = document.getElementById("number") as HTMLInputElement
+    var student = randomStudent()
+    name.value = student.name
+    matnr.value = student.id.toString()
+}
