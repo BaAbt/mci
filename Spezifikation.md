@@ -1078,13 +1078,437 @@ __**Changelog**__
 
 __***\[Artefakt/e\]***__
 
-Es wurden einige "Identifizierte Probleme" beim Prototyp angepasst:
+Unser Anonymes Review. 
+Hier nicht in Tabellenform, aufgrund der gewaehlten Arbeitsweise.
+Falls dies ein Problem ist, bitte das relevante Dokument anschauen oder bei uns melden.
 
-- Fehlende Bestaetigung verschiedener Aktionen 
-    - Es wurden mehrere Confirm-Felder eingebaut, welche dies deutlicher machen
-- Die Struktur der Auswahl wurde nicht uebermittelt
-  - Die Struktur wir nun schritt fuer schritt eingeblendet, so dass dem Nutzer immer der naechste Schritt klar ist
-- 
+#02
+
+ Als Pförtner möchte ich eine Liste der aktuell ausgeliehenen Transponder angezeigt bekommen, damit beim schließen des Hochschulgebäudes die Räume überprüft werden können deren Transponder noch ausgeliehen sind \
+
+
+**Execution**
+
+
+
+*   auf die Startseite geschaut
+
+**Evaluation:**
+
+
+
+*   Das Resultat war eine Liste aller In ausleihe findender Transponder, Uhrzeiten und Räumen, sowie eine Liste aller Transponder
+
+**Execution:**
+
+
+
+*   Ich wollte sehen ob noch Transponder nicht zurückgegeben wurden und schaue auf die Liste
+
+**Evaluation:**
+
+
+
+*   Ich sehe das 4 noch nicht zurückgegeben sind, schaue im rückgabekasten nach, sehe 5 Transponder und nehme sie mit
+
+**Execution**
+
+
+
+*   Ich will alle zurückgeben  und suche einen Weg alle zurückzugeben
+
+**Evaluation:**
+
+
+
+*   Es wird keiner präsentiert 
+
+**Execution:**
+
+
+
+*   Ich will mehr Informationen und klicke auf in-Ausleihe
+
+**Evaluation:**
+
+
+
+*    Ich bekomme eine Liste aller Transponder In-Ausleihe
+
+**Execution:**
+
+
+
+*   Ich möchte herausfinden welche Transponder noch nicht hinzugefügt wurden
+
+**Evaluation:**
+
+
+
+*   Ich sehe alle Transponder und deren Zeiten und mache mich auf den Weg die restlichen zu finden
+
+**Bewertung**
+
+
+
+*   Die Übersicht war gut und ich konnte auf den ersten Blick die in-ausleihe befindenden Transponder begutachten
+*   Das die Überschriften anklickbar sind ist nicht sofort erkennbar
+*   Es ist bei der Startseite nicht klar ob sich nur 4 Transponder oder mehr in Ausleihe befinden
+*   Nicht klar, wie man einen Transponder zurückgibt
+
+#03
+
+Als Pförtner möchte ich zu jeder Zeit einen Überblick über die aktuell in der Ausleihe befindlichen Transponder erhalten, damit ich Auskünfte über Raumbelegungen und Ausleihfristen geben kann.
+
+**Execution:**
+
+
+
+*   Ich möchte sagen, wann ein bestimmter Raum frei wird
+
+**Evaluation:**
+
+
+
+*    Da es keine Suchfunktion gibt schaue ich auf die in-ausleihe liste
+
+**Execution:**
+
+
+
+*   Ich suche in der Liste
+
+**Evaluation:**
+
+
+
+*   Da ich nichts in der Liste zu den Raum finden gehe ich davon aus das der Raum frei ist.
+
+**Bewertung:**
+
+
+
+*   Was passiert wenn eine Gruppe mehr als 2 Räumen zugeordnet ist?
+*   Der Zugriff auf Informationen, wie welcher Raum belegt hat ist zu schwer zu finden
+*   Ich bekomme keine Infos wann welche gruppe einen Transpondern zugeordnet ist
+*   Man kann sehr gute Informationen über aktuelle Zeiten zu Transpondern fingern
+
+#04
+
+Als Pförtner möchte ich einen Überblick über die Räume haben, die mit einer Transpondernummer assoziiert werden.
+
+**Execution:**
+
+
+
+*   ich möchte sehen auf welche Räume der derzeit ausgeliehene Transponder Zugriff hat und klicke auf die Zeile
+
+**Evaluation:**
+
+
+
+*    Mir werden Informationen über alle Räume die mit einem Transponder in verbindung stehen angezeigt
+
+**Execution:**
+
+
+
+*   Ich klicke auf einen Transponder
+
+**Evaluation:**
+
+
+
+*    Mir werden Informationen über alle Räume die mit einem Transponder in verbindung stehen angezeigt
+
+**Bewertung:**
+
+
+
+*   Top.
+
+
+
+#06
+
+Als Pförtner möchte ich bei der Ausleihe der Transponder überprüfen können, ob die Person berechtigt ist den angefragten Transponder auszuleihen, damit kein Unbefugter einen Zugang zu den Räumen der Hochschule erlangt.
+
+**Execution:**
+
+
+
+*   Ich klicke auf Neu, da ich eine neue ausleihe vergeben will
+
+**Evaluation:**
+
+
+
+*   Ich sehe ein Feld und gebe den Raum ein, den der Student gesagt hat
+
+**Execution:**
+
+
+
+*   Ich klicke auf den Transponder, da ich diesen ausleihen will
+
+**Evaluation:**
+
+
+
+*    Ich suche nach der Person vor mir und prüfe ob sie in der Liste zu finden ist.
+
+Bewertung
+
+
+
+*   Was wenn ich schon vorher weiss, welcher Transponder ausgeliehen werden soll?
+*   Die Räume Suche kann bei mehreren Treffern zu verwirrung sorgen, da nicht klar ist welcher der richtige Transponder ist
+*   Wie funktioniert die Prüfung das der, der da vor uns ist auch die Person ist die er vorgibt zu sein?
+
+#07
+
+Als Pförtner möchte ich nachvollziehen können, wie lange ein Transponder bereits ausgeliehen wurde, damit das Sicherheitsrisiko besser bewertet werden kann.
+
+**Execution:**
+
+
+
+*   ich schaue auf die in Ausleihe liste
+
+**Evaluation:**
+
+
+
+*    Ich sehe alle Ausleihzeiten und  wie lange sie schon in Ausleihe sind
+
+Bewertung:
+
+
+
+*   top, einziges Manko: Sortiert die liste automatisch aufsteigend statt absteigend nach der Zeit. Es interessiert ja vor allem die länger ausgeliehenen Transponder.
+
+#27
+
+Als Pförtner möchte ich die Ausgabe eines Transponders mittels Unterschrift bestätigen lassen.
+
+**Execution:**
+
+
+
+*   ?
+
+**Evaluation:**
+
+
+
+*    ?
+
+Bewertung: 
+
+
+
+*   Keine Funktion in der Applikation
+
+
+
+#28
+
+Als Pförtner möchte ich eine Möglichkeit haben, zu verifizieren ob die Person die einen Transponder ausleiht nicht nur vorgibt diese Person zu sein.
+
+**Execution:**
+
+
+
+*   ?
+
+**Evaluation:**
+
+
+
+*    ?
+
+Bewertung: 
+
+
+
+*   Keine Funktion in der Applikation
+
+
+#08
+
+Als Dozent möchte ich die Möglichkeit haben, Studierenden die Zugangsberechtigung zu einem Raum für einen definierten Zeitraum zu erteilen, damit ich nach Projektzeitraum nicht manuell die Berechtigungen entfernen muss.
+
+Exec:
+
+1. Ich klicke auf “Verwaltung der Zugangsrechte von Studenten”
+2. Ich klicke auf Berechtigung hinzufügen 
+
+Eval:
+
+1. Ich sehe eine Liste mit allen Studenten die Berechtigungen haben
+2. Es passiert nichts
+
+Bewertung:
+
+Ich weiß nicht was man eingeben / auswählen muss um einem bestimmten Studenten Zugang zu einem Raum zu gewähren. Es fehlt eine Eingabeaufforderung oder ähnliches.
+
+#10
+
+Als Dozent möchte ich jederzeit Studierenden mit Berechtigung diese entziehen können.
+
+Exec:
+
+1. Ich klicke auf “Verwaltung der Zugangsrechte von Studenten”
+2. Ich klicke auf Berechtigung entfernen
+
+Eval:
+
+1. Ich sehe eine Liste mit allen Studenten die Berechtigungen haben
+2. Es passiert nichts.
+
+Bewertung:
+
+Welche Berechtigung wird jetzt entfernt? Ich bekomme keine Auswahl welche Berechtigung ich entfernen will und auch kein feedback dass irgendetwas entfernt wurde.
+
+#12
+
+Als Dozent möchte ich sehen können, welche Person zuletzt den Transponder für einen meiner Räume ausgeliehen hat, damit ich einen Ansprechpartner habe, falls der Raum nicht in gutem Zustand hinterlassen wurde.
+
+Exec:
+
+
+
+1. Ich klicke auf “Liste der zuverantwortenden Räume” 
+2. Ich klicke auf einen Raum
+
+Eval:
+
+
+
+1. Ich sehe eine Liste aller Räume
+2. Ich sehe die Historie des (aktuellen?) Tages
+
+Bewertung:
+
+Falls das Datum das aktuelle ist, passt das soweit, nett wäre noch wenn man einen anderen Tag aussuchen könnte, aber die User Story ist auf jeden fall erfüllt.
+
+#14
+
+Als Dozent möchte ich die Möglichkeit haben, mir die aktuell berechtigten Studierenden für einen gegebenen Raum anzeigen zu lassen, damit ich die Berechtigungen leichter bearbeiten kann.
+
+Exec:
+
+1. Ich klicke auf “Liste der zuverantwordenden Räumen” 
+2. Ich klicke klicke auf einen Raum
+
+Eval:
+
+1. Ich sehe eine Liste an Räumen
+2. Ich sehe die Historie von diesem Raum
+
+Bewertung:
+
+Ich sehe nur die Historie, nicht die Leute die Berechtigungen haben, ich kann diese auch nicht anklicken oder gar entfernen. Die Anforderung wurde nicht erfüllt.
+
+#15
+
+Als Dozent möchte ich einen Überblick über die mir zugeteilten Räume bekommen.
+
+Exec:
+
+
+
+1. Ich klicke auf “Liste der zuverantwortenden Räume” 
+
+Eval:
+
+
+
+1. Ich sehe eine Liste aller Räume
+
+Bewertung:
+
+Man bekommt schnell einen Überblick, passt also so.
+
+#16
+
+Als Dozent möchte ich Studierenden die Ausleihberechtigung für einen Transponder erteilen können, damit diese Projektarbeiten durchführen können.
+
+Exec:
+
+1. Ich klicke auf “Verwaltung der Zugangsrechte von Studenten”
+2. Ich klicke auf Berechtigung hinzufügen 
+
+Eval:
+
+1. Ich sehe eine Liste mit allen Studenten die Berechtigungen haben
+2. Es passiert nichts
+
+Bewertung:
+
+Auch hier fehlt eine Eingabe/Bestätigung.
+
+#17
+
+Als Dozent möchte ich einem Vertreter meine Rechte delegieren können, damit ich mich nicht alleinig um die Zugangsberechtigungen kümmern muss.
+
+Exec:
+
+1. Ich klicke auf “Verwaltung von Vertretungsberechtigten”
+2. Ich klicke auf “Vertreter hinzufügen”
+
+Eval:
+
+1. Ich sehe (wenn auch nicht in der Preview, weil außerhalb des frames) eine Liste meiner Vertreter
+2. Es passiert nichts
+
+Bewertung:
+
+Wieder keine Eingabeaufforderung / Bestätigung, das entfernen funktioniert ebenfalls nicht.
+
+**Student Bewertung**
+
+#01
+
+Als Student möchte ich schnell und einfach Transponder ausleihen können, damit ich meine Projektarbeiten in den dafür vorgesehenen Räumen durchführen kann.
+
+**Execution:**
+
+Um Transponder ausleihen zu können muss der Student zum Pförtner gehen und kann das nicht in der App machen.
+
+**Bewertung:**
+
+Da nicht gesagt wurde, dass der Transponder per App ausgeliehen werden kann, muss diese User Story nicht in der App bewertet werden.
+
+#09
+
+Als Student möchte ich den ausgeliehenen Transponder einfach und schnell abgeben können.
+
+**Execution:**
+
+Den Transponder kann man nicht über eine App zurückgeben, sondern man muss zum Pförtner gehen, um dort den Transponder zurück zu geben.
+
+**Bewertung:**
+
+Auch das zurückgeben des Transponders kann nicht über die App dargestellt werden, daher ist die User Story gut dargestellt.
+
+#29
+
+Als Student möchte ich auf dem Weg vom Bahnhof zum Hauptgebäude überprüfen können ob der Transponder, den ich ausleihen möchte, nicht bereits ausgeliehen ist, damit ich nicht umsonst unnötigen Weg zurücklege, sondern direkt zu dem Raum gehen kann.
+
+**Execution:**
+
+Auf der Startseite des Menüs sind die Transponder des jeweiligen Studenten aufgelistet. Neben den Räumen gibt es grüne Punkte, die anzeigen, dass der Transponder noch nicht ausgeliehen ist. Wenn man einen bestimmten Transponder sucht, kann man oben auch noch Suchen.
+
+**Bewertung:**
+
+Die Exekution der User Story ist sehr gut, da man auf Anhieb sieht, auf welche Transponder man zugriff hat und ob diese schon ausgeliehen sind. In dem Fall wäre es aber noch schön, die grünen Punkte zu erklären, da man sonst nicht weiß wofür die vorhanden sind, wenn man mit dem System noch nicht so vertraut ist.
+
+ 
+**Bewertung insgesamt**
+
+Den Studenten finde ich insgesamt gut dargestellt, da die eine User Story gut dargestellt ist. Außerdem ist es schön, dass man eine eigene Seite für die Mitteilungen hat und dass der Sperrbildschirm mit einer Benachrichtigung abgebildet wurde. Die Seite Search, wo man alle Transponder und Räume sieht, ist meiner Meinung nach Unnötig, da man als Student nur seine Räume braucht und man die eigentlich schon direkt im Hauptmenü findet. Aber ich finde es gut gemacht, dass man zwischen dem mappen von Räumen und Transpondern wechseln kann.
+
 
 ## Usability Evaluation
 
@@ -1098,7 +1522,7 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-31.07.2020      |  Gesamtszenario hinzugefügt, Rollen/Aufgaben Moderator verbessert, Anzahl Probanten angepasst                      |       Feedback eingearbeitet                       
+           |                         |                              
            |                         |                              
            |                         |                              
            |                         |                              
@@ -1133,7 +1557,7 @@ __Testpersonen (Eigenschaften, Anzahl)__
 
 Als Testpersonen wird in diesem Fall der Pförtner benötigt. Dieser ist 25-65 Jahre alt und arbeitet hauptberuflich als Pförtner, weswegen er auch schon einige Erfahrung mit ähnlicher Software oder der Vergabe von Schlüsseln haben.
 
-Da es sich bei unserem Programm nur um ein sehr kleines handelt, brauchen wir nur 2-3 Testpersonen, die das Programm testen.
+Um den Großteil der Fehler in unserem System zu finden, benötigen wir 6 bis 9 Personen, die den Pförtner in unserem Usability Test spielen.
 
 Auch einige Studenten werden benötigt, um die Authentifizierung mit einer MultiCa zu testen. Des Weiteren können die Studenten gut beurteilen, ob der Prozess schnell genug abläuft.
 
@@ -1186,9 +1610,7 @@ __Rolle und Aufgaben des Test-Moderators__
 
 Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht. Andererseits hilft er ihnen, wenn sie noch Fragen haben.
 
-Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern kann.
-
-Der Rest des Teams bleibt erstmal bei der Befragung im Hintergrund und kümmert sich um die Technik, wie zum Beispiel den Eye-Tracker und die Log-Files.   
+Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern  
 
 Bericht und Präsentation
 
