@@ -1522,7 +1522,8 @@ __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
 -----------|-------------------------|------------------------------
-           |                         |                              
+01.08.2020 | Gesamtszenario angepasst| Bisher Nicht vollstaendig
+01.08.2020 | Rollenverteilung angepasst| Bisher hatte nur der Moderator Aufgaben. Das wurde geaendert.
            |                         |                              
            |                         |                              
            |                         |                              
@@ -1531,16 +1532,14 @@ __**Changelog**__
 __***\[Artefakt/e\]***__
 
 
-**Testplan  MCI**
+**Zweck, Ziele**
 
-__Zweck, Ziele__
 
 Dieses Dokument dient dazu, einen Testplan für die Transponder Vergabe an der Th-Köln zu beschreiben.
 
 Das Ziel von dem Usability-Tests ist es, potenzielle Probleme im Design zu finden, welche die Effizienz, Produktivität und Zufriedenheit des Endnutzers negativ beeinträchtigen und verbessert werden sollten.
 
-
-__Beschreibung des Produkts/Systems__
+**Beschreibung des Produkts/Systems**
 
 Unser Produkt soll das Ausleihen eines Transponders an der TH-Köln digitalisieren und vereinfachen.
 
@@ -1552,30 +1551,30 @@ Am Ende er lässt sich die Eingabe mit einer Unterschrift auf einem entsprechend
 
 Um einen Transponder zurückzugeben muss der Student ihn lediglich an der Pforte abgeben oder in die Rückgabe-Box werfen. Der Pförtner kann dann den Transponder im System Suchen und auf zurückgegeben drücken, bestätigen und damit den Transponder als zurückgegeben markieren.
 
-
-__Testpersonen (Eigenschaften, Anzahl)__
+**Testpersonen (Eigenschaften, Anzahl)**
 
 Als Testpersonen wird in diesem Fall der Pförtner benötigt. Dieser ist 25-65 Jahre alt und arbeitet hauptberuflich als Pförtner, weswegen er auch schon einige Erfahrung mit ähnlicher Software oder der Vergabe von Schlüsseln haben.
-
-Um den Großteil der Fehler in unserem System zu finden, benötigen wir 6 bis 9 Personen, die den Pförtner in unserem Usability Test spielen.
-
+Um Möglichst viele Fehler zu finden führen wir den Test bei zwei bis drei Personen durch. Mehr Personen werden nicht benötigt, da es sich nur um ein kleines Programm handelt.
 Auch einige Studenten werden benötigt, um die Authentifizierung mit einer MultiCa zu testen. Des Weiteren können die Studenten gut beurteilen, ob der Prozess schnell genug abläuft.
 
+**Testaufgaben (Gesamt Szenario und Testszenarien)**
 
-__Testaufgaben (Gesamt Szenario und Testszenarien):__
+Gesamt Szenario:
+
+Sie sind ein Pförtner an der Th-Köln. 
+Ein Teil ihrer Aufgabe als Pförtner ist es, Personen die einen Transponder ausleihen wollen ihnen diesen auszuhändigen. 
+Dafür scannen Sie die Multicard des Studenten oder geben seine Daten manuell ins System ein.
+Um die Ausleihe zu bestätigen, müssen Sie dann diese noch mit einer Unterschrift bestätigen.
+Danach überschreibt das System die Berechtigung des Studenten auf einen Transponder, den Sie diesem dann geben können. 
+Bei Abgeben des Transponders tragen Sie den Studenten dann aus der Liste der Ausgeliehenen Transponder aus.
+
+Testszenarien
 
 __Gesamt Szenario:__
 
 |||
 |--- |--- |
 |User Task|Testszenario|
-|Transponder verleihen und entziehen|Sie sind ein Pförtner an der TH-Köln und ein Student will einen Transponder ausleihen. Am Ende des Tages will der Student den Transponder wieder zurückgeben.|
-|Transponder ausleihen und zurückgeben|Sie sind Student an der TH-Köln und wollen einen Transponder ausleihen. Am Ende des Tages wollen sie den Transponder wieder abgeben.|
-
-
-__Testszenarien:__
-
-|||
 |--- |--- |
 |Daten der Person eingeben|Sie sind an der Pforte und eine Person möchte einen Transponder ausleihen, also geben Sie die Daten von der Person ein.|
 |Berechtigung überprüfen|Bevor Sie den Schlüssel aushändigen, wollen Sie wissen ob diese Person überhaupt die Berechtigung für den Raum besitzt.|
@@ -1588,14 +1587,13 @@ __Testszenarien:__
 |Transponder abgeben (Student)|Sie wollen einen Transponder zurückgeben|
 
 
-__Testumgebung, Ausrüstung__
+**Testumgebung, Ausrüstung**
 
 Als Testumgebung wählen wir eine Feldstudie, da wir das System in der realen Umgebung testen wollen, um so eventuelle Fehler zu finden. Das Programm kann somit direkt an den verschiedenen Zielgruppen getestet werden.
 
 Als Ausrüstung benötigen wir eine Kamera, die das Auge des Benutzers tracken kann. Außerdem werden Fragebögen benötigt, welche die Teilnehmer am Ende ausfüllen. Natürlich darf auch ein Computer nicht fehlen, sowie ein Zeichenpad für die Unterschriften und einen NFC-Reader, falls vorhanden.
 
-
-__Verwendete Usability-Methoden der Datenerhebung__
+**Verwendete Usability-Methoden der Datenerhebung**
 
 Zur Datenerhebung nutzen wir drei Methoden:
 
@@ -1605,15 +1603,13 @@ Zur Datenerhebung nutzen wir drei Methoden:
 
 3. Als letztes benutzen wir einen Fragebogen. Auf diesem sollen die Teilnehmer Fragen vor allem zu den Themen: (Zeit-)Effizienz, Übersichtlichkeit und Verständnis der Applikation (im Bezug auf Design und Feedback) beantworten.
 
+**Rolle und Aufgaben des Test-Moderators**
 
-__Rolle und Aufgaben des Test-Moderators__
+Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht.
+Außerdem soll der Test-Moderator fragen, was die Probanden gut an der aktuellen Seite finden und was man eventuell verbessern kann.
 
-Die Rolle des Test-Moderators ist es die Probanden durch die Aufgaben zu führen. Das macht er einerseits indem er die Aufgabenstellung an die Teilnehmer gibt, indem er den Studenten spielt, der einen Transponder braucht. Andererseits hilft er ihnen, wenn sie noch Fragen haben.
+Der Rest des Teams bleibt erstmal bei der Befragung im Hintergrund und kümmert sich um die Technik, wie zum Beispiel den Eye-Tracker und die Log-Files. Außerdem helfen sie den Testpersonen, wenn sie noch technische oder organisatorische Fragen haben.
 
-Außerdem soll der Test-Moderator fragen, was die Probanden gut an der Aktuellen Seite finden und was man eventuell verbessern  
-
-Bericht und Präsentation
+**Bericht und Präsentation**
 
 Am Ende wertet man die Ergebnisse aller drei Datenerhebungens-Methoden aus dem Test aus, die Log-Files, der Eye-Tracker und die Fragebögen. Die Probleme werden gesammelt und genau beschrieben. Anschließend sollen Optimierungen für die Probleme gefunden werden und am Schluss wird eine Gewichtung für das Problem angegeben.
-
-__***\[Erläuterung\]***__
