@@ -1524,9 +1524,12 @@ Den Studenten finde ich insgesamt gut dargestellt, da die eine User Story gut da
 
 ## Usability Evaluation
 
-[ ]{.underline}
+Um zu überprüfen, ob unsere Anwendung auch tatsächlich nutzbar ist, können verschiedene Methoden zum Testen verwendet werden
 
 ### Usability-Test Testplan
+
+Wir selber beschreiben nur einen Testplan.
+Dieser kann aufgrund der aktuellen Situation nicht ausgeführt werden.
 
 __**Changelog**__
 
