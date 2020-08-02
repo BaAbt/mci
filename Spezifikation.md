@@ -65,11 +65,14 @@ ein Konzept, welches sie prototypisch implementieren und testen.
 
 # Spezifikation
 
-Im folgenden ist die eigene Spezifikation zu lesen
+Es folgt unsere Spezifikation.
+Sie umfasst alle Artefakte und Erläuterungen
+Sie ist dabei nach der Vorgabe formatiert.
 
 ## Nutzungskontext verstehen und beschreiben
 
-Im folgenden Bereich ist der Nutzungskontext aufgefuehrt
+Der Nutzungskontext soll genau abbilden, wie, von wem und warum unsere Spezifikation verwendet wird.
+Dabei wurden verschiedene Methoden verwendet.
 
 ### Stakeholder Analyse
 
@@ -82,8 +85,6 @@ __**Changelog**__
            |                         |                              
            |                         |                              
            |                         |                              
-
-
 
 __***\[Artefakt/e\]***__
 
