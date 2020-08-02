@@ -952,6 +952,8 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 **Fehlend:**
 
 - (Issue #01) Eine Übersicht aller Räume und der assoziierten Transpondernummern.
+- (Issue #12) Systemstatus/Ausfälle des Servers können nicht eingesehen werden.
+  (Issue #13) Designkonsistenz auch zwischen unterschiedlichen Usern.
 
 **In Ausleihe:**
 
@@ -959,6 +961,7 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 - (Issue #03) Einen Timeslot auszuwählen wäre ein neuer Punkt im Ablauf.
 - (Issue #04) Die Farbliche Kodierung der Einträge wurde nicht vollständig verstanden.
 - (Issue #05) Das Dropdown Symbol wurde nicht als solches erkannt.
+- (Issue #14) Das Suchfeld unterbricht die Verbindung von Tabellenkopf und -rumpf.
 
 **Vergabe:**
 
@@ -968,6 +971,7 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
   3. Unterschreiben
 - (Issue #07) Timeslot-Anderungen sollten nicht vom Pförtner unternommen werden können.
 - (Issue #10) Man muss den gesamten Namen und die Matrikelnummer eingeben.
+- (Issue #11) Die Sprache war nicht einheitlich.
 
 **Rückgabe**
 
@@ -1010,15 +1014,8 @@ Dort sind Anweisungen zum Bau und Link zur Webseite zu finden.
 
 __***\[Erläuterung\]***__
 
-Dies ist leider nicht so ausfuehrlich, wie wir es gerne haetten, sollte allerdings alle Punkte erfuellen.
-Man sollte vielleicht erwaehnen das vor dieser Aufgabe keiner aus dem Team Erfahrung mit Frontendentwicklung hatte und die Klausuren sich annaeherten.
-Jetzt wo die Entschuldigungen aus dem Weg sind hier die Erlaeuterungen:
-
-__Allgemein:__
-
-- Die Anwendungen wurde mit Typescript und ohne Frameworks entwickelt.
-- Sie Arbeitet bei In Ausleihe, Raeume und Verlauf mit einem Internen Array
-- Sie arbeitet intern auf einer in der Typescript verwalteten liste
+Trotz mangelder Erfahrung des Teams wurde eine Website des Transponderverleihs gebaut.
+Diese wurde Anwendungen wurde mit Typescript und ohne Frameworks entwickelt.
 
 __Zeitslots bei der Ausleihe:__
 
