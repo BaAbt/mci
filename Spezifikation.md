@@ -953,7 +953,7 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 
 - (Issue #01) Eine Übersicht aller Räume und der assoziierten Transpondernummern.
 - (Issue #12) Systemstatus/Ausfälle des Servers können nicht eingesehen werden.
-  (Issue #13) Designkonsistenz auch zwischen unterschiedlichen Usern.
+- (Issue #13) Designkonsistenz auch zwischen unterschiedlichen Usern.
 
 **In Ausleihe:**
 
