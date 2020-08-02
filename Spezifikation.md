@@ -76,6 +76,8 @@ Dabei wurden verschiedene Methoden verwendet.
 
 ### Stakeholder Analyse
 
+In der Stakeholder Analyse wurden die verschieden Interessengruppen identifiziert und gewichtet. Diese dient teilweise als Grundlage für die anschließende Kategorisierung in User Profiles.
+
 __**Changelog**__
 
  **Datum** | **Was wurde geändert?** | **Warum wurde es geändert?** 
@@ -224,6 +226,8 @@ Deswegen werden wir vor allem auf die Stakeholder Ausleihender, Pförtner, Raumv
 
 ### User Profiles  
 
+In den User Profiles wurden unsere primären Nutzergruppen identifiziert und ihre Charakteristiken, Kenntnisse über ähnliche Technik und Motivationen erfasst.
+
 __**Changelog**__
 
 [//]: # "https://tableconvert.com/"
@@ -365,6 +369,8 @@ Diese User Profiles beschreiben die Benutzer, die hauptsächlich mit unseren Sys
 
 ### Personas  
 
+Die Personas sind eine Verfeinerung der User Profiles und analysieren die Nutzer auf dem persönlichstem Level. Im folgenden wurden einzelne Personen aus unseren Nutzergruppen auf diese Weise untersucht, um danach die Nutzungsanforderungen spezifizieren zu können.
+
 __**Changelog**__  
 
 [//]: # "https://tableconvert.com/"
@@ -502,15 +508,19 @@ Das hilft dabei, mehr unterschiedliche Perspektiven auf ein Thema zu haben
 
 ## Nutzungsanforderungen spezifizieren
 
+Dieser Schritt war aufgrund der aktuellen Lage nicht notwendig, da wir nicht mit echten Personen sprechen konnten. Deshalb gibt es vorgegebene User Stories, an welchen wir uns im Verlaufe des Projekts orientieren konnten.
+
 User Storys: https://agile02.gm.fh-koeln.de/pages/viewpage.action?pageId=19464219
 
 Ist-Szenarien: https://agile02.gm.fh-koeln.de/display/MCIP/Ist-Szenarien
 
 ## Gestaltungslösungen entwickeln, die die Nutzungsanforderungen erfüllen
 
-Im folgenden sind die individuellen Gestalltungsloesungen aufgefuehrt.
+Um eine finale Gestaltungslösung zu entwickeln, erstellen wir erst individuelle Storyboards, dann einen gemeinsamen Figma Prototypen und abschließend den funktionalen Prototypen in form einer Web Anwendung.
 
 ### Storyboards
+
+Die erstellten Storyboards dienen dazu erste Design Ideen und Interaktionsmöglichkeiten des Nutzers schnell zu visualisieren. Diese wurden anschließend ausgewertet um eine gemeinsame Lösung zu erarbeiten.
 
 __**Changelog**__
 
@@ -761,6 +771,8 @@ $~$
 
 ### Figma Prototyp
 
+Der Figma Prototyp dient dazu, das Konzept aus den Storyboards weiter zu verfeinern und konkrete Design Ideen und den Interaktionsfluss zu visualisieren.
+
 __**Changelog**__
 
 [//]: # "https://tableconvert.com/"
@@ -992,6 +1004,8 @@ Der Confirm button wurde dort absichtlich eingeführt und nicht durch klick irge
 [ ]{.underline}
 
 ### Funktionaler Prototyp
+
+Bei dem funktionalen Prototyp wurde eine Website erstellt die den Ablauf des Transponderverleihs beispielhaft modelliert.
 
 __**Changelog**__
 
@@ -1502,7 +1516,7 @@ Auf der Startseite des Menüs sind die Transponder des jeweiligen Studenten aufg
 
 Die Exekution der User Story ist sehr gut, da man auf Anhieb sieht, auf welche Transponder man zugriff hat und ob diese schon ausgeliehen sind. In dem Fall wäre es aber noch schön, die grünen Punkte zu erklären, da man sonst nicht weiß wofür die vorhanden sind, wenn man mit dem System noch nicht so vertraut ist.
 
- 
+
 **Bewertung insgesamt**
 
 Den Studenten finde ich insgesamt gut dargestellt, da die eine User Story gut dargestellt ist. Außerdem ist es schön, dass man eine eigene Seite für die Mitteilungen hat und dass der Sperrbildschirm mit einer Benachrichtigung abgebildet wurde. Die Seite Search, wo man alle Transponder und Räume sieht, ist meiner Meinung nach Unnötig, da man als Student nur seine Räume braucht und man die eigentlich schon direkt im Hauptmenü findet. Aber ich finde es gut gemacht, dass man zwischen dem mappen von Räumen und Transpondern wechseln kann.
